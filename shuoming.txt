@@ -1,0 +1,558 @@
+可以。下面我直接给你一份可交给 Codex 开发的实现文档，尽量写成工程说明书的形式。最后我再给你一组测试提问示例和理想输出要点，方便你验收。
+
+项目探索与决策台：实现方案文档
+1. 页面定位
+页面名称
+
+项目探索与决策台
+
+页面目标
+
+用户输入一个项目方向、项目简介或约束条件后，系统基于已有的 iGEM 历史项目向量库与文本分块，完成：
+
+召回相似历史项目
+从历史案例中归纳出若干可行路线
+识别潜在风险与短板
+输出下一步建议
+为每条结论绑定证据片段与来源
+页面核心价值
+
+这不是一个普通问答页，而是一个证据驱动的探索与决策页面。
+它体现的是：
+
+检索能力
+归纳能力
+对比能力
+受约束建议能力
+可追溯证据能力
+2. MVP 范围
+
+第一版只做以下能力，不做复杂多轮 agent。
+
+输入
+
+用户提供：
+
+项目简介（必填）
+队伍优势（可选）
+预算等级（可选）
+想强调的方向（可选）
+输出
+
+系统返回：
+
+一句话探索结论
+Top 3 相似历史项目
+2 到 3 条可行路线
+3 个主要风险
+3 个下一步行动建议
+每条结论附证据来源
+暂不做
+
+第一版不做：
+
+连续多轮记忆
+自动生成完整 6 个月路线图
+奖项概率预测
+复杂评分模型
+实时联网抓取
+3. 页面信息架构
+
+前端页面建议分成 5 个区块。
+
+3.1 输入区
+
+字段如下：
+
+project_brief：项目简介，多行文本，必填
+team_strengths：队伍优势，多选
+wet_lab_strong
+modeling_strong
+hardware_strong
+software_strong
+hp_strong
+storytelling_strong
+budget_level：预算等级，单选
+low
+medium
+high
+focus_goal：希望强调的方向，单选或多选
+experiment
+human_practices
+implementation
+entrepreneurship
+software
+hardware
+balanced
+3.2 探索结论区
+
+显示：
+
+一句话总结
+总体判断
+输出置信度
+3.3 相似项目区
+
+每个项目卡片显示：
+
+team_name
+year
+project_title
+similarity_reason
+key_tags
+source_count
+3.4 路线建议区
+
+每条路线显示：
+
+路线名称
+适合原因
+优势
+风险
+关联历史案例
+3.5 证据区
+
+按建议或路线展开显示：
+
+证据片段
+所属 team / year
+page title 或 section
+source url
+与当前建议的关联说明
+4. 后端总架构
+
+采用单服务架构即可，第一版不要拆太细。
+
+4.1 模块划分
+
+后端建议分为以下模块：
+
+api
+services
+retrieval
+ranking
+analysis
+generation
+schemas
+storage
+4.2 模块职责
+api
+
+提供 HTTP 接口
+
+retrieval
+
+向量检索、关键词检索、混合召回
+
+ranking
+
+对 chunk 和 project 做重排和打分
+
+analysis
+
+抽取输入意图、聚合项目信息、生成路线候选
+
+generation
+
+调用 LLM，根据结构化上下文生成最终结果
+
+storage
+
+访问向量库、项目元数据、chunk 文本
+
+5. 数据假设与最小数据要求
+
+你说现在已有部分数据，已经分词并完成向量化。
+那么第一版至少需要下面这些字段。
+
+5.1 chunk 级数据
+
+每个 chunk 至少包含：
+
+{
+  "chunk_id": "string",
+  "text": "string",
+  "embedding": "vector",
+  "team_name": "string",
+  "year": 2023,
+  "project_title": "string|null",
+  "page_title": "string|null",
+  "source_url": "string|null"
+}
+5.2 project 级聚合字段
+
+如果暂时没有 project 表，可以在服务层按 team_name + year 聚合。
+
+推荐最小字段：
+
+{
+  "project_key": "team_name__year",
+  "team_name": "string",
+  "year": 2023,
+  "project_title": "string|null",
+  "wiki_url": "string|null"
+}
+6. 核心工作流
+
+整个后端流程分 7 步。
+
+Step 1：输入标准化
+
+将用户输入转成统一请求对象。
+
+请求示例
+{
+  "project_brief": "We want to build a yeast-based biosensor for detecting heavy metals in campus water sources, with low budget and a strong wet-lab team.",
+  "team_strengths": ["wet_lab_strong"],
+  "budget_level": "low",
+  "focus_goal": ["experiment", "implementation"]
+}
+Step 2：意图抽取
+
+用一个轻量 LLM 或规则抽取出结构化探索意图。
+
+目标输出
+{
+  "problem_domains": ["heavy metal detection", "water quality monitoring"],
+  "application_scenarios": ["campus water testing"],
+  "organism_candidates": ["yeast"],
+  "constraint_tags": ["low budget"],
+  "strength_tags": ["wet_lab_strong"],
+  "focus_tags": ["experiment", "implementation"],
+  "query_keywords": [
+    "heavy metal biosensor",
+    "water detection",
+    "yeast biosensor",
+    "environmental monitoring"
+  ]
+}
+说明
+
+这里不要追求太复杂。
+第一版只要能提炼出 5 到 10 个检索关键词即可。
+
+Step 3：两级召回
+3.1 chunk 级召回
+
+按下面几路同时召回：
+
+原始 brief 向量检索
+抽取关键词拼接后的向量检索
+关键词 BM25 检索（如果有）
+organism / scenario 命中的 boost
+
+召回目标：
+
+先取 top 30~50 chunks
+3.2 project 级聚合
+
+按 team_name + year 聚合召回到项目级。
+
+每个项目聚合信息：
+
+命中的 chunk 数量
+chunk 平均分
+chunk 最高分
+是否命中标题
+是否有不同页面支持
+3.3 project 打分公式
+
+建议先用简单可解释打分：
+
+project_score =
+0.45 * max_chunk_similarity
++ 0.25 * avg_top3_chunk_similarity
++ 0.15 * diversity_bonus
++ 0.15 * keyword_hit_bonus
+
+其中：
+
+max_chunk_similarity：项目命中 chunk 的最高相似度
+avg_top3_chunk_similarity：前 3 个 chunk 平均相似度
+diversity_bonus：来自不同页面时加分
+keyword_hit_bonus：标题/正文命中核心关键词时加分
+
+最终选 Top 5 projects
+
+Step 4：证据挑选
+
+针对每个 Top project，挑选最有代表性的 2 到 4 个 chunk。
+
+选择规则
+
+优先选：
+
+与项目简述最相关的 chunk
+内容信息密度高的 chunk
+不重复的 chunk
+不要全是同一个页面
+输出格式
+{
+  "project_key": "TeamX__2023",
+  "team_name": "TeamX",
+  "year": 2023,
+  "project_title": "MetalSense",
+  "evidence_chunks": [
+    {
+      "chunk_id": "c1",
+      "text": "...",
+      "page_title": "Design",
+      "source_url": "..."
+    }
+  ]
+}
+Step 5：案例归纳与路线生成
+
+这是页面的关键步骤。
+
+输入
+用户输入
+Top 5 project 概要
+每个项目的代表证据
+输出目标
+
+归纳出 2 到 3 条“可行路线”。
+
+路线的定义
+
+路线不是项目名称，而是一个更抽象的方案类型，比如：
+
+低成本检测路线
+场景化实施路线
+强验证实验路线
+硬件增强路线
+用户驱动设计路线
+实现方式
+
+先让 LLM 做一次受约束总结，提示它：
+
+不要编造历史项目
+只基于提供证据归纳
+每条路线必须关联至少 1 个项目
+每条风险必须有支持证据
+不确定时明确说“证据不足”
+Step 6：生成最终结果
+
+最终统一输出为固定 JSON，不要直接让模型输出自然语言散文。
+
+推荐返回结构
+{
+  "summary": {
+    "one_line_conclusion": "This direction is feasible and has historical precedent in iGEM, but similar projects often underperform on implementation and user-facing validation.",
+    "confidence": "medium"
+  },
+  "similar_projects": [
+    {
+      "team_name": "TeamA",
+      "year": 2022,
+      "project_title": "MetalGuard",
+      "similarity_reason": "Similar biosensor objective and environmental detection scenario.",
+      "tags": ["biosensor", "environment", "detection"]
+    }
+  ],
+  "candidate_routes": [
+    {
+      "route_name": "Low-cost biosensor validation route",
+      "fit_reason": "Fits teams with strong wet-lab capacity and limited budget.",
+      "advantages": [
+        "Faster prototype cycle",
+        "Clear experimental storytelling"
+      ],
+      "risks": [
+        "May lack implementation depth",
+        "User scenario may remain weak"
+      ],
+      "related_projects": ["TeamA__2022", "TeamB__2021"],
+      "evidence_refs": ["ev1", "ev2"]
+    }
+  ],
+  "main_risks": [
+    {
+      "risk": "Innovation overlap with prior detection projects",
+      "why_it_matters": "Several historical teams used similar framing without differentiating user scenario.",
+      "evidence_refs": ["ev3"]
+    }
+  ],
+  "next_actions": [
+    {
+      "action": "Define one concrete end-user scenario before finalizing the sensing architecture.",
+      "reason": "This reduces the risk of a technically valid but weakly framed project.",
+      "evidence_refs": ["ev2", "ev4"]
+    }
+  ],
+  "evidence_map": [
+    {
+      "evidence_id": "ev1",
+      "team_name": "TeamA",
+      "year": 2022,
+      "page_title": "Design",
+      "quote": "....",
+      "source_url": "..."
+    }
+  ]
+}
+Step 7：前端渲染
+
+前端只负责消费结构化 JSON 并展示。
+
+不要让前端自行拼逻辑。
+
+7. LLM Prompt 设计
+
+建议拆成两个 prompt，而不是一个大 prompt。
+
+7.1 Prompt A：输入意图抽取
+
+输入：用户表单
+输出：结构化检索意图 JSON
+
+约束
+只抽取，不分析
+不生成建议
+不输出解释
+输出固定 JSON
+7.2 Prompt B：探索结论生成
+
+输入：
+
+用户输入
+Top projects
+evidence chunks
+
+输出：
+
+summary
+similar_projects
+candidate_routes
+main_risks
+next_actions
+evidence_refs
+关键约束
+
+必须明确写进 prompt：
+
+不得使用未提供的外部知识
+不得虚构项目、年份、页面
+每一条路线都必须关联 evidence_refs
+每一个风险都必须有 evidence_refs
+如果证据不够，写明“insufficient evidence”
+输出必须是 JSON
+8. 推荐接口设计
+8.1 提交探索请求
+
+POST /api/explore
+
+request
+{
+  "project_brief": "We want to build a yeast-based biosensor for detecting heavy metals in campus water sources.",
+  "team_strengths": ["wet_lab_strong"],
+  "budget_level": "low",
+  "focus_goal": ["experiment", "implementation"]
+}
+response
+
+返回上面定义的最终 JSON。
+
+8.2 查看相似项目详情
+
+GET /api/projects/{project_key}
+
+response
+{
+  "project_key": "TeamA__2022",
+  "team_name": "TeamA",
+  "year": 2022,
+  "project_title": "MetalGuard",
+  "wiki_url": "...",
+  "evidence_chunks": [...]
+}
+8.3 健康检查
+
+GET /api/health
+
+返回：
+
+{
+  "status": "ok"
+}
+9. 推荐代码目录结构
+backend/
+  app/
+    main.py
+    api/
+      routes_explore.py
+      routes_projects.py
+    schemas/
+      request.py
+      response.py
+      retrieval.py
+    services/
+      explore_service.py
+    retrieval/
+      vector_search.py
+      keyword_search.py
+      hybrid_search.py
+    ranking/
+      project_ranker.py
+    analysis/
+      query_parser.py
+      project_aggregator.py
+      evidence_selector.py
+    generation/
+      prompt_builder.py
+      llm_client.py
+      result_parser.py
+    storage/
+      project_repository.py
+      chunk_repository.py
+    utils/
+      logging.py
+      text.py
+10. 推荐实现顺序
+Phase 1：跑通最小链路
+建 /api/explore
+接收前端输入
+直接用原始 project_brief 做向量检索
+返回相似 chunk 和聚合后的项目
+
+目标：先验证检索是否可用
+
+Phase 2：加入 project 聚合与证据筛选
+按 team/year 聚合
+打分
+选 Top 5 项目
+每个项目挑 2 到 4 个 chunk
+
+目标：从“段落检索”升级到“项目探索”
+
+Phase 3：加入 LLM 结构化输出
+做 query parsing
+做 Prompt B
+输出固定 JSON
+
+目标：形成可展示的探索页
+
+Phase 4：优化前端展示
+路线卡片
+风险卡片
+证据抽屉
+相似项目点击展开
+11. 验收标准
+
+Codex 完成后，你可以按下面标准验收。
+
+基础验收
+可以提交项目简介
+能返回结构化结果
+能显示 Top 3 相似项目
+能显示证据片段
+页面不报错
+质量验收
+返回内容不是泛泛而谈
+相似项目与输入方向明显相关
+每个主要结论都能追溯到证据
+不出现明显编造的 team/year/page
+边界验收
+输入很短时，系统仍能返回“证据不足”
+输入含糊时，不应编造成熟路线
+没有足够证据时，应降低 confidence

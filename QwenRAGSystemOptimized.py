@@ -1,5 +1,5 @@
-#  ================ github Streamlit 部署 ===========
-
+# ================ github Streamlit 部署 ===========
+import re
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import jieba
@@ -14,6 +14,13 @@ from pathlib import Path
 from openai import OpenAI
 from rank_bm25 import BM25Okapi
 
+# 新增：语言检测
+try:
+    from langdetect import detect
+except ImportError:
+    raise ImportError("请安装 langdetect: pip install langdetect")
+
+
 
 class QwenRAGSystemOptimized:
     def __init__(self, api_key: str = None):
@@ -21,14 +28,12 @@ class QwenRAGSystemOptimized:
         """
         api_key: 用户可手动传入 Qwen API Key，如果不传则读取环境变量 DASHSCOPE_API_KEY
         """
-        from dotenv import load_dotenv
-        from openai import OpenAI
         load_dotenv()
 
         api_key = api_key or os.getenv("DASHSCOPE_API_KEY")
         if not api_key:
             raise ValueError(
-                "未找到 DASHSCOPE_API_KEY，请传入或设置环境变量"
+                "DASHSCOPE_API_KEY not found. Please set Qwen's API key as an environment variable."
             )
 
         self.client = OpenAI(
@@ -37,23 +42,32 @@ class QwenRAGSystemOptimized:
         )
 
         # ========== 索引和元数据 ==========
-        if not Path("vector_index.faiss").exists():
+        if not Path("./out_embedding/vector_index.faiss").exists():
             raise FileNotFoundError("缺少 vector_index.faiss，请检查路径")
-        if not Path("chunk_metadata.json").exists():
+        if not Path("./out_embedding/chunk_metadata.json").exists():
             raise FileNotFoundError("缺少 chunk_metadata.json，请检查路径")
 
-        self.index = faiss.read_index("vector_index.faiss")
-        with open("chunk_metadata.json", "r", encoding="utf-8") as f:
+        self.index = faiss.read_index("./out_embedding/vector_index.faiss")
+        with open("./out_embedding/chunk_metadata.json", "r", encoding="utf-8") as f:
             self.metadata = json.load(f)
 
         # ========== 嵌入模型 ==========
         self.embed_model = SentenceTransformer("BAAI/bge-base-zh-v1.5")
 
         # ========== 交叉编码器 ==========
-        self.cross_encoder = CrossEncoder("shibing624/text2vec-base-chinese")
+        self.cross_encoder = CrossEncoder("BAAI/bge-reranker-base")
 
         # ========== 初始化 BM25 ==========
         self._prepare_bm25_corpus()
+
+    def _extract_hard_filters(self, query: str) -> dict:
+        """从用户提问中提取强过滤条件（如年份）"""
+        filters = {}
+        # 匹配 2000-2099 之间的4位数字作为年份
+        year_match = re.search(r'(20\d{2})', query)
+        if year_match:
+            filters['year'] = int(year_match.group(1))
+        return filters
 
     def _prepare_bm25_corpus(self):
         """预处理BM25检索语料"""
@@ -65,47 +79,117 @@ class QwenRAGSystemOptimized:
         self.tokenized_corpus = [list(jieba.cut(text)) for text in self.all_texts]
         self.bm25 = BM25Okapi(self.tokenized_corpus)
 
-    def hybrid_retrieve(self, query: str, k: int = 10, bm25_candidates: int = 100) -> List[Dict]:
-        """混合检索：BM25初筛 + 向量检索 + 交叉编码器重排序"""
+    # def hybrid_retrieve(self, query: str, k: int = 10, bm25_candidates: int = 100) -> List[Dict]:
+    #     """混合检索：BM25初筛 + 向量检索 + 交叉编码器重排序"""
+    #     if not hasattr(self, "bm25"):
+    #         raise RuntimeError("BM25 尚未初始化，请检查 _prepare_bm25_corpus()")
+
+    #     # 1. BM25 初筛
+    #     tokenized_query = list(jieba.cut(query))
+    #     bm25_scores = self.bm25.get_scores(tokenized_query)
+    #     top_bm25_indices = np.argsort(bm25_scores)[::-1][:bm25_candidates]
+
+    #     # 2. 向量检索
+    #     query_embed = self.embed_model.encode([query])
+    #     candidate_texts = [self.all_texts[i] for i in top_bm25_indices]
+    #     candidate_embeddings = self.embed_model.encode(candidate_texts)
+    #     vector_scores = cosine_similarity(query_embed, candidate_embeddings)[0]
+
+    #     # 3. 融合 BM25 和向量得分
+    #     bm25_normalized = (bm25_scores[top_bm25_indices] - np.min(bm25_scores[top_bm25_indices])) / (
+    #         np.max(bm25_scores[top_bm25_indices]) - np.min(bm25_scores[top_bm25_indices]) + 1e-8
+    #     )
+    #     vector_normalized = (vector_scores - np.min(vector_scores)) / (
+    #         np.max(vector_scores) - np.min(vector_scores) + 1e-8
+    #     )
+
+    #     hybrid_scores = 0.3 * bm25_normalized + 0.7 * vector_normalized
+    #     top_hybrid_indices = top_bm25_indices[np.argsort(hybrid_scores)[::-1][:k]]
+
+    #     # 4. 交叉编码器重排序
+    #     rerank_pairs = [(query, self.all_texts[i]) for i in top_hybrid_indices]
+    #     rerank_scores = self._batch_rerank(rerank_pairs)
+
+    #     results = []
+    #     for idx, score in zip(top_hybrid_indices, rerank_scores):
+    #         chunk_data = {
+    #             "text": self.metadata[idx]["text"],
+    #             "metadata": self.metadata[idx]["metadata"],
+    #             "score": float(score)
+    #         }
+    #         results.append(chunk_data)
+
+    #     return results
+
+    def hybrid_retrieve(self, query: str, k: int = 10, recall_candidates: int = 50) -> List[Dict]:
+        """【真·双线并行】混合检索：BM25召回 + FAISS向量召回 -> 规则拦截 -> 交叉编码器重排序"""
         if not hasattr(self, "bm25"):
             raise RuntimeError("BM25 尚未初始化，请检查 _prepare_bm25_corpus()")
 
-        # 1. BM25 初筛
+        # 1. 提前提取问题中的硬性条件（如年份）
+        filters = self._extract_hard_filters(query)
+
+        # ==================== 并行召回阶段 ====================
+        
+        # 【左手】：BM25 稀疏召回 (专注字面关键字匹配)
         tokenized_query = list(jieba.cut(query))
         bm25_scores = self.bm25.get_scores(tokenized_query)
-        top_bm25_indices = np.argsort(bm25_scores)[::-1][:bm25_candidates]
+        # 取字面分数最高的 Top N 个
+        top_bm25_indices = np.argsort(bm25_scores)[::-1][:recall_candidates].tolist()
 
-        # 2. 向量检索
-        query_embed = self.embed_model.encode([query])
-        candidate_texts = [self.all_texts[i] for i in top_bm25_indices]
-        candidate_embeddings = self.embed_model.encode(candidate_texts)
-        vector_scores = cosine_similarity(query_embed, candidate_embeddings)[0]
+        # 【右手】：FAISS 向量召回 (专注深层语义理解)
+        # 把问题变成向量 (注意：FAISS 强制要求 float32 格式)
+        query_embed = self.embed_model.encode([query]).astype(np.float32)
+        # 直接去你之前建好的 FAISS 库里秒查！
+        faiss_distances, faiss_indices_2d = self.index.search(query_embed, recall_candidates)
+        top_faiss_indices = faiss_indices_2d[0].tolist()
 
-        # 3. 融合 BM25 和向量得分
-        bm25_normalized = (bm25_scores[top_bm25_indices] - np.min(bm25_scores[top_bm25_indices])) / (
-            np.max(bm25_scores[top_bm25_indices]) - np.min(bm25_scores[top_bm25_indices]) + 1e-8
-        )
-        vector_normalized = (vector_scores - np.min(vector_scores)) / (
-            np.max(vector_scores) - np.min(vector_scores) + 1e-8
-        )
+        # ==================== 融合与过滤阶段 ====================
 
-        hybrid_scores = 0.3 * bm25_normalized + 0.7 * vector_normalized
-        top_hybrid_indices = top_bm25_indices[np.argsort(hybrid_scores)[::-1][:k]]
+        # 【合并候选池并去重】：把两边找出来的人混在一起
+        # 使用 set 去重，可能总共会有 50 ~ 100 个唯一的候选人
+        combined_indices = list(set(top_bm25_indices + top_faiss_indices))
 
-        # 4. 交叉编码器重排序
-        rerank_pairs = [(query, self.all_texts[i]) for i in top_hybrid_indices]
+        # 【规则后置过滤】：按年份无情剔除
+        filtered_indices = []
+        for idx in combined_indices:
+            # 容错：去除 faiss 有时找不够数量返回的 -1 占位符
+            if idx < 0 or idx >= len(self.metadata):
+                continue
+            
+            chunk_meta = self.metadata[idx]["metadata"]
+            
+            # 如果提问中有年份，且数据块年份不匹配，直接拦截
+            if 'year' in filters and chunk_meta.get('year') != filters['year']:
+                continue
+                
+            filtered_indices.append(idx)
+            
+        # 容错：如果过滤条件太严导致全军覆没，降级回退到过滤前的结果以防程序崩溃
+        if not filtered_indices:
+            filtered_indices = combined_indices[:k*2]
+
+        # ==================== 精排面试阶段 ====================
+
+        # 【终极面试：交叉编码器重排序】
+        # 让最聪明的 Cross-Encoder 对剩下的候选人逐一打分
+        rerank_pairs = [(query, self.all_texts[i]) for i in filtered_indices]
         rerank_scores = self._batch_rerank(rerank_pairs)
 
+        # 组装结果
         results = []
-        for idx, score in zip(top_hybrid_indices, rerank_scores):
-            chunk_data = {
+        for idx, score in zip(filtered_indices, rerank_scores):
+            results.append({
                 "text": self.metadata[idx]["text"],
                 "metadata": self.metadata[idx]["metadata"],
                 "score": float(score)
-            }
-            results.append(chunk_data)
-
-        return results
+            })
+            
+        # 根据 Cross-Encoder 得分从高到低排序
+        results.sort(key=lambda x: x['score'], reverse=True)
+        
+        # 最终只交出最顶尖的 k 个作业
+        return results[:k]
 
     def _batch_rerank(self, rerank_pairs: List[tuple]) -> List[float]:
         """批量处理交叉编码器以加速重排序"""
@@ -114,7 +198,7 @@ class QwenRAGSystemOptimized:
         return rerank_scores
 
     def generate_prompt(self, query: str, chunks: List[Dict]) -> str:
-        """构建增强提示"""
+        """构建增强提示（始终用中文）"""
         context = "\n\n".join([
             f"[来源：{c['metadata']['team_name']} {c['metadata']['year']}]\n{c['text']}"
             for c in chunks
@@ -136,7 +220,8 @@ class QwenRAGSystemOptimized:
         """调用 Qwen API"""
         try:
             response = self.client.chat.completions.create(
-                model="qwen-plus",
+                # model="qwen-plus",
+                model="qwen3.5-plus",
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=3000,
                 temperature=0.5,
@@ -147,19 +232,70 @@ class QwenRAGSystemOptimized:
         except Exception as e:
             raise RuntimeError(f"API 调用失败: {str(e)}")
 
+    def _translate_with_qwen(self, text: str, target_lang: str) -> str:
+        """使用 Qwen 模型进行翻译"""
+        if target_lang == "zh":
+            instruction = "请将以下英文翻译成专业、简洁的中文："
+        elif target_lang == "en":
+            instruction = "Please translate the following Chinese into professional, concise English:"
+        else:
+            return text
+
+        try:
+            response = self.client.chat.completions.create(
+                model="qwen-plus",
+                messages=[{"role": "user", "content": f"{instruction}\n\n{text}"}],
+                max_tokens=1000,
+                temperature=0.3,
+                top_p=0.9
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            # 如果翻译失败，返回原文（避免中断）
+            print(f"Translation failed: {e}")
+            return text
+
+    def detect_language(self, text: str) -> str:
+        """检测文本语言，返回 'zh' 或 'en'"""
+        try:
+            lang = detect(text)
+            if lang.startswith("zh"):
+                return "zh"
+            elif lang == "en":
+                return "en"
+            else:
+                # 默认中文（因为文档是中文）
+                return "zh"
+        except:
+            return "zh"
+
     def postprocess_answer(self, answer: str) -> str:
         """后处理答案"""
-        processed = f"## iGEM专家回答\n\n{answer}"
-        if "【来源说明】" not in answer:
-            processed += "\n\n---\n*注：以上回答基于检索到的 iGEM 项目信息*"
+        processed = f"## iGEM Expert Answer\n\n{answer}"
+        if "【Source】" not in answer and "来源" not in answer:
+            processed += "\n\n---\n*Note: This response is based on retrieved iGEM project information.*"
         return processed
 
     def query(self, question: str) -> Dict:
-        """端到端 RAG 流程"""
-        chunks = self.hybrid_retrieve(question, k=8)
-        prompt = self.generate_prompt(question, chunks)
-        answer = self.call_qwen_api(prompt)
-        processed_answer = self.postprocess_answer(answer)
+        """端到端 RAG 流程，支持中英文输入"""
+        # Step 1: 检测用户问题语言
+        user_lang = self.detect_language(question)
+        is_english_input = (user_lang == "en")
+
+        # Step 2: 如果是英文，翻译成中文用于 RAG
+        query_for_rag = self._translate_with_qwen(question, "zh") if is_english_input else question
+
+        # Step 3: 执行 RAG（内部全程中文）
+        chunks = self.hybrid_retrieve(query_for_rag, k=8)
+        prompt = self.generate_prompt(query_for_rag, chunks)
+        chinese_answer = self.call_qwen_api(prompt)
+
+        # Step 4: 如果用户用英文提问，将答案翻译回英文
+        final_answer = self._translate_with_qwen(chinese_answer, "en") if is_english_input else chinese_answer
+
+        # Step 5: 后处理（根据语言调整提示语）
+        processed_answer = self.postprocess_answer(final_answer)
+
         return {
             "question": question,
             "answer": processed_answer,

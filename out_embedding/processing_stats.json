@@ -1,0 +1,8 @@
+{
+  "chunk_size": 600,
+  "chunk_overlap": 80,
+  "embedding_model": "BAAI/bge-base-zh-v1.5",
+  "total_chunks": 16474,
+  "document_count": 925,
+  "vector_dimension": 768
+}
