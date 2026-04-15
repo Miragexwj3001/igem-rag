@@ -1,0 +1,5033 @@
+[
+  {
+    "id": "rule_0090",
+    "question": "2019年TU_Kaiserslautern队的模型中包含哪些核心参数和前提假设？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU_Kaiserslautern",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 5898
+    }
+  },
+  {
+    "id": "rule_0178",
+    "question": "INSAENSLyon1团队在2023年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "INSAENSLyon1",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 13564
+    }
+  },
+  {
+    "id": "rule_0001",
+    "question": "UCSF团队在2015年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UCSF",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 848
+    }
+  },
+  {
+    "id": "rule_0124",
+    "question": "2024年NNU-CHINA队在实验技术层面做出了什么创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NNU-CHINA",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 15959
+    }
+  },
+  {
+    "id": "rule_0019",
+    "question": "Edinburgh_UG团队在2017年开展了哪些公众科普或推广活动？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Edinburgh_UG",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 2719
+    }
+  },
+  {
+    "id": "rule_0008",
+    "question": "East_Chapel_Hill团队在2017年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "East_Chapel_Hill",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 2301
+    }
+  },
+  {
+    "id": "rule_0023",
+    "question": "2018年UAlberta队的人类实践工作有哪些可量化的成效？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UAlberta",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 4768
+    }
+  },
+  {
+    "id": "rule_0131",
+    "question": "2018年BNDS_CHINA队在实验技术层面做出了什么创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BNDS_CHINA",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 3121
+    }
+  },
+  {
+    "id": "rule_0159",
+    "question": "UPF_CRG_Barcelona团队在2018年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UPF_CRG_Barcelona",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 3284
+    }
+  },
+  {
+    "id": "rule_0158",
+    "question": "2020年Athens队的湿实验验证结果如何，是否达到预期目标？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Athens",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 8057
+    }
+  },
+  {
+    "id": "rule_0099",
+    "question": "Mingdao团队在2018年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Mingdao",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 3109
+    }
+  },
+  {
+    "id": "rule_0062",
+    "question": "HZAU-China团队在2021年为什么要建立数学模型？核心目标是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "HZAU-China",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 8995
+    }
+  },
+  {
+    "id": "rule_0091",
+    "question": "2018年Vilnius-Lithuania-OG队的模型中包含哪些核心参数和前提假设？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Vilnius-Lithuania-OG",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 3615
+    }
+  },
+  {
+    "id": "rule_0136",
+    "question": "2023年XHD-WuHan-China队的整体湿实验设计思路是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "XHD-WuHan-China",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 14313
+    }
+  },
+  {
+    "id": "rule_0139",
+    "question": "2024年Cambridge队的整体湿实验设计思路是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Cambridge",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 15179
+    }
+  },
+  {
+    "id": "rule_0014",
+    "question": "2020年Toulouse_INSA-UPS队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Toulouse_INSA-UPS",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 8171
+    }
+  },
+  {
+    "id": "rule_0141",
+    "question": "BKEA团队在2024年是如何设计其湿实验方案的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BKEA",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 15612
+    }
+  },
+  {
+    "id": "rule_0034",
+    "question": "IISER-Pune-India团队在2023年与哪些利益相关方进行了合作或访谈？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "IISER-Pune-India",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 13830
+    }
+  },
+  {
+    "id": "rule_0122",
+    "question": "Aachen团队在2018年的湿实验中有哪些实验方法上的创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Aachen",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 4138
+    }
+  },
+  {
+    "id": "rule_0087",
+    "question": "UOregon团队在2023年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UOregon",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 12430
+    }
+  },
+  {
+    "id": "rule_0068",
+    "question": "2020年KSA_KOREA队的计算建模代码是否对外公开？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "KSA_KOREA",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 8769
+    }
+  },
+  {
+    "id": "rule_0170",
+    "question": "NU_Kazakhstan团队在2018年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NU_Kazakhstan",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 5227
+    }
+  },
+  {
+    "id": "rule_0182",
+    "question": "2017年ETH_Zurich队在湿实验过程中面对了什么困难，采取了什么应对措施？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "ETH_Zurich",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 2934
+    }
+  },
+  {
+    "id": "rule_0012",
+    "question": "2018年HebrewU队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "HebrewU",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 3939
+    }
+  },
+  {
+    "id": "rule_0174",
+    "question": "2021年Rochester队的湿实验中，底盘生物的选择策略是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Rochester",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 8959
+    }
+  },
+  {
+    "id": "rule_0125",
+    "question": "2017年Freiburg队在实验技术层面做出了什么创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Freiburg",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 2349
+    }
+  },
+  {
+    "id": "rule_0149",
+    "question": "2017年Glasgow队的湿实验验证方案是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Glasgow",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 2793
+    }
+  },
+  {
+    "id": "rule_0002",
+    "question": "Tsinghua团队在2019年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Tsinghua",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 5713
+    }
+  },
+  {
+    "id": "rule_0082",
+    "question": "LZU-CHINA团队在2018年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "LZU-CHINA",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 4868
+    }
+  },
+  {
+    "id": "rule_0105",
+    "question": "BGU_Israel团队在2018年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BGU_Israel",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 3016
+    }
+  },
+  {
+    "id": "rule_0057",
+    "question": "UESTC-China团队在2019年为什么要建立数学模型？核心目标是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UESTC-China",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 6174
+    }
+  },
+  {
+    "id": "rule_0108",
+    "question": "2018年UNebraska-Lincoln队如何验证其模型预测和真实实验数据的一致性？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UNebraska-Lincoln",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 3870
+    }
+  },
+  {
+    "id": "rule_0037",
+    "question": "Thessaly团队在2019年与哪些利益相关方进行了合作或访谈？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Thessaly",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 5663
+    }
+  },
+  {
+    "id": "rule_0157",
+    "question": "Slovenia_HS团队在2015年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Slovenia_HS",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 69
+    }
+  },
+  {
+    "id": "rule_0142",
+    "question": "2022年SubCat_China队的整体湿实验设计思路是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SubCat_China",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 11270
+    }
+  },
+  {
+    "id": "rule_0004",
+    "question": "TU_Darmstadt团队在2018年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU_Darmstadt",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 4683
+    }
+  },
+  {
+    "id": "rule_0171",
+    "question": "2018年TAS_Taipei队的湿实验中，底盘生物的选择策略是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TAS_Taipei",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 3026
+    }
+  },
+  {
+    "id": "rule_0119",
+    "question": "Tsinghua团队在2019年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Tsinghua",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 5695
+    }
+  },
+  {
+    "id": "rule_0043",
+    "question": "SZ_SHD团队在2021年与哪些利益相关方进行了合作或访谈？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SZ_SHD",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 9854
+    }
+  },
+  {
+    "id": "rule_0169",
+    "question": "Toronto团队在2015年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Toronto",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 494
+    }
+  },
+  {
+    "id": "rule_0061",
+    "question": "2019年NAU-CHINA队的计算建模是为了解决什么科学问题？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NAU-CHINA",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 6579
+    }
+  },
+  {
+    "id": "rule_0064",
+    "question": "2021年British_Columbia队的计算建模是为了解决什么科学问题？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "British_Columbia",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 9385
+    }
+  },
+  {
+    "id": "rule_0040",
+    "question": "2019年QHFZ-China队在人类实践中接触了哪些关键合作方？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "QHFZ-China",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 5934
+    }
+  },
+  {
+    "id": "rule_0070",
+    "question": "2019年SUSTech_Shenzhen队的计算建模代码是否对外公开？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SUSTech_Shenzhen",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 5790
+    }
+  },
+  {
+    "id": "rule_0016",
+    "question": "2018年Valencia_UPV队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Valencia_UPV",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 3824
+    }
+  },
+  {
+    "id": "rule_0120",
+    "question": "2020年Waseda队的湿实验涉及哪些核心遗传元件和表达产物？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Waseda",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 8239
+    }
+  },
+  {
+    "id": "rule_0132",
+    "question": "USAFA团队在2023年是如何设计其湿实验方案的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "USAFA",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 12264
+    }
+  },
+  {
+    "id": "rule_0047",
+    "question": "TecMonterreyGDL团队在2023年如何开展社会需求调研？采用了哪些方法？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TecMonterreyGDL",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 13136
+    }
+  },
+  {
+    "id": "rule_0106",
+    "question": "Munich团队在2018年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Munich",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 4331
+    }
+  },
+  {
+    "id": "rule_0116",
+    "question": "CSMU_Taiwan团队在2020年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "CSMU_Taiwan",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 7668
+    }
+  },
+  {
+    "id": "rule_0180",
+    "question": "2018年UiOslo_Norway队在湿实验过程中面对了什么困难，采取了什么应对措施？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UiOslo_Norway",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 4243
+    }
+  },
+  {
+    "id": "rule_0114",
+    "question": "Baltimore_BioCrew团队在2019年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Baltimore_BioCrew",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 7259
+    }
+  },
+  {
+    "id": "rule_0135",
+    "question": "Cambridge团队在2024年是如何设计其湿实验方案的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Cambridge",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 15178
+    }
+  },
+  {
+    "id": "rule_0046",
+    "question": "Linkoping_Sweden团队在2019年如何开展社会需求调研？采用了哪些方法？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Linkoping_Sweden",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 6839
+    }
+  },
+  {
+    "id": "rule_0052",
+    "question": "2024年AIS-China队通过什么方式了解公众对其项目的需求？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "AIS-China",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 15335
+    }
+  },
+  {
+    "id": "rule_0095",
+    "question": "2019年Toronto队的模型中包含哪些核心参数和前提假设？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Toronto",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 5296
+    }
+  },
+  {
+    "id": "rule_0072",
+    "question": "SUSTech_Shenzhen团队在2019年是否开源了建模代码？使用了什么语言或工具？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SUSTech_Shenzhen",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 5791
+    }
+  },
+  {
+    "id": "rule_0156",
+    "question": "Slovenia团队在2016年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Slovenia",
+      "year": 2016,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 1201
+    }
+  },
+  {
+    "id": "rule_0020",
+    "question": "2017年William_and_Mary队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "William_and_Mary",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 2557
+    }
+  },
+  {
+    "id": "rule_0038",
+    "question": "2020年Imperial_College队在人类实践中接触了哪些关键合作方？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Imperial_College",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 8149
+    }
+  },
+  {
+    "id": "rule_0035",
+    "question": "IvyMaker-China团队在2021年与哪些利益相关方进行了合作或访谈？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "IvyMaker-China",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 9415
+    }
+  },
+  {
+    "id": "rule_0033",
+    "question": "2018年Lethbridge_HS队在人类实践中接触了哪些关键合作方？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Lethbridge_HS",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 4115
+    }
+  },
+  {
+    "id": "rule_0123",
+    "question": "Manchester团队在2017年的湿实验中有哪些实验方法上的创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Manchester",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 1802
+    }
+  },
+  {
+    "id": "rule_0069",
+    "question": "Ionis_Paris团队在2020年是否开源了建模代码？使用了什么语言或工具？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Ionis_Paris",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 7527
+    }
+  },
+  {
+    "id": "rule_0146",
+    "question": "Czech_Republic团队在2015年采用了哪些方法来验证其实验设计？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Czech_Republic",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 199
+    }
+  },
+  {
+    "id": "rule_0085",
+    "question": "2015年DTU-Denmark队建立了什么类型的计算模型来支持实验设计？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "DTU-Denmark",
+      "year": 2015,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 331
+    }
+  },
+  {
+    "id": "rule_0015",
+    "question": "TU_Darmstadt团队在2019年开展了哪些公众科普或推广活动？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU_Darmstadt",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 6906
+    }
+  },
+  {
+    "id": "rule_0121",
+    "question": "BNUZH-China团队在2024年的湿实验中有哪些实验方法上的创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BNUZH-China",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 15856
+    }
+  },
+  {
+    "id": "rule_0006",
+    "question": "Utrecht团队在2017年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Utrecht",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 2574
+    }
+  },
+  {
+    "id": "rule_0118",
+    "question": "Technion-Israel团队在2020年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Technion-Israel",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 8727
+    }
+  },
+  {
+    "id": "rule_0172",
+    "question": "KCL_UK团队在2021年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "KCL_UK",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 9193
+    }
+  },
+  {
+    "id": "rule_0022",
+    "question": "2024年TUDarmstadt队的人类实践工作有哪些可量化的成效？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TUDarmstadt",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 14552
+    }
+  },
+  {
+    "id": "rule_0109",
+    "question": "2024年IEA队如何验证其模型预测和真实实验数据的一致性？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "IEA",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 14436
+    }
+  },
+  {
+    "id": "rule_0054",
+    "question": "Heidelberg团队在2017年如何开展社会需求调研？采用了哪些方法？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Heidelberg",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 2674
+    }
+  },
+  {
+    "id": "rule_0013",
+    "question": "2021年Ecuador队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Ecuador",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 9818
+    }
+  },
+  {
+    "id": "rule_0128",
+    "question": "2017年Judd_UK队在实验技术层面做出了什么创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Judd_UK",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 2009
+    }
+  },
+  {
+    "id": "rule_0092",
+    "question": "TU-Dresden团队在2024年建模时设定了哪些关键输入参数和假设条件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU-Dresden",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 14964
+    }
+  },
+  {
+    "id": "rule_0181",
+    "question": "2018年Edinburgh_UG队在湿实验过程中面对了什么困难，采取了什么应对措施？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Edinburgh_UG",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 4350
+    }
+  },
+  {
+    "id": "rule_0051",
+    "question": "2018年UESTC-Software队通过什么方式了解公众对其项目的需求？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UESTC-Software",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 3748
+    }
+  },
+  {
+    "id": "rule_0063",
+    "question": "UESTC-Software团队在2018年为什么要建立数学模型？核心目标是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UESTC-Software",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 3740
+    }
+  },
+  {
+    "id": "rule_0134",
+    "question": "2023年TU-Dresden队的整体湿实验设计思路是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU-Dresden",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 13095
+    }
+  },
+  {
+    "id": "rule_0024",
+    "question": "2017年Valencia_UPV队的人类实践工作有哪些可量化的成效？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Valencia_UPV",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 2165
+    }
+  },
+  {
+    "id": "rule_0073",
+    "question": "OUC-China团队在2017年是否开源了建模代码？使用了什么语言或工具？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "OUC-China",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 2440
+    }
+  },
+  {
+    "id": "rule_0144",
+    "question": "2019年Sydney_Australia队的湿实验验证方案是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Sydney_Australia",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 6595
+    }
+  },
+  {
+    "id": "rule_0053",
+    "question": "2024年Sydney-Australia队通过什么方式了解公众对其项目的需求？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Sydney-Australia",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 15029
+    }
+  },
+  {
+    "id": "rule_0058",
+    "question": "2024年CAU-China队的计算建模是为了解决什么科学问题？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "CAU-China",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 15945
+    }
+  },
+  {
+    "id": "rule_0168",
+    "question": "BS-United-China团队在2023年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BS-United-China",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 13932
+    }
+  },
+  {
+    "id": "rule_0078",
+    "question": "GO_Paris-Saclay团队在2021年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "GO_Paris-Saclay",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 9910
+    }
+  },
+  {
+    "id": "rule_0112",
+    "question": "Oxford团队在2016年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Oxford",
+      "year": 2016,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 1232
+    }
+  },
+  {
+    "id": "rule_0143",
+    "question": "Aachen团队在2024年采用了哪些方法来验证其实验设计？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Aachen",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 14394
+    }
+  },
+  {
+    "id": "rule_0005",
+    "question": "UPF_CRG_Barcelona团队在2018年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UPF_CRG_Barcelona",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 3299
+    }
+  },
+  {
+    "id": "rule_0003",
+    "question": "Toronto团队在2019年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Toronto",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 5302
+    }
+  },
+  {
+    "id": "rule_0018",
+    "question": "2020年LINKS_China队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "LINKS_China",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 8106
+    }
+  },
+  {
+    "id": "rule_0025",
+    "question": "British_Columbia团队在2015年的人类实践产生了哪些具体的社会影响？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "British_Columbia",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 784
+    }
+  },
+  {
+    "id": "rule_0028",
+    "question": "Linkoping_Sweden团队在2019年的人类实践产生了哪些具体的社会影响？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Linkoping_Sweden",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 6845
+    }
+  },
+  {
+    "id": "rule_0039",
+    "question": "2017年EPFL队在人类实践中接触了哪些关键合作方？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "EPFL",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 1753
+    }
+  },
+  {
+    "id": "rule_0115",
+    "question": "Shiyan_SY_China团队在2015年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Shiyan_SY_China",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 48
+    }
+  },
+  {
+    "id": "rule_0030",
+    "question": "ULaval团队在2019年的人类实践产生了哪些具体的社会影响？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "ULaval",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 6122
+    }
+  },
+  {
+    "id": "rule_0096",
+    "question": "2018年BGU_Israel队的模型中包含哪些核心参数和前提假设？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BGU_Israel",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 3015
+    }
+  },
+  {
+    "id": "rule_0154",
+    "question": "Vilnius-Lithuania团队在2021年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Vilnius-Lithuania",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 9928
+    }
+  },
+  {
+    "id": "rule_0042",
+    "question": "2020年BITSPilani-Goa_India队在人类实践中接触了哪些关键合作方？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BITSPilani-Goa_India",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 8000
+    }
+  },
+  {
+    "id": "rule_0140",
+    "question": "2024年GEC-Beijing队的整体湿实验设计思路是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "GEC-Beijing",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 16277
+    }
+  },
+  {
+    "id": "rule_0081",
+    "question": "NEU_CHINA团队在2019年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NEU_CHINA",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 5632
+    }
+  },
+  {
+    "id": "rule_0151",
+    "question": "2019年SUSTech_Shenzhen队的湿实验验证方案是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SUSTech_Shenzhen",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 5781
+    }
+  },
+  {
+    "id": "rule_0113",
+    "question": "2018年METU_HS_Ankara队的湿实验涉及哪些核心遗传元件和表达产物？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "METU_HS_Ankara",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 3242
+    }
+  },
+  {
+    "id": "rule_0126",
+    "question": "2018年LZU-CHINA队在实验技术层面做出了什么创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "LZU-CHINA",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 4860
+    }
+  },
+  {
+    "id": "rule_0010",
+    "question": "2020年SMS_Shenzhen队对项目进行了怎样的伦理评估与生物安全审查？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SMS_Shenzhen",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 8568
+    }
+  },
+  {
+    "id": "rule_0145",
+    "question": "2023年UGM-Indonesia队的湿实验验证方案是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UGM-Indonesia",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 14040
+    }
+  },
+  {
+    "id": "rule_0021",
+    "question": "2021年Rochester队如何向社会公众传播合成生物学知识？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Rochester",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 8972
+    }
+  },
+  {
+    "id": "rule_0094",
+    "question": "Evry-Paris-Saclay团队在2023年建模时设定了哪些关键输入参数和假设条件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Evry-Paris-Saclay",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 12448
+    }
+  },
+  {
+    "id": "rule_0153",
+    "question": "Oxford团队在2017年采用了哪些方法来验证其实验设计？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Oxford",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 2852
+    }
+  },
+  {
+    "id": "rule_0101",
+    "question": "Aachen团队在2020年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Aachen",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 7802
+    }
+  },
+  {
+    "id": "rule_0060",
+    "question": "OUC-China团队在2017年为什么要建立数学模型？核心目标是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "OUC-China",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 2433
+    }
+  },
+  {
+    "id": "rule_0161",
+    "question": "EPFL团队在2018年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "EPFL",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 4029
+    }
+  },
+  {
+    "id": "rule_0167",
+    "question": "DUT-China团队在2023年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "DUT-China",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 13195
+    }
+  },
+  {
+    "id": "rule_0086",
+    "question": "HongKong-JSS团队在2023年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "HongKong-JSS",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 13484
+    }
+  },
+  {
+    "id": "rule_0117",
+    "question": "2019年SZU-China队的湿实验涉及哪些核心遗传元件和表达产物？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SZU-China",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 5306
+    }
+  },
+  {
+    "id": "rule_0056",
+    "question": "SCU-China团队在2023年为什么要建立数学模型？核心目标是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SCU-China",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 13545
+    }
+  },
+  {
+    "id": "rule_0059",
+    "question": "UofUppsala团队在2020年为什么要建立数学模型？核心目标是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UofUppsala",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 7612
+    }
+  },
+  {
+    "id": "rule_0041",
+    "question": "AUC_TURKEY团队在2015年与哪些利益相关方进行了合作或访谈？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "AUC_TURKEY",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 736
+    }
+  },
+  {
+    "id": "rule_0138",
+    "question": "Paris_Bettencourt团队在2022年是如何设计其湿实验方案的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Paris_Bettencourt",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 10944
+    }
+  },
+  {
+    "id": "rule_0127",
+    "question": "AshesiGhana团队在2017年的湿实验中有哪些实验方法上的创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "AshesiGhana",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 2028
+    }
+  },
+  {
+    "id": "rule_0074",
+    "question": "2017年TU-Eindhoven队的计算建模代码是否对外公开？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU-Eindhoven",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 2589
+    }
+  },
+  {
+    "id": "rule_0100",
+    "question": "2018年NEFU_China队如何验证其模型预测和真实实验数据的一致性？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NEFU_China",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 3091
+    }
+  },
+  {
+    "id": "rule_0055",
+    "question": "2017年Shanghaitech队的计算建模是为了解决什么科学问题？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Shanghaitech",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 2450
+    }
+  },
+  {
+    "id": "rule_0026",
+    "question": "2024年Korea-HS队的人类实践工作有哪些可量化的成效？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Korea-HS",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 16170
+    }
+  },
+  {
+    "id": "rule_0036",
+    "question": "2019年Linkoping_Sweden队在人类实践中接触了哪些关键合作方？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Linkoping_Sweden",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作",
+      "ref_chunk_id": 6841
+    }
+  },
+  {
+    "id": "rule_0160",
+    "question": "2019年Calgary队的湿实验验证结果如何，是否达到预期目标？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Calgary",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 6499
+    }
+  },
+  {
+    "id": "rule_0166",
+    "question": "2024年UToronto队的湿实验中，底盘生物的选择策略是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UToronto",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 15537
+    }
+  },
+  {
+    "id": "rule_0150",
+    "question": "2018年SJTU-BioX-Shanghai队的湿实验验证方案是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SJTU-BioX-Shanghai",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 3163
+    }
+  },
+  {
+    "id": "rule_0077",
+    "question": "CCU_Taiwan团队在2020年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "CCU_Taiwan",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 8669
+    }
+  },
+  {
+    "id": "rule_0044",
+    "question": "Munich团队在2019年如何开展社会需求调研？采用了哪些方法？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Munich",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 6489
+    }
+  },
+  {
+    "id": "rule_0097",
+    "question": "Jilin_China团队在2018年建模时设定了哪些关键输入参数和假设条件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Jilin_China",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 3071
+    }
+  },
+  {
+    "id": "rule_0107",
+    "question": "2019年Austin_UTexas队如何验证其模型预测和真实实验数据的一致性？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Austin_UTexas",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 6780
+    }
+  },
+  {
+    "id": "rule_0049",
+    "question": "Paris_Bettencourt团队在2021年如何开展社会需求调研？采用了哪些方法？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Paris_Bettencourt",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 9169
+    }
+  },
+  {
+    "id": "rule_0032",
+    "question": "NEU_CHINA团队在2020年的人类实践产生了哪些具体的社会影响？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NEU_CHINA",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 8509
+    }
+  },
+  {
+    "id": "rule_0075",
+    "question": "2024年UNILausanne队的计算建模代码是否对外公开？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UNILausanne",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 14580
+    }
+  },
+  {
+    "id": "rule_0103",
+    "question": "Macquarie_Australia团队在2017年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Macquarie_Australia",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 2395
+    }
+  },
+  {
+    "id": "rule_0083",
+    "question": "Bielefeld-CeBiTec团队在2017年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Bielefeld-CeBiTec",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 1725
+    }
+  },
+  {
+    "id": "rule_0104",
+    "question": "NUDT_CHINA团队在2019年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NUDT_CHINA",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 6344
+    }
+  },
+  {
+    "id": "rule_0079",
+    "question": "Stanford团队在2020年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Stanford",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 8935
+    }
+  },
+  {
+    "id": "rule_0129",
+    "question": "UM_Macau团队在2019年的湿实验中有哪些实验方法上的创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UM_Macau",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 6152
+    }
+  },
+  {
+    "id": "rule_0076",
+    "question": "2017年Valencia_UPV队的计算建模代码是否对外公开？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Valencia_UPV",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 2160
+    }
+  },
+  {
+    "id": "rule_0031",
+    "question": "Lethbridge团队在2017年的人类实践产生了哪些具体的社会影响？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Lethbridge",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 2829
+    }
+  },
+  {
+    "id": "rule_0163",
+    "question": "2021年NUS_Singapore队的湿实验验证结果如何，是否达到预期目标？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NUS_Singapore",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 10014
+    }
+  },
+  {
+    "id": "rule_0175",
+    "question": "2017年Manchester队的湿实验中，底盘生物的选择策略是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Manchester",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 1799
+    }
+  },
+  {
+    "id": "rule_0183",
+    "question": "Aachen团队在2024年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Aachen",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 14396
+    }
+  },
+  {
+    "id": "rule_0110",
+    "question": "2018年Navarra_BG队的湿实验涉及哪些核心遗传元件和表达产物？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Navarra_BG",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 4052
+    }
+  },
+  {
+    "id": "rule_0093",
+    "question": "Grenoble-Alpes团队在2019年建模时设定了哪些关键输入参数和假设条件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Grenoble-Alpes",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 6542
+    }
+  },
+  {
+    "id": "rule_0050",
+    "question": "2019年TU_Kaiserslautern队通过什么方式了解公众对其项目的需求？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU_Kaiserslautern",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 5901
+    }
+  },
+  {
+    "id": "rule_0176",
+    "question": "BNDS-China团队在2024年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BNDS-China",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 15078
+    }
+  },
+  {
+    "id": "rule_0133",
+    "question": "IOANNINA团队在2024年是如何设计其湿实验方案的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "IOANNINA",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 16419
+    }
+  },
+  {
+    "id": "rule_0000",
+    "question": "Glasgow团队在2017年如何处理项目的伦理问题？经过了哪些审查流程？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Glasgow",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 2805
+    }
+  },
+  {
+    "id": "rule_0162",
+    "question": "ShanghaiTech-China团队在2023年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "ShanghaiTech-China",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 12388
+    }
+  },
+  {
+    "id": "rule_0011",
+    "question": "Peking团队在2015年开展了哪些公众科普或推广活动？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Peking",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 188
+    }
+  },
+  {
+    "id": "rule_0065",
+    "question": "2015年Oxford队的计算建模是为了解决什么科学问题？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Oxford",
+      "year": 2015,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的",
+      "ref_chunk_id": 36
+    }
+  },
+  {
+    "id": "rule_0048",
+    "question": "2021年GO_Paris-Saclay队通过什么方式了解公众对其项目的需求？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "GO_Paris-Saclay",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 9914
+    }
+  },
+  {
+    "id": "rule_0147",
+    "question": "2024年BIT-China队的湿实验验证方案是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "BIT-China",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 15233
+    }
+  },
+  {
+    "id": "rule_0098",
+    "question": "Edinburgh团队在2023年建模时设定了哪些关键输入参数和假设条件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Edinburgh",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 13648
+    }
+  },
+  {
+    "id": "rule_0177",
+    "question": "2021年Ecuador队在湿实验过程中面对了什么困难，采取了什么应对措施？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Ecuador",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 9809
+    }
+  },
+  {
+    "id": "rule_0179",
+    "question": "ABOA团队在2024年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "ABOA",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 15760
+    }
+  },
+  {
+    "id": "rule_0155",
+    "question": "TU_Eindhoven团队在2019年的实验得到了哪些关键结果？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU_Eindhoven",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 6738
+    }
+  },
+  {
+    "id": "rule_0165",
+    "question": "2024年Aachen队的湿实验中，底盘生物的选择策略是怎样的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Aachen",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 14391
+    }
+  },
+  {
+    "id": "rule_0080",
+    "question": "TU-Eindhoven团队在2017年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU-Eindhoven",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 2586
+    }
+  },
+  {
+    "id": "rule_0088",
+    "question": "2020年OhioState队的模型中包含哪些核心参数和前提假设？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "OhioState",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 7562
+    }
+  },
+  {
+    "id": "rule_0111",
+    "question": "KEYSTONE团队在2020年的项目中用到了哪些关键生物元件？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "KEYSTONE",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物",
+      "ref_chunk_id": 7852
+    }
+  },
+  {
+    "id": "rule_0152",
+    "question": "Oxford团队在2017年采用了哪些方法来验证其实验设计？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Oxford",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 2861
+    }
+  },
+  {
+    "id": "rule_0027",
+    "question": "2018年NU_Kazakhstan队的人类实践工作有哪些可量化的成效？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NU_Kazakhstan",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 5243
+    }
+  },
+  {
+    "id": "rule_0009",
+    "question": "2024年Cornell队对项目进行了怎样的伦理评估与生物安全审查？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Cornell",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 14660
+    }
+  },
+  {
+    "id": "rule_0067",
+    "question": "UPF_CRG_Barcelona团队在2018年是否开源了建模代码？使用了什么语言或工具？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UPF_CRG_Barcelona",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 3291
+    }
+  },
+  {
+    "id": "rule_0148",
+    "question": "Grenoble-Alpes团队在2019年采用了哪些方法来验证其实验设计？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Grenoble-Alpes",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法",
+      "ref_chunk_id": 6536
+    }
+  },
+  {
+    "id": "rule_0045",
+    "question": "JIASHU-Shanghai团队在2024年如何开展社会需求调研？采用了哪些方法？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "JIASHU-Shanghai",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法",
+      "ref_chunk_id": 16386
+    }
+  },
+  {
+    "id": "rule_0066",
+    "question": "TU_Eindhoven团队在2015年是否开源了建模代码？使用了什么语言或工具？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TU_Eindhoven",
+      "year": 2015,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 522
+    }
+  },
+  {
+    "id": "rule_0029",
+    "question": "2017年SECA_NZ队的人类实践工作有哪些可量化的成效？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SECA_NZ",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响",
+      "ref_chunk_id": 2321
+    }
+  },
+  {
+    "id": "rule_0007",
+    "question": "2023年IIT-Roorkee队对项目进行了怎样的伦理评估与生物安全审查？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "IIT-Roorkee",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查",
+      "ref_chunk_id": 13610
+    }
+  },
+  {
+    "id": "rule_0185",
+    "question": "UESTC-China团队在2017年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UESTC-China",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 2271
+    }
+  },
+  {
+    "id": "rule_0137",
+    "question": "Wego_Taipei团队在2022年是如何设计其湿实验方案的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Wego_Taipei",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析",
+      "ref_chunk_id": 11198
+    }
+  },
+  {
+    "id": "rule_0173",
+    "question": "Pasteur_Paris团队在2018年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Pasteur_Paris",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择",
+      "ref_chunk_id": 3547
+    }
+  },
+  {
+    "id": "rule_0186",
+    "question": "JNU-China团队在2019年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "JNU-China",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 5604
+    }
+  },
+  {
+    "id": "rule_0130",
+    "question": "2021年NUS_Singapore队在实验技术层面做出了什么创新？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "NUS_Singapore",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点",
+      "ref_chunk_id": 10012
+    }
+  },
+  {
+    "id": "rule_0164",
+    "question": "2015年Czech_Republic队的湿实验验证结果如何，是否达到预期目标？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Czech_Republic",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果",
+      "ref_chunk_id": 201
+    }
+  },
+  {
+    "id": "rule_0089",
+    "question": "2024年UniMuenster队的模型中包含哪些核心参数和前提假设？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "UniMuenster",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设",
+      "ref_chunk_id": 15202
+    }
+  },
+  {
+    "id": "rule_0184",
+    "question": "SJTU-software团队在2023年的实验中遇到了哪些技术挑战？是如何解决的？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SJTU-software",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案",
+      "ref_chunk_id": 12331
+    }
+  },
+  {
+    "id": "rule_0017",
+    "question": "TJUSLS_China团队在2019年开展了哪些公众科普或推广活动？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "TJUSLS_China",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动",
+      "ref_chunk_id": 5474
+    }
+  },
+  {
+    "id": "rule_0071",
+    "question": "2017年SZU-China队的计算建模代码是否对外公开？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "SZU-China",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码",
+      "ref_chunk_id": 1942
+    }
+  },
+  {
+    "id": "rule_0084",
+    "question": "Baltimore_BioCrew团队在2019年使用了哪种类型的数学模型？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Baltimore_BioCrew",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型",
+      "ref_chunk_id": 7267
+    }
+  },
+  {
+    "id": "rule_0102",
+    "question": "Sydney_Australia团队在2019年的模型预测结果与实验数据吻合程度如何？",
+    "type": "rule_based",
+    "difficulty": "easy",
+    "ground_truth": {
+      "team_name": "Sydney_Australia",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度",
+      "ref_chunk_id": 6605
+    }
+  },
+  {
+    "id": "llm_0000",
+    "question": "LIRA系统在识别特定miRNA后，是否既能通过荧光蛋白表达实现可视化检测，又能通过显色反应提供快速定性结果？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14502,
+      "team_name": "CJUH-JLU-China",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果"
+    }
+  },
+  {
+    "id": "llm_0001",
+    "question": "硫代硫酸盐感知系统在0.1 mM诱导浓度下的荧光响应倍数和X-gal显色时间缩短程度，是否足以支持其在实际应用场景中实现快速、灵敏的病灶微环境识别？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14722,
+      "team_name": "GEC-Guangzhou",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0002",
+    "question": "为什么同时选用大肠杆菌和分支杆菌作为生产细菌膜囊泡的底盘生物？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16134,
+      "team_name": "TU-Eindhoven",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0003",
+    "question": "如何通过质粒构建和菌株改造实现γ-聚谷氨酸的高效发酵生产？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5605,
+      "team_name": "JNU-China",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0004",
+    "question": "如何在保持蛋白质序列不变的前提下，降低高GC含量基因的局部GC比例并减少重复序列，以提高其合成可行性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13269,
+      "team_name": "Barcelona-UB",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0005",
+    "question": "如何系统性地优化实验条件以提高目标蛋白的可溶性表达、纳米载体的封装效率以及田间应用中的释放均匀性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5581,
+      "team_name": "Tec-Chihuahua",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0006",
+    "question": "在10 nM激素浓度下，颜色指示系统产生肉眼可见红色素的响应时间是多少？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6915,
+      "team_name": "UCopenhagen",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果"
+    }
+  },
+  {
+    "id": "llm_0007",
+    "question": "实验数据和结果分别存放在哪两个网页链接中？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11294,
+      "team_name": "Patras",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0008",
+    "question": "为什么选择大肠杆菌和蓝藻来构建模拟地衣共生关系的共培养系统？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13159,
+      "team_name": "Fudan",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0009",
+    "question": "改造后的菌株在增强磷酸盐摄取能力的同时，其生长特性是否发生了变化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 747,
+      "team_name": "York",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0010",
+    "question": "hBD-2对白粉病的最小抑菌浓度是多少？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10015,
+      "team_name": "NUS_Singapore",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果"
+    }
+  },
+  {
+    "id": "llm_0011",
+    "question": "如何通过调整引物浓度来平衡重复序列扩增效率与产物产量？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8666,
+      "team_name": "CCU_Taiwan",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0012",
+    "question": "冻干myTXTL系统在长期储存后还能保持多高的反应活性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10623,
+      "team_name": "Waseda_Tokyo",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0013",
+    "question": "如何通过调控诱导条件和宿主菌株特性来提升重金属生物传感器的检测灵敏度与环境适应性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4108,
+      "team_name": "Lethbridge_HS",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0014",
+    "question": "环化后的肽是否保留了对胰蛋白酶的抑制活性，其活性水平如何？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12590,
+      "team_name": "Latvia-Riga",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0015",
+    "question": "为什么选择高拷贝质粒来表达触发序列？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3140,
+      "team_name": "Lambert_GA",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物"
+    }
+  },
+  {
+    "id": "llm_0016",
+    "question": "不同AHL分子的结构差异是否会影响内酯酶的降解效率？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14363,
+      "team_name": "WIST",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0017",
+    "question": "这个生物传感器如何确保在检测到特定信号分子后只产生红色荧光，而不受其他常见调控元件的干扰？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 703,
+      "team_name": "Genspace",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物"
+    }
+  },
+  {
+    "id": "llm_0018",
+    "question": "Scl2蛋白表达后是否成功赋予胶原材料更强的凝胶强度？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10151,
+      "team_name": "CCA_San_Diego",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0019",
+    "question": "Zymetec处理如何同时提升玉米在干旱胁迫下的脯氨酸积累、抗氧化酶活性和生长指标？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15839,
+      "team_name": "Tec-Chihuahua",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果"
+    }
+  },
+  {
+    "id": "llm_0020",
+    "question": "铅生物传感器在低于10微摩尔浓度时是否仍能产生可检测的颜色变化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15164,
+      "team_name": "HongKong-JSS",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0021",
+    "question": "如何验证重新合成的pLsrA启动子在功能上优于原始Registry中存在序列错误的版本？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 705,
+      "team_name": "Genspace",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0022",
+    "question": "如何通过基因电路设计实现微塑料的检测与捕获？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2132,
+      "team_name": "Lund",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物"
+    }
+  },
+  {
+    "id": "llm_0023",
+    "question": "为什么选择大肠杆菌DH5α作为工程菌株来实现磷酸盐的去除？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11166,
+      "team_name": "Sogang_Korea",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0024",
+    "question": "联合表达PETase和MHETase后，TPA的最终产量是否显著高于两种酶单独作用时的理论加和值？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3328,
+      "team_name": "Hong_Kong_HKU",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果"
+    }
+  },
+  {
+    "id": "llm_0025",
+    "question": "AdoCbl浓度变化如何影响毒素表达和细胞存活，进而调控维生素B12的产量？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12460,
+      "team_name": "Freiburg",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0026",
+    "question": "在模拟肠道环境中，工程菌能否稳定定植并持续分泌IL-10？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4614,
+      "team_name": "Oxford",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0027",
+    "question": "如何通过启动子优化和信号肽添加来提升EGF的分泌效率？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1315,
+      "team_name": "SYSU-MEDICINE",
+      "year": 2016,
+      "canon_section": "Wet Lab",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0028",
+    "question": "如何验证pH调控系统在不同酸碱度条件下的响应精度？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6622,
+      "team_name": "SZPT-CHINA",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0029",
+    "question": "Halorhodopsin在Synechocystis中未能实现预期淡化效果的主要原因是什么？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9782,
+      "team_name": "Linkoping_Sweden",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证结果"
+    }
+  },
+  {
+    "id": "llm_0030",
+    "question": "如何通过调控不同基因模块的表达来平衡抗菌肽产量与宿主细胞存活？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8458,
+      "team_name": "Fudan",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0031",
+    "question": "为什么选择大肠杆菌的不同菌株分别用于质粒克隆和蛋白表达？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5431,
+      "team_name": "Mingdao",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0032",
+    "question": "如何验证该系统在类风湿关节炎患者体内实现靶向编辑的特异性和有效性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12290,
+      "team_name": "AFCM-Egypt",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0033",
+    "question": "如何通过模块化设计和诱导调控策略来平衡抗菌肽的产量与宿主细胞的安全性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8454,
+      "team_name": "Fudan",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0034",
+    "question": "这三种shRNA中，哪一种在实验中实现了最高的sFlt1-14 mRNA敲低效率？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8705,
+      "team_name": "DNHS_SanDiego_CA",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物"
+    }
+  },
+  {
+    "id": "llm_0035",
+    "question": "dCas9-sgRNA复合物是通过阻断哪个关键步骤来实现对mcy基因簇的转录抑制？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7057,
+      "team_name": "HK_SSC",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物"
+    }
+  },
+  {
+    "id": "llm_0036",
+    "question": "真核细胞中toehold开关的翻译效率为何显著低于原核系统，其关键限制因素是什么？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10962,
+      "team_name": "TAU_Israel",
+      "year": 2022,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0037",
+    "question": "为什么同时选用大肠杆菌和人类细胞系来开发这个诊断平台？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6472,
+      "team_name": "Munich",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0038",
+    "question": "这个项目在InterLab验证中使用的标准化测量方法是什么？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2075,
+      "team_name": "Vilnius-Lithuania",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0039",
+    "question": "为什么溶栓酶基因在pET-22b-LK载体中的表达产量低？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12789,
+      "team_name": "Taipei-KCISLK-V1",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0040",
+    "question": "为什么这个团队要使用两种不同的大肠杆菌菌株，而不是只用一种？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 511,
+      "team_name": "TU_Eindhoven",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0041",
+    "question": "TERT基因沉默后，是否增强了HER2阳性癌细胞对靶向抗体的药物敏感性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14555,
+      "team_name": "Patras",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0042",
+    "question": "为什么选择大肠杆菌DH5α和BL21(DE3)分别承担克隆和表达任务，而不是使用同一种菌株完成全流程？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1361,
+      "team_name": "NUDT_CHINA",
+      "year": 2016,
+      "canon_section": "Wet Lab",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0043",
+    "question": "微重力环境下，酵母细胞中由GAL启动子调控的基因表达动态变化是否与适应性进化获得的耐受表型存在关联？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9077,
+      "team_name": "Concordia-Montreal",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0044",
+    "question": "如何通过荧光信号定量反映环境中磷酸和硝酸的浓度？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5678,
+      "team_name": "Lambert_GA",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0045",
+    "question": "为什么在合成生物学实验中会分别选用两种不同遗传背景的大肠杆菌菌株来承担克隆扩增和蛋白表达这两个任务？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1779,
+      "team_name": "CLSB-UK",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0046",
+    "question": "这个项目最终实现了对目标代谢物的定量检测吗？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1097,
+      "team_name": "EPFL",
+      "year": 2016,
+      "canon_section": "Wet Lab",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0047",
+    "question": "为什么选择苔藓作为底盘生物来开展合成生物学研究？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 800,
+      "team_name": "UNIK_Copenhagen",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0048",
+    "question": "这个项目最终实现了怎样的功能验证效果？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6340,
+      "team_name": "NUDT_CHINA",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0049",
+    "question": "如何利用T3SS实现治疗性蛋白的分泌与跨膜递送，从而避免传统纯化步骤？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5152,
+      "team_name": "UCopenhagen",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0050",
+    "question": "如何利用迭代封端组装技术高效构建重复性蜘蛛丝蛋白基因序列，并在大肠杆菌中实现功能性表达？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 530,
+      "team_name": "UCLA",
+      "year": 2015,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "关键生物元件与表达产物"
+    }
+  },
+  {
+    "id": "llm_0051",
+    "question": "预染色丝蛋白和特异性染料这两种策略，哪一种在实际应用中更能有效降低纺织印染过程的水耗与污染？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3762,
+      "team_name": "Aalto-Helsinki",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0052",
+    "question": "如何通过调控光照模式和质粒拷贝数稳定性，同时提升光控降解系统的特异性与效率？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6137,
+      "team_name": "Vilnius-Lithuania",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0053",
+    "question": "这个生物传感器的检测灵敏度能达到什么水平？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3103,
+      "team_name": "Mingdao",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0054",
+    "question": "微胶囊在高污染废水中降解的问题是通过调整哪种材料的浓度来解决的？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12867,
+      "team_name": "FZPt-CHINA",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0055",
+    "question": "如何通过TEV蛋白酶切割来激活荧光信号，从而实现对目标蛋白酶（如cruzipain）的检测？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2857,
+      "team_name": "Oxford",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0056",
+    "question": "这个项目如何验证其设计的生物传感器在实际环境样本中的检测灵敏度和特异性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15149,
+      "team_name": "TecCEM",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0057",
+    "question": "如何验证目标蛋白在植物原生质体和本氏烟叶片中成功表达？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5555,
+      "team_name": "GDSYZX",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0058",
+    "question": "如何实现细菌形态的动态调控与三维网络结构的精准构建，从而协同提升生物材料的机械强度和生物安全性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12535,
+      "team_name": "CAU-China",
+      "year": 2023,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0059",
+    "question": "为什么选择NK-92细胞系而不是其他免疫效应细胞作为实体瘤治疗的核心底盘？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6551,
+      "team_name": "SMMU-China",
+      "year": 2019,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0060",
+    "question": "如何通过调整底物浓度和数据采集策略来消除高浓度下荧光信号检测的系统性偏差？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9543,
+      "team_name": "GreatBay_United",
+      "year": 2021,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0061",
+    "question": "如何确保在家庭检测场景中，仅当两个dCas9同时结合相邻靶序列时才触发显色反应？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4238,
+      "team_name": "UiOslo_Norway",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验方法创新点"
+    }
+  },
+  {
+    "id": "llm_0062",
+    "question": "如何验证该系统在无细胞体系中对目标分析物的响应能力？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16192,
+      "team_name": "Kyoto",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0063",
+    "question": "如何验证双菌系统中两种微生物的功能分工是否有效实现了PET到PHA的完整生物转化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16228,
+      "team_name": "Madrid-UCM",
+      "year": 2024,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验设计分析"
+    }
+  },
+  {
+    "id": "llm_0064",
+    "question": "如何利用外膜囊泡实现蛋白酶检测信号的稳定递送与放大？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2858,
+      "team_name": "Oxford",
+      "year": 2017,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "实验验证方法"
+    }
+  },
+  {
+    "id": "llm_0065",
+    "question": "为什么选择大肠杆菌的不同菌株分别用于质粒构建和蛋白表达？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4070,
+      "team_name": "SUIS_Shanghai",
+      "year": 2018,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "底盘生物的选择"
+    }
+  },
+  {
+    "id": "llm_0066",
+    "question": "如何通过质粒共享与设备共建实现跨团队的实验协作？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8059,
+      "team_name": "Athens",
+      "year": 2020,
+      "canon_section": "Wet Lab",
+      "canon_subsection": "技术挑战及解决方案"
+    }
+  },
+  {
+    "id": "llm_0067",
+    "question": "如何验证相态转变的浊度变化与Cas13a切割产物浓度之间的正相关关系？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2415,
+      "team_name": "TUDelft",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0068",
+    "question": "建模代码和数据存放在哪个平台？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12755,
+      "team_name": "WageningenUR",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0069",
+    "question": "CRISPR-Cas系统的自毁功能是否完全独立于外部环境信号，仅由其自身对基因组DNA的靶向切割所驱动？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 605,
+      "team_name": "Vilnius-Lithuania",
+      "year": 2015,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0070",
+    "question": "这三种计算模型分别针对哪些关键生物学过程进行模拟和优化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7082,
+      "team_name": "SCU-China",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0071",
+    "question": "哪些计算模型被用来预测BURP域蛋白催化线性肽环化反应的效率？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12592,
+      "team_name": "Latvia-Riga",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0072",
+    "question": "模型和序列优化算法的代码是否对公众开放？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14852,
+      "team_name": "Munich",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0073",
+    "question": "为什么选择常微分方程模型来描述钙吸收和基因表达，而用随机模型来模拟杀伤开关的行为？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8461,
+      "team_name": "Fudan",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0074",
+    "question": "模型预测的抗体亲和力提升和DNA折纸刚性增强，是否在后续实验中得到了湿实验验证？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8867,
+      "team_name": "Harvard",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0075",
+    "question": "为什么K45A突变体的预测结合亲和力比野生型更强？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15615,
+      "team_name": "BKEA",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0076",
+    "question": "IL-10的分泌和降解动力学参数（0.05 ng/cell/h 和 0.02 h⁻¹）是否足以支撑模型预测出稳定的Th17/Treg平衡？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4625,
+      "team_name": "Oxford",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0077",
+    "question": "这些模型各自依赖的关键假设是否会影响它们对同一生物系统行为预测的一致性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1749,
+      "team_name": "EPFL",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0078",
+    "question": "模型预测的污染物降解效率与实验测得的数据在多大程度上一致？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13097,
+      "team_name": "TU-Dresden",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0079",
+    "question": "模型相关的代码是否公开可获取，还是需要通过邮件申请权限才能访问？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15120,
+      "team_name": "XMU-China",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0080",
+    "question": "在构建该代谢通路的数学模型时，哪些实验数据被用来确定酶动力学参数和基因表达水平？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13865,
+      "team_name": "Hangzhou-BioX",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0081",
+    "question": "NO浓度在什么范围内能有效触发P_yeaR启动子开关，同时保证IL-10和myrosinase的产量最大化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5633,
+      "team_name": "NEU_CHINA",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0082",
+    "question": "为什么ΔcrcB菌株在高氟化物浓度下仍能生长，而模型却预测其会因毒性抑制生长？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2294,
+      "team_name": "East_Chapel_Hill",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0083",
+    "question": "如何整合代谢通量分析、基因表达动力学和酶结构模拟这三类模型，来定量预测工程菌中BHB的最终产量？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15218,
+      "team_name": "Concordia-Shanghai",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0084",
+    "question": "模型的代码是否以可访问的形式公开，还是仅限于团队内部使用？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6859,
+      "team_name": "Oxford",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0085",
+    "question": "哪些计算模型被用来分析异黄酮合成途径并优化目标产物产量？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15006,
+      "team_name": "Thailand-RIS",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0086",
+    "question": "模型代码托管在GitLab上，具体包含哪些类型的建模方法？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13335,
+      "team_name": "NNU-CHINA",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0087",
+    "question": "如何通过BiFC技术验证两个蛋白质之间的相互作用？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2646,
+      "team_name": "Wageningen_UR",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0088",
+    "question": "模型预测的菌群比例优化结果在实验中是否得到了验证？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12411,
+      "team_name": "HUST-China",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0089",
+    "question": "在给定的参数范围内，IPTG浓度变化对晶状体蛋白聚集程度的影响是否呈现非线性响应？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 992,
+      "team_name": "TAS_Taipei",
+      "year": 2016,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0090",
+    "question": "两种蛋白的表达系统在动力学参数设定上是否存在关键差异，导致它们达到功能浓度所需的时间尺度相差一个数量级以上？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7948,
+      "team_name": "FCB-UANL",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0091",
+    "question": "为什么电容变化的预测值与实测值一致，但信噪比却低于预期？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11761,
+      "team_name": "TU_Dresden",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0092",
+    "question": "为什么在模拟中选择1 Pa·s作为糖浆粘度来代表“最坏情况”？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9600,
+      "team_name": "ULaval",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0093",
+    "question": "在给定的初始浓度、细菌生长速率、装置几何参数和酶促反应速率常数下，该固定化系统对四种多环芳烃的去除效率如何随时间变化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14545,
+      "team_name": "TUDarmstadt",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0094",
+    "question": "有没有提供可运行的代码实现？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8361,
+      "team_name": "GreatBay_SCIE",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0095",
+    "question": "模型预测的降解或结合效率与实验测量值之间的偏差，是否主要源于特定环境因素（如氧气浓度）或分子相互作用机制（如结合位点）的忽略？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1606,
+      "team_name": "Paris_Bettencourt",
+      "year": 2016,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0096",
+    "question": "为什么选择基于结构的蛋白折叠预测而非动力学模型来研究TFAM与DNA的相互作用？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11354,
+      "team_name": "Korea_HS",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0097",
+    "question": "适配体N56与CEA N域的结合是否主要依赖于分子对接中评估的范德华力、氢键和疏水相互作用？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14220,
+      "team_name": "KUAS-SEOUL",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0098",
+    "question": "这三种建模方法各自解决了实验中哪一类关键问题？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7840,
+      "team_name": "Grenoble_Alpes",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0099",
+    "question": "如何通过建模预测两种不同类型的振荡器在双向耦合下的同步行为和动态响应？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 311,
+      "team_name": "HZAU-China",
+      "year": 2015,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0100",
+    "question": "建模工作主要解决了哪两类生物学问题？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9451,
+      "team_name": "Patras",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0101",
+    "question": "如何通过计算建模协同优化纳米抗体的结合能力、益生菌的分泌效率以及喷雾递送过程中的活菌分布？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11022,
+      "team_name": "Groningen",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0102",
+    "question": "在低氧和cAMP双信号条件下，AND逻辑门驱动的CAR表达如何随时间变化，其特异性是否足以区分肿瘤微环境与正常组织？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2373,
+      "team_name": "Cornell",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0103",
+    "question": "预测显示哪些miRNA的脚趾开关候选序列具有预期结构和高自由能？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9691,
+      "team_name": "UParis_BME",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0104",
+    "question": "模型的源代码是否公开可获取？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8208,
+      "team_name": "ASTWS-China",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0105",
+    "question": "公开的建模代码和模拟文件具体包含哪些类型的计算模型？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14007,
+      "team_name": "TU-Eindhoven",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0106",
+    "question": "他们用什么数学方法来描述生物系统的动态变化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10468,
+      "team_name": "Nanjing_NFLS",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0107",
+    "question": "溴仿的生成和甲烷抑制效果在瘤胃环境中是否主要依赖于氢气和二氧化碳的浓度范围？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 15476,
+      "team_name": "Lund",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0108",
+    "question": "为什么团队选择将噬菌体与抗生素联合使用来应对耐药菌？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3459,
+      "team_name": "IISc-Bangalore",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0109",
+    "question": "模型实现所用的 MATLAB 和 TensorFlow 代码是否已公开？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9730,
+      "team_name": "SJTang",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0110",
+    "question": "这两种建模方法——常微分方程和分子动力学模拟——分别解决了系统中哪些不同尺度的动力学问题？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4036,
+      "team_name": "EPFL",
+      "year": 2018,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0111",
+    "question": "模型预测的过敏原蛋白减少比例与过敏反应发生率降低之间的定量关系是否得到了实验验证？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16110,
+      "team_name": "Keystone",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0112",
+    "question": "eDNA浓度与转化效率之间的线性关系在什么浓度范围内成立？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11597,
+      "team_name": "Austin_UTexas",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0113",
+    "question": "模型验证不够全面的主要原因是什么？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14277,
+      "team_name": "RDFZ-CHINA",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0114",
+    "question": "在给定的实验条件下，dCas9-HRP-gRNA复合物介导的显色反应速率主要受哪个参数限制？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6235,
+      "team_name": "TU_Dresden",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0115",
+    "question": "如何量化不同代谢反应对电子胞外传递效率和生物量生成的相对贡献？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13647,
+      "team_name": "Edinburgh",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0116",
+    "question": "模型的数学方程和参数是否在Wiki中完整公开，而没有提供对应的可运行代码仓库？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11836,
+      "team_name": "NYCU_Formosa",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0117",
+    "question": "模型的数学方程和参数是否足以让其他研究者复现CFW的结构稳定性模拟结果？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10926,
+      "team_name": "Thessaly",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0118",
+    "question": "如何通过常微分方程模型量化LacI调控系统对抗菌肽和siRNA表达动力学的影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10563,
+      "team_name": "Tec-Chihuahua",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0119",
+    "question": "这个计算模型如何预测转基因菌株在输卵管壶腹中定植后，其产生的蛋白酶对卵子透明带关键成分的作用效果及整体安全性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9745,
+      "team_name": "IISER-Tirupati_India",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0120",
+    "question": "如何通过数学建模量化工程菌对肠道内一氧化氮浓度变化的响应灵敏度，并预测治疗蛋白在定植、裂解与清除全过程中的时空表达与释放动力学？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16022,
+      "team_name": "NJTech-China",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0121",
+    "question": "模型预测与实验测量在各类性能指标上的误差是否普遍控制在10%以内？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13098,
+      "team_name": "TU-Dresden",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0122",
+    "question": "如何通过建模确定重组酶方向因子的合成与降解速率，以实现双向开关的动态调控？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6212,
+      "team_name": "BNU-China",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0123",
+    "question": "为什么同时使用常微分方程模型和基于规则的个体模型来模拟细菌与抗菌肽的相互作用？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7524,
+      "team_name": "Ionis_Paris",
+      "year": 2020,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0124",
+    "question": "在低浓度磷酸盐和硝酸盐条件下，传感器输出的随机波动是否会影响基于机器学习模型对作物产量的预测准确性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5680,
+      "team_name": "Lambert_GA",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "模型类型"
+    }
+  },
+  {
+    "id": "llm_0125",
+    "question": "如何通过建模预测转基因枯草杆菌在斜纹夜蛾体表的附着、侵入和杀虫过程，从而优化其生物防治效果？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1938,
+      "team_name": "SZU-China",
+      "year": 2017,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0126",
+    "question": "这些模型在不同尺度（酶活、发酵、产量）上的预测精度是否都保持在可接受的误差范围内？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6422,
+      "team_name": "ECUST_China",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "预测与实验数据吻合度"
+    }
+  },
+  {
+    "id": "llm_0127",
+    "question": "在给定的酶学参数、底物浓度和环境条件下，模型预测的GLA产量是否受到NADPH或ATP供应的限制？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9999,
+      "team_name": "Worldshaper-Nanjing",
+      "year": 2021,
+      "canon_section": "Model",
+      "canon_subsection": "输入参数与假设"
+    }
+  },
+  {
+    "id": "llm_0128",
+    "question": "如何通过协同优化等温扩增、核糖开关调控和酶促显色这三个动力学过程，来同时提升检测灵敏度和缩短整体反应时间？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5656,
+      "team_name": "Thessaly",
+      "year": 2019,
+      "canon_section": "Model",
+      "canon_subsection": "建模目的"
+    }
+  },
+  {
+    "id": "llm_0129",
+    "question": "模型预测的药物表达量峰值对应的乳酸浓度是多少？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16451,
+      "team_name": "HWFLA-Beijing",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0130",
+    "question": "存储库里的代码是否包含建模、硬件和软件部分所用的具体实现？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10550,
+      "team_name": "Thessaloniki",
+      "year": 2022,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0131",
+    "question": "模拟预测的内溶素-细胞壁结合亲和力与实际抗菌效果之间的一致性，是否在不同细菌种类间表现出相似的趋势？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12478,
+      "team_name": "Tec-Chihuahua",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0132",
+    "question": "源代码中是否包含了AI模型和基底突变模型的完整实现，以便其他团队能够复现和优化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13527,
+      "team_name": "NJU-China",
+      "year": 2023,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0133",
+    "question": "项目建模部分的代码是否公开可获取？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14655,
+      "team_name": "Cornell",
+      "year": 2024,
+      "canon_section": "Model",
+      "canon_subsection": "开源代码"
+    }
+  },
+  {
+    "id": "llm_0134",
+    "question": "哪些调研方法被用来评估生物基纺织材料的市场接受度和环境影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7210,
+      "team_name": "GreatBay_SZ",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0135",
+    "question": "这些公众参与活动总共吸引了多少人？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6508,
+      "team_name": "Calgary",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0136",
+    "question": "哪些团队在实验材料上提供了具体支持，各自提供了什么？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 609,
+      "team_name": "Vilnius-Lithuania",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0137",
+    "question": "该项目在实验室安全和伦理层面采取了哪些具体措施来规避基因工程产物的环境释放风险和临床应用中的潜在危害？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9373,
+      "team_name": "Korea_HS",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0138",
+    "question": "这个项目如何将本地水质问题的实地发现与全球水质安全目标联系起来？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 16010,
+      "team_name": "Hannover",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0139",
+    "question": "受访者对非药物治疗的兴趣与对基因工程安全性的担忧之间是否存在明显矛盾，这种矛盾可能如何影响未来疗法的临床转化？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6327,
+      "team_name": "Hong_Kong_LFC_PC",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0140",
+    "question": "该项目是否进行了正式的伦理审查？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3298,
+      "team_name": "UPF_CRG_Barcelona",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0141",
+    "question": "这些教育活动在多大程度上提升了学生对合成生物学的理解和兴趣？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9267,
+      "team_name": "BNU-China",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0142",
+    "question": "哪些机构为该项目提供了实验所需的硬件、试剂或分析软件支持？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3988,
+      "team_name": "Tacoma_RAINmakers",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0143",
+    "question": "这个装置在设计时如何兼顾技术可专利性与临床伦理需求之间的平衡？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6806,
+      "team_name": "Pasteur_Paris",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0144",
+    "question": "哪些实证数据支持益生菌疗法在乳糜泻患者中的潜在接受度？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14991,
+      "team_name": "Austin-utexas",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响"
+    }
+  },
+  {
+    "id": "llm_0145",
+    "question": "哪些外部机构为该项目提供了实验材料或样品？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4849,
+      "team_name": "Madrid-OLM",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0146",
+    "question": "哪些机构或团队为该项目提供了疟疾防控实地经验、基因设计优化建议以及质粒资源与专家反馈？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6585,
+      "team_name": "NAU-CHINA",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0147",
+    "question": "哪些外部机构或群体参与了该平台从实验设计、安全性评估到社会需求反馈的全周期开发？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5355,
+      "team_name": "TUDelft",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0148",
+    "question": "DNA数据存储在安全性方面面临哪些主要风险，团队采取了哪些具体应对措施？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11361,
+      "team_name": "Korea_HS",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0149",
+    "question": "哪些利益相关方的反馈被用来评估项目在光吸收扩展和淀粉生产方面的实际应用潜力？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13300,
+      "team_name": "Tsinghua-TFL",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0150",
+    "question": "这些公众参与活动对提升人们对生物修复技术认知和接受度的效果如何？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5282,
+      "team_name": "Sorbonne_U_Paris",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响"
+    }
+  },
+  {
+    "id": "llm_0151",
+    "question": "哪些利益相关方既提供了临床需求反馈，又参与了市场化潜力的探讨？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10640,
+      "team_name": "TU-Eindhoven",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0152",
+    "question": "在推进基因编辑技术用于癌症治疗时，如何平衡其潜在的临床益处与对安全性、资源可及性及社会公平性的伦理关切？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 254,
+      "team_name": "BGU_Israel",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0153",
+    "question": "这些科普活动总共覆盖了多少人？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9715,
+      "team_name": "NDNF_China",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0154",
+    "question": "如何确保皮质醇检测结果能反映个体差异而非仅依赖群体平均值？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3513,
+      "team_name": "Queens_Canada",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0155",
+    "question": "哪些机构在结肠癌研究与科普方面提供了实验支持、模型资源或专业指导？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1631,
+      "team_name": "METU_HS_Ankara",
+      "year": 2016,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0156",
+    "question": "公众对猫薄荷应用的支持率是否与项目强调非转基因使用方式的沟通策略有关？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4582,
+      "team_name": "GreatBay_China",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0157",
+    "question": "这些科普活动和传播方式对提升儿童和国际同行对可持续农业技术的兴趣和认知效果如何？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13630,
+      "team_name": "SZ-SHD",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0158",
+    "question": "这个团队在教育推广和安全伦理方面分别采取了哪些具体措施？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7868,
+      "team_name": "KEYSTONE",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0159",
+    "question": "如何通过高收入客户补贴低收入客户的模式，解决AptaVita在低收入地区的市场推广难题？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9285,
+      "team_name": "TUDelft",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0160",
+    "question": "这些公众推广活动对参与者了解合成生物学及其应用产生了哪些可衡量的影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10628,
+      "team_name": "Waseda_Tokyo",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0161",
+    "question": "这些科普活动总共覆盖了多少名公众？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14261,
+      "team_name": "NUDT-CHINA",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0162",
+    "question": "公众对雄激素性脱发的遗传和环境影响认知不足，是否反映了现有科普传播在关键病理机制解释上的缺失？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4560,
+      "team_name": "NYMU-Taipei",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0163",
+    "question": "公众对靶向细菌疗法的支持度是否与安全设计（如自杀回路）存在关联？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13053,
+      "team_name": "BNUZH-China",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0164",
+    "question": "如何通过安全培训、伦理讨论和公众反馈这三个环节，系统性地降低新型抗菌蛋白在研发和应用过程中可能带来的生物安全与伦理风险？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9003,
+      "team_name": "HZAU-China",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0165",
+    "question": "这些 outreach 活动中，哪一类参与者表现出最高的实际采纳意愿？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12094,
+      "team_name": "UniofBath",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0166",
+    "question": "哪些机构类型参与了该项目的协作，且各自发挥了什么作用？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13490,
+      "team_name": "HongKong-JSS",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0167",
+    "question": "为什么选择湿式运输作为dsRNA技术的应用场景？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9330,
+      "team_name": "Kyoto",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0168",
+    "question": "当地儿童、医学专家和社区公众对病毒快速检测技术的哪些具体需求被识别出来了？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8505,
+      "team_name": "NEU_CHINA",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0169",
+    "question": "这个项目如何通过利用人类废物实现资源闭环来体现可持续发展和生物伦理原则？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14898,
+      "team_name": "Toulouse-INSA-UPS",
+      "year": 2024,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0170",
+    "question": "公众对合成生物学及其应用的看法主要通过哪些方式被收集？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 407,
+      "team_name": "Glasgow",
+      "year": 2015,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0171",
+    "question": "这个教育工具包在实际教学应用中，学生反馈主要集中在哪些方面，从而影响了后续的优化方向？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 1754,
+      "team_name": "EPFL",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0172",
+    "question": "哪些合作单位提供了与肠道炎症模型相关的实验材料或数据支持？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5639,
+      "team_name": "NEU_CHINA",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0173",
+    "question": "哪些机构在项目中提供了实验技术指导，哪些机构提供了监管或工程支持？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4148,
+      "team_name": "Aachen",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0174",
+    "question": "这些科普活动总共覆盖了多少受众人数？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 7846,
+      "team_name": "Grenoble_Alpes",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0175",
+    "question": "科普活动和社交媒体宣传后，公众对生物塑料推广的支持率是多少？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13071,
+      "team_name": "ASIJ-Tokyo",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0176",
+    "question": "患者对现有治疗的主要不满集中在哪些方面，而他们更倾向于接受哪种替代治疗方式？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4627,
+      "team_name": "Oxford",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0177",
+    "question": "高尿酸血症患者中有多大比例会进展为痛风？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5933,
+      "team_name": "QHFZ-China",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0178",
+    "question": "这些公众拓展活动是否都围绕同一个核心科学目标展开？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 12467,
+      "team_name": "Freiburg",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0179",
+    "question": "为什么女性心脏病患者容易被误诊？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 11103,
+      "team_name": "Lambert_GA",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0180",
+    "question": "如何通过优化抗生素筛选条件和规划非抗生素替代方案来降低抗性基因泄漏风险？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6991,
+      "team_name": "Athens",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0181",
+    "question": "哪些外部团队参与了 toehold switch 相关工具的开发与验证？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8940,
+      "team_name": "Stanford",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0182",
+    "question": "公众参与活动对提升人们对合成生物学应用于水质检测的认知和接受度有何具体影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10599,
+      "team_name": "THINKER_CHINA",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0183",
+    "question": "这些公众参与和教育活动对提升不同群体对合成生物学的兴趣和参与意愿产生了怎样的可量化影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 9943,
+      "team_name": "Vilnius-Lithuania",
+      "year": 2021,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0184",
+    "question": "如何确保转基因乳酸乳球菌在食品应用中既不会逃逸到环境又满足食品安全要求？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6631,
+      "team_name": "SZPT-CHINA",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0185",
+    "question": "这个教育包在实际使用中是否有效提升了iGEM团队的数学建模能力？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8150,
+      "team_name": "Imperial_College",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0186",
+    "question": "该团队采取了哪些具体措施来兼顾生物安全、监管合规、环境风险控制以及社会包容性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 14055,
+      "team_name": "UGM-Indonesia",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0187",
+    "question": "这些面向不同群体的科普活动对提升公众对合成生物学及相关医疗技术的理解和接受度产生了哪些可衡量的影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 10552,
+      "team_name": "Thessaloniki",
+      "year": 2022,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0188",
+    "question": "该团队在人类实践活动中如何具体开展公众参与和伦理安全评估？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6404,
+      "team_name": "Greatbay_SCIE",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0189",
+    "question": "他们通过哪些具体活动来体现对合成生物学伦理问题的关注？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6764,
+      "team_name": "UPRM",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0190",
+    "question": "公众和专家对PET生物降解技术的接受程度，主要受到哪些实际因素的影响？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13336,
+      "team_name": "NNU-CHINA",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "社会需求调研方法"
+    }
+  },
+  {
+    "id": "llm_0191",
+    "question": "这些 outreach 活动总共直接覆盖了多少名学生？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 8590,
+      "team_name": "Calgary",
+      "year": 2020,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0192",
+    "question": "他们通过哪些具体方式向公众普及心衰预防知识？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5201,
+      "team_name": "BioMarvel",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": null
+    }
+  },
+  {
+    "id": "llm_0193",
+    "question": "哪些合作方提供了与尿酸降解或检测直接相关的实践经验？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 5934,
+      "team_name": "QHFZ-China",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  },
+  {
+    "id": "llm_0194",
+    "question": "这项工作如何通过多维度的社会调研和公众互动，验证其技术方案在真实医疗场景中的实际需求和接受度？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4742,
+      "team_name": "DLUT_China_B",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "具体案例与影响"
+    }
+  },
+  {
+    "id": "llm_0195",
+    "question": "公众对噬菌体疗法的支持率是多少？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 4337,
+      "team_name": "Munich",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "公众推广活动"
+    }
+  },
+  {
+    "id": "llm_0196",
+    "question": "如何确保转基因细菌在环境中的生物安全，防止其意外扩散？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 2280,
+      "team_name": "UESTC-China",
+      "year": 2017,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0197",
+    "question": "如何通过遗传和物理双重遏制策略确保该系统在环境释放时的安全性？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 13656,
+      "team_name": "Edinburgh",
+      "year": 2023,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0198",
+    "question": "实验所用的大肠杆菌菌株是否经过基因改造以消除潜在的环境释放风险？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 3540,
+      "team_name": "OUC-China",
+      "year": 2018,
+      "canon_section": "Human Practices",
+      "canon_subsection": "伦理审查"
+    }
+  },
+  {
+    "id": "llm_0199",
+    "question": "哪些合作方提供了实验所需的生物元件或质粒？",
+    "type": "llm_generated",
+    "difficulty": "medium",
+    "ground_truth": {
+      "chunk_id": 6180,
+      "team_name": "UESTC-China",
+      "year": 2019,
+      "canon_section": "Human Practices",
+      "canon_subsection": "利益相关方合作"
+    }
+  }
+]
