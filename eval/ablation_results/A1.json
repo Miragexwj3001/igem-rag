@@ -1,0 +1,37 @@
+{
+  "tag": "A1",
+  "name": "Hybrid 无年份过滤",
+  "config": {
+    "tag": "A1",
+    "name": "Hybrid 无年份过滤",
+    "use_bm25": true,
+    "use_faiss": true,
+    "use_reranker": true,
+    "use_year_filter": false,
+    "recall": 50
+  },
+  "metrics": {
+    "overall": {
+      "Hit@1": 0.4186,
+      "Hit@3": 0.5736,
+      "Hit@5": 0.6357,
+      "MRR": 0.507,
+      "n": 387
+    },
+    "rule_based": {
+      "Hit@1": 0.3422,
+      "Hit@3": 0.5134,
+      "Hit@5": 0.5882,
+      "MRR": 0.4449,
+      "n": 187
+    },
+    "llm_generated": {
+      "Hit@1": 0.49,
+      "Hit@3": 0.63,
+      "Hit@5": 0.68,
+      "MRR": 0.5651,
+      "n": 200
+    }
+  },
+  "elapsed_s": 2072.2
+}

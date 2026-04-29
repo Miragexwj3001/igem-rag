@@ -7,6 +7,57 @@
 
 ---
 
+## 实验步骤
+
+### 1. 数据集构建
+
+**规则化题（187题）**
+
+1. 将所有 chunk 的 `Section` / `Subsection` 字段规范化为 3 大模块 × 17 个子模块
+2. 过滤正文长度 < 150 字符的 chunk，得到有效 chunk 11,735 个
+3. 对每个 `(canon_section, canon_subsection)` 组合，从中随机抽取若干 chunk，按预设模板填入 `{team}` 和 `{year}` 生成问题
+4. Ground truth 为 `(team_name, year, canon_subsection)` 三元组
+
+**LLM生成题（200题）**
+
+1. 按三大模块均匀抽样（Wet Lab / Model / Human Practices 各约 67 题）
+2. 将每个 chunk 的正文（截取前 800 字）送入 `qwen-plus`，提示词要求：不得在问题中直接提及团队名和年份，聚焦内容核心，语言自然
+3. Ground truth 为该 chunk 的 `chunk_id`
+
+### 2. 检索流程
+
+系统使用 `QwenRAGSystemOptimized.hybrid_retrieve()`，流程为：
+
+```
+BM25 稀疏召回（Top-50）
+        ↓
+FAISS 向量召回（Top-50，BAAI/bge-base-zh-v1.5）
+        ↓
+合并去重 + 年份硬过滤
+        ↓
+CrossEncoder 重排序（BAAI/bge-reranker-base）
+        ↓
+返回 Top-10
+```
+
+### 3. 命中判断
+
+- **规则化题**：检索返回的 Top-K 中，任意一条 chunk 的 `(team_name, year, 规范化subsection)` 与 ground truth 完全匹配，则视为命中
+- **LLM生成题**：Top-K 中包含 ground truth `chunk_id` 则视为命中
+
+### 4. 评估指标
+
+- **Hit@K**：命中排名 ≤ K 的题目比例
+- **MRR**（Mean Reciprocal Rank）：命中排名倒数的均值，衡量整体排序质量
+
+### 5. 运行环境
+
+- 环境：`igem-rag` conda 环境（Python 3.10，torch 2.3.1）
+- 模型在 CPU 运行（RTX 5090 与 torch 2.3.1 不兼容）
+- 脚本：`eval/run_eval.py`，全量 387 题约耗时 22 分钟
+
+---
+
 ## 整体结果
 
 | 题型 | n | Hit@1 | Hit@3 | Hit@5 | MRR |

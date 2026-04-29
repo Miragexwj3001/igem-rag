@@ -1,0 +1,37 @@
+{
+  "tag": "B2",
+  "name": "Dense (FAISS) Only",
+  "config": {
+    "tag": "B2",
+    "name": "Dense (FAISS) Only",
+    "use_bm25": false,
+    "use_faiss": true,
+    "use_reranker": true,
+    "use_year_filter": true,
+    "recall": 50
+  },
+  "metrics": {
+    "overall": {
+      "Hit@1": 0.3488,
+      "Hit@3": 0.4496,
+      "Hit@5": 0.4806,
+      "MRR": 0.4054,
+      "n": 387
+    },
+    "rule_based": {
+      "Hit@1": 0.2406,
+      "Hit@3": 0.3262,
+      "Hit@5": 0.3529,
+      "MRR": 0.2861,
+      "n": 187
+    },
+    "llm_generated": {
+      "Hit@1": 0.45,
+      "Hit@3": 0.565,
+      "Hit@5": 0.6,
+      "MRR": 0.5169,
+      "n": 200
+    }
+  },
+  "elapsed_s": 784.2
+}

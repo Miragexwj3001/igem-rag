@@ -191,6 +191,74 @@ class QwenRAGSystemOptimized:
         # 最终只交出最顶尖的 k 个作业
         return results[:k]
 
+    def flexible_retrieve(self, query: str, k: int = 10, recall_candidates: int = 50,
+                          use_bm25: bool = True, use_faiss: bool = True,
+                          use_reranker: bool = True, use_year_filter: bool = True) -> List[Dict]:
+        """可配置检索，用于消融实验。无 Reranker 时使用 RRF 融合排序。"""
+        if not use_bm25 and not use_faiss:
+            raise ValueError("use_bm25 和 use_faiss 不能同时为 False")
+
+        filters = self._extract_hard_filters(query) if use_year_filter else {}
+
+        bm25_ordered: list = []
+        faiss_ordered: list = []
+        raw_bm25_scores = None
+
+        if use_bm25:
+            tokenized_query = list(jieba.cut(query))
+            raw_bm25_scores = self.bm25.get_scores(tokenized_query)
+            bm25_ordered = np.argsort(raw_bm25_scores)[::-1][:recall_candidates].tolist()
+
+        if use_faiss:
+            query_embed = self.embed_model.encode([query]).astype(np.float32)
+            faiss_distances, faiss_idx_2d = self.index.search(query_embed, recall_candidates)
+            faiss_ordered = [i for i in faiss_idx_2d[0].tolist() if i >= 0]
+
+        combined = list(set(bm25_ordered + faiss_ordered))
+
+        yr = filters.get('year')
+        if yr:
+            filtered = [i for i in combined
+                        if 0 <= i < len(self.metadata)
+                        and self.metadata[i]['metadata'].get('year') == yr]
+            if not filtered:
+                filtered = [i for i in combined if 0 <= i < len(self.metadata)]
+        else:
+            filtered = [i for i in combined if 0 <= i < len(self.metadata)]
+
+        if not filtered:
+            return []
+
+        if use_reranker:
+            rerank_pairs = [(query, self.all_texts[i]) for i in filtered]
+            scores = self._batch_rerank(rerank_pairs)
+            results = [{"text": self.metadata[i]["text"],
+                        "metadata": self.metadata[i]["metadata"],
+                        "score": float(s)}
+                       for i, s in zip(filtered, scores)]
+        else:
+            RRF_K = 60
+            bm25_rank = {idx: r + 1 for r, idx in enumerate(bm25_ordered)}
+            faiss_rank = {idx: r + 1 for r, idx in enumerate(faiss_ordered)}
+            results = []
+            for idx in filtered:
+                if use_bm25 and use_faiss:
+                    r1 = bm25_rank.get(idx, recall_candidates + 1)
+                    r2 = faiss_rank.get(idx, recall_candidates + 1)
+                    score = 1.0 / (RRF_K + r1) + 1.0 / (RRF_K + r2)
+                elif use_bm25:
+                    r1 = bm25_rank.get(idx, recall_candidates + 1)
+                    score = 1.0 / (RRF_K + r1)
+                else:
+                    r2 = faiss_rank.get(idx, recall_candidates + 1)
+                    score = 1.0 / (RRF_K + r2)
+                results.append({"text": self.metadata[idx]["text"],
+                                "metadata": self.metadata[idx]["metadata"],
+                                "score": score})
+
+        results.sort(key=lambda x: x['score'], reverse=True)
+        return results[:k]
+
     def _batch_rerank(self, rerank_pairs: List[tuple]) -> List[float]:
         """批量处理交叉编码器以加速重排序"""
         with ThreadPoolExecutor() as executor:

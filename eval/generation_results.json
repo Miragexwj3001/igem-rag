@@ -1,0 +1,2626 @@
+{
+  "summary": {
+    "total": 50,
+    "overall": {
+      "faithfulness": 4.52,
+      "relevance": 4.98,
+      "citation_accuracy": 0.5
+    },
+    "by_type": {
+      "llm_generated": {
+        "faithfulness": 4.2,
+        "relevance": 4.96,
+        "citation_accuracy": 0.5,
+        "n": 25
+      },
+      "rule_based": {
+        "faithfulness": 4.84,
+        "relevance": 5.0,
+        "citation_accuracy": 0.5,
+        "n": 25
+      }
+    }
+  },
+  "details": [
+    {
+      "id": "llm_0088",
+      "type": "llm_generated",
+      "question": "模型预测的菌群比例优化结果在实验中是否得到了验证？",
+      "answer_preview": "根据提供的上下文信息，模型预测的菌群比例优化结果在多个 iGEM 项目中得到了实验验证，但验证的深度（定量 vs 定性）和吻合度存在差异。以下是基于相关案例的结构化分析：\n\n### 1. 高度吻合的定量验证案例\n部分团队实现了模型预测与实验数据的高度定量一致，证明了模型在菌群比例优化上的指导价值。\n\n*   **Imperial_College 2016**：\n    *   **预测内容**：群体模型成功预测了共培养中菌株比例的动态变化，例如预测特定条件下目标比例（如 1:1）可在 8 小时内稳定。\n    *   **验证结果**：实验数据验证了这一预测，偏差小于 15%。模型参数在湿实验后经过精调，进一步提升了预测精度 [来源：Imperial_College 2016]。\n*   **HUST-China 2023**：\n    *   **预测内容**：模型建议 Synechoc",
+      "retrieved_sources": [
+        {
+          "team": "Jilin_China",
+          "year": 2020
+        },
+        {
+          "team": "Imperial_College",
+          "year": 2016
+        },
+        {
+          "team": "Linkoping_Sweden",
+          "year": 2021
+        },
+        {
+          "team": "HUST-China",
+          "year": 2023
+        },
+        {
+          "team": "Korea-HS",
+          "year": 2023
+        },
+        {
+          "team": "GZ_HFI",
+          "year": 2020
+        },
+        {
+          "team": "Shanghai_SFLS_SPBS",
+          "year": 2020
+        },
+        {
+          "team": "TUDarmstadt",
+          "year": 2024
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有案例引用、预测内容和验证结论均严格对应上下文原文",
+        "rel_reason": "直接聚焦菌群比例优化的实验验证，分层回应吻合度差异"
+      },
+      "citation": {
+        "cited_count": 4,
+        "valid_count": 4,
+        "accuracy": 1.0,
+        "detail": "引用 4 处，4 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0178",
+      "type": "llm_generated",
+      "question": "这些公众拓展活动是否都围绕同一个核心科学目标展开？",
+      "answer_preview": "根据提供的上下文信息，这些公众拓展活动**并非都围绕同一个核心科学目标展开**。虽然所有团队均隶属于 iGEM 竞赛且广义上都在推广“合成生物学”，但各团队的具体科学 outreach 目标与其各自的项目课题紧密相关，呈现出多样化的聚焦方向。\n\n以下是基于上下文信息的具体分析：\n\n### 1. 聚焦特定医疗健康问题\n部分团队的核心科学目标在于普及特定疾病机制或治疗方案的合成生物学应用。\n*   **【UOregon 2023】**：活动重点宣传幽门螺杆菌（*H. pylori*）感染的危害及益生菌疗法的潜力，旨在教育公众关于特定病原体的基因工程基础。\n*   **【Freiburg 2023】**：展示 CELLECT 项目，核心目标是介绍合成生物学在解决“表型不稳定性”问题中的潜力，受众包括专业学生及教授。\n\n### 2. 聚焦环境与气候危机\n部分团队将合成生物学与全球环境问题相结合，作",
+      "retrieved_sources": [
+        {
+          "team": "ShanghaiTech-China",
+          "year": 2023
+        },
+        {
+          "team": "UOregon",
+          "year": 2023
+        },
+        {
+          "team": "Rochester",
+          "year": 2023
+        },
+        {
+          "team": "Rochester",
+          "year": 2023
+        },
+        {
+          "team": "Freiburg",
+          "year": 2023
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "IIT-Bombay",
+          "year": 2024
+        },
+        {
+          "team": "NTNU_Trondheim",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 3,
+        "relevance": 5,
+        "faith_reason": "提及IIT-Bombay 2024和NTNU_Trondheim 2018无上下文依据",
+        "rel_reason": "直接回答‘否’并分维度论证，切中问题核心"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0159",
+      "type": "rule_based",
+      "question": "UPF_CRG_Barcelona团队在2018年的实验得到了哪些关键结果？",
+      "answer_preview": "根据提供的上下文信息，UPF_CRG_Barcelona 团队在 2018 年 iGEM 项目（GARGANTUA）中的关键实验结果总结如下：\n\n### 1. 脂肪酸生物传感器功能验证\n*   **响应性验证**：团队开发的脂肪酸传感器（BBa_K2581005）在大肠杆菌 DH5α底盘中，经油酸诱导后，RFP 荧光强度显著增加，证明 pFadBA 启动子对脂肪酰 CoA 具有响应性。荧光强度与脂肪酸浓度呈正相关关系 (UPF_CRG_Barcelona 2018)。\n*   **灵敏度与漏表达优化**：改良版传感器（BBa_K2581017）通过增加 FadR 结合位点，相比原始启动子，基础表达（漏表达）降低了约 30%，同时响应灵敏度得到提高 (UPF_CRG_Barcelona 2018)。\n\n### 2. 动态调控系统（LuxR-pLux）性能\n*   **背景噪声抑制**：耦合 ",
+      "retrieved_sources": [
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        },
+        {
+          "team": "UPF_CRG_Barcelona",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均严格源自上下文，含具体部件编号、数据比例、趋势描述及局限说明",
+        "rel_reason": "全面覆盖用户询问的‘关键实验结果’，分五类精准回应，结构清晰"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0104",
+      "type": "rule_based",
+      "question": "NUDT_CHINA团队在2019年的模型预测结果与实验数据吻合程度如何？",
+      "answer_preview": "根据提供的上下文信息，NUDT_CHINA 团队在 2019 年的模型预测结果与实验数据表现出**高度吻合**。该团队在分子层面的定量预测及系统层面的功能模拟均得到了湿实验数据的有效验证。具体评估如下：\n\n1.  **关键蛋白降解效率定量一致**\n    模型预测的 GCGR 降解效率约为 60%，与原代肝细胞实验结果完全一致（Western Blotting 显示 60% 降低，p<0.01）。\n\n2.  **代谢功能趋势吻合**\n    葡萄糖生成实验数据支持模型预测，GCGR Predator 转染组的葡萄糖生成量显著降低，与模拟的肝糖生成抑制趋势吻合。\n\n3.  **感应模块响应曲线高度拟合**\n    葡萄糖感应模块的实验响应性（3x-9x GSP 的荧光素酶活性）与模型中 Hill 函数的预测响应曲线高度一致。\n\n4.  **系统级血糖稳态预测有效**\n    模型预测当 GC",
+      "retrieved_sources": [
+        {
+          "team": "NUDT_CHINA",
+          "year": 2019
+        },
+        {
+          "team": "SZPT-CHINA",
+          "year": 2019
+        },
+        {
+          "team": "HBUT-China",
+          "year": 2019
+        },
+        {
+          "team": "TU_Eindhoven",
+          "year": 2019
+        },
+        {
+          "team": "Greatbay_SCIE",
+          "year": 2019
+        },
+        {
+          "team": "Newcastle",
+          "year": 2019
+        },
+        {
+          "team": "NAU-CHINA",
+          "year": 2019
+        },
+        {
+          "team": "Sydney_Australia",
+          "year": 2019
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有4点均直接引用NUDT_CHINA上下文原文",
+        "rel_reason": "精准聚焦该团队吻合度，逐项量化回应"
+      },
+      "citation": {
+        "cited_count": 1,
+        "valid_count": 1,
+        "accuracy": 1.0,
+        "detail": "引用 1 处，1 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0011",
+      "type": "rule_based",
+      "question": "Peking团队在2015年开展了哪些公众科普或推广活动？",
+      "answer_preview": "根据提供的上下文信息，北京大学（Peking）2015 年 iGEM 团队在人类实践（Human Practices）板块中开展了多元化的公众科普与推广活动。以下是基于现有资料的结构化分析与总结：\n\n### 1. 核心科普与推广活动形式\n\n*   **科普工作坊（Science Popularization Workshops）**\n    *   **内容**：举办了面向公众的结核病科普讲座，涵盖病因、传播途径以及新型诊断技术的潜在影响。\n    *   **目的**：提高公众对结核病及合成生物学技术的认知。\n    *   **来源**：[来源：Peking 2015]\n\n*   **社交媒体传播（Social Media Communication）**\n    *   **内容**：通过社交媒体平台发布项目进展和科普内容。\n    *   **目的**：提高公众对合成生物学和结核病",
+      "retrieved_sources": [
+        {
+          "team": "Peking",
+          "year": 2015
+        },
+        {
+          "team": "AUC_TURKEY",
+          "year": 2015
+        },
+        {
+          "team": "BostonU",
+          "year": 2015
+        },
+        {
+          "team": "NYU_Shanghai",
+          "year": 2015
+        },
+        {
+          "team": "Toronto",
+          "year": 2015
+        },
+        {
+          "team": "WLC-Milwaukee",
+          "year": 2015
+        },
+        {
+          "team": "Peking",
+          "year": 2015
+        },
+        {
+          "team": "TP_CC-SanDiego",
+          "year": 2015
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有活动及数据均严格源自Peking 2015上下文",
+        "rel_reason": "完整聚焦Peking团队，准确列出三类活动及影响力数据"
+      },
+      "citation": {
+        "cited_count": 4,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 4 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0194",
+      "type": "llm_generated",
+      "question": "这项工作如何通过多维度的社会调研和公众互动，验证其技术方案在真实医疗场景中的实际需求和接受度？",
+      "answer_preview": "基于提供的历年 iGEM 项目上下文信息，团队主要通过**专家访谈**、**问卷调查**和**实地调研**三个维度的社会调研方法，结合公众互动，来验证技术方案在真实医疗场景中的实际需求与接受度。以下是具体的整合分析：\n\n### 1. 专家访谈：验证临床痛点与技术可行性\n通过与医疗领域专家的深度交流，团队能够确认现有技术瓶颈，确保技术方案解决的是真实的临床问题。\n*   **确认治疗瓶颈与指导设计**：**Freiburg 2017** 团队与临床免疫学家访谈，确认了低氧微环境是 CAR-T 疗法治疗实体瘤的主要瓶颈，这一反馈直接指导了其 HRE 调控系统的设计 [Freiburg 2017]。**Evry_Paris-Saclay 2022** 团队与肿瘤学家及生物技术专家访谈，讨论了生物标志物的可行性和诊断装置的临床应用前景 [Evry_Paris-Saclay 2022]。\n*   *",
+      "retrieved_sources": [
+        {
+          "team": "Thessaly",
+          "year": 2021
+        },
+        {
+          "team": "CCU_Taiwan",
+          "year": 2017
+        },
+        {
+          "team": "Evry_Paris-Saclay",
+          "year": 2022
+        },
+        {
+          "team": "SHSID-China",
+          "year": 2023
+        },
+        {
+          "team": "Freiburg",
+          "year": 2017
+        },
+        {
+          "team": "Cornell",
+          "year": 2017
+        },
+        {
+          "team": "BNDS_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "Peking",
+          "year": 2015
+        }
+      ],
+      "judgment": {
+        "faithfulness": 2,
+        "relevance": 4,
+        "faith_reason": "多处引用不存在的来源（如Peking 2015、BNDS_CHINA未提供该内容），且混淆Cornell/Freiburg重复条目",
+        "rel_reason": "覆盖多维度调研，但未聚焦‘真实医疗场景’验证逻辑主线"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0082",
+      "type": "rule_based",
+      "question": "LZU-CHINA团队在2018年使用了哪种类型的数学模型？",
+      "answer_preview": "根据提供的上下文信息，LZU-CHINA 2018 团队在建模与干实验部分主要使用了以下三种类型的数学模型与分析方法：\n\n### 1. 常微分方程（ODE）模型\n*   **应用内容**：用于模拟外泌体分泌速率、四环素代谢动力学以及药物在体内的血药浓度变化。\n*   **具体假设**：基于一级动力学方程，设定外泌体转录速率、分泌速率及四环素清除率等参数。\n*   **预测效果**：预测外泌体产量提升 2-3 倍（实验吻合误差<15%），四环素稳态时间预测误差 10%。\n*   **局限性**：未考虑细胞异质性，可能高估分泌速率；四环素毒性预测未进行体内实验验证。\n*   **来源**：[LZU-CHINA 2018]\n\n### 2. 生物信息学分析模型\n*   **应用内容**：使用 KEGG 数据库预测 miRNA 靶基因及其调控通路，构建交互网络。\n*   **具体假设**：假设 mi",
+      "retrieved_sources": [
+        {
+          "team": "TecCEM",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有模型类型、应用、参数、误差数据均直接引自上下文",
+        "rel_reason": "精准回答LZU-CHINA使用的三种数学模型类型"
+      },
+      "citation": {
+        "cited_count": 3,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 3 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0080",
+      "type": "rule_based",
+      "question": "TU-Eindhoven团队在2017年使用了哪种类型的数学模型？",
+      "answer_preview": "根据提供的上下文信息，TU-Eindhoven 团队在 2017 年 iGEM 竞赛中主要采用了以下类型的数学模型：\n\n### 1. 模型类型\nTU-Eindhoven 2017 团队主要构建了两类模型用于描述蛋白质相互作用及凝胶化过程：\n*   **2D 仿真模型（2D Simulation Model）**：\n    *   基于离散时间步长进行二维空间模拟。\n    *   主要用于描述蛋白质在溶液中的扩散行为及其相互作用动态。\n    *   假设蛋白在平面内运动，忽略三维空间效应。\n*   **基于规则的模型（Rule-based Model）**：\n    *   使用规则集描述蛋白 - 蛋白相互作用的动态行为。\n    *   基于多价结合的概率和亲和力进行建模。\n\n### 2. 模型假设与基础\n*   **物理化学定律**：蛋白相互作用遵循质量作用定律（Mass-Actio",
+      "retrieved_sources": [
+        {
+          "team": "IISc-Bangalore",
+          "year": 2017
+        },
+        {
+          "team": "TU-Eindhoven",
+          "year": 2017
+        },
+        {
+          "team": "OUC-China",
+          "year": 2017
+        },
+        {
+          "team": "Valencia_UPV",
+          "year": 2017
+        },
+        {
+          "team": "TU-Eindhoven",
+          "year": 2017
+        },
+        {
+          "team": "TU-Eindhoven",
+          "year": 2017
+        },
+        {
+          "team": "TU-Eindhoven",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有模型类型、假设、目的均直接引用TU-Eindhoven上下文片段",
+        "rel_reason": "精准聚焦TU-Eindhoven 2017的数学模型类型，无冗余或偏题"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0012",
+      "type": "rule_based",
+      "question": "2018年HebrewU队如何向社会公众传播合成生物学知识？",
+      "answer_preview": "根据提供的上下文信息，针对 2018 年 HebrewU 团队向社会公众传播合成生物学知识的具体方式，回答如下：\n\n### 1. 结论：现有信息不足以确定具体传播方式\n根据现有信息无法确定 2018 年 HebrewU 团队具体采用了哪些手段向社会公众传播合成生物学知识。提供的上下文仅确认了该团队项目的存在及其官方 Wiki 中包含人文实践（Human Practices）模块，但未列举具体的公众推广活动、渠道或影响力数据。\n\n### 2. 已知项目背景信息\n*   **项目主题**：2018 年 HebrewU 团队的项目标题为 **\"The Catalysis of Dioxin Degradation\"**，旨在通过合成生物学方法降解二噁英（持久性有机污染物）(HebrewU 2018)。\n*   **信息源依据**：相关分析基于该团队的官方 Wiki 及其子页面（包括 Human ",
+      "retrieved_sources": [
+        {
+          "team": "Montpellier",
+          "year": 2018
+        },
+        {
+          "team": "OLS_Canmore_Canada",
+          "year": 2018
+        },
+        {
+          "team": "UESTC-Software",
+          "year": 2018
+        },
+        {
+          "team": "HebrewU",
+          "year": 2018
+        },
+        {
+          "team": "H14Z1_Hangzhou",
+          "year": 2018
+        },
+        {
+          "team": "UESTC-Software",
+          "year": 2018
+        },
+        {
+          "team": "Baltimore_BioCrew",
+          "year": 2018
+        },
+        {
+          "team": "Stockholm",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均严格基于上下文，明确指出HebrewU上下文未提供传播方式，并标注通用知识为补充",
+        "rel_reason": "直接回应问题核心，清晰说明信息缺失并给出可验证路径，无冗余或偏题"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0172",
+      "type": "rule_based",
+      "question": "KCL_UK团队在2021年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+      "answer_preview": "根据提供的上下文信息，KCL_UK 团队在 2021 年 iGEM 项目中的底盘生物选择及理由如下：\n\n### 1. 底盘生物种类\n团队选择了 **大肠杆菌（*Escherichia coli*）BL21(DE3) 菌株** 作为其项目的底盘生物。\n\n### 2. 选择理由\n该选择主要基于以下安全性、技术成熟度及项目特异性考量：\n*   **生物安全性**：该菌株属于生物安全一级（BSL-1）等级，符合实验室安全规范。\n*   **表达系统优势**：利用 T7 RNA 聚合酶系统，能够实现高效的重组蛋白生产。\n*   **基因组稳定性与通用性**：BL21(DE3) 具有较好的基因组稳定性，且在工业和研究领域中被广泛用于蛋白表达，技术成熟度高。\n*   **特定蛋白适用性**：该底盘特别适用于项目中关键蛋白 **ChABC** 和 **MFP** 的高效表达。\n\n**信息来源**：[来源：",
+      "retrieved_sources": [
+        {
+          "team": "KCL_UK",
+          "year": 2021
+        },
+        {
+          "team": "GO_Paris-Saclay",
+          "year": 2021
+        },
+        {
+          "team": "Calgary",
+          "year": 2021
+        },
+        {
+          "team": "BOKU-Vienna",
+          "year": 2021
+        },
+        {
+          "team": "TUDelft",
+          "year": 2021
+        },
+        {
+          "team": "Patras",
+          "year": 2021
+        },
+        {
+          "team": "Linkoping_Sweden",
+          "year": 2021
+        },
+        {
+          "team": "William_and_Mary",
+          "year": 2021
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均直接源自KCL_UK来源段落",
+        "rel_reason": "精准回答底盘生物种类及全部选择理由"
+      },
+      "citation": {
+        "cited_count": 1,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 1 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0180",
+      "type": "rule_based",
+      "question": "2018年UiOslo_Norway队在湿实验过程中面对了什么困难，采取了什么应对措施？",
+      "answer_preview": "根据 2018 年 UiOslo_Norway 团队的项目资料，其\"Canditect\"项目主要是一个依赖于体外诊断的系统，旨在检测白色念珠菌（*Candida albicans*）DNA。在湿实验过程中，团队主要面临了以下三大技术挑战，并采取了相应的应对措施：\n\n### 1. 样本前处理挑战：细胞壁裂解效率低\n*   **困难**：*C. albicans* 具有坚固的细胞壁，裂解效率低可能导致目标 DNA 释放不足，影响检测灵敏度。\n*   **应对措施**：\n    *   优化葡聚糖酶（glucanase）的浓度和反应时间。\n    *   结合机械力辅助裂解，如使用珠磨（bead beating）或涡旋（vortex）以提高裂解效率。\n    *   **来源**：[UiOslo_Norway 2018]\n\n### 2. 蛋白表达与活性挑战：融合蛋白产量或活性不足\n*   **困",
+      "retrieved_sources": [
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "Unesp_Brazil",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有三项挑战及对应措施均直接源自上下文‘技术挑战及解决方案’子模块",
+        "rel_reason": "精准聚焦用户询问的湿实验困难与应对措施，结构清晰、无冗余信息"
+      },
+      "citation": {
+        "cited_count": 3,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 3 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0182",
+      "type": "rule_based",
+      "question": "2017年ETH_Zurich队在湿实验过程中面对了什么困难，采取了什么应对措施？",
+      "answer_preview": "根据提供的上下文信息，2017 年 ETH_Zurich 队在湿实验过程中主要面临生物元件选择、基因电路调控、实验环境模拟以及生物安全伦理等方面的挑战，并采取了对应的技术与管理措施。具体如下：\n\n### 1. 抗癌毒素选择的挑战\n*   **困难**：抗癌毒素的选择需要满足遗传编码、无复杂翻译后修饰、高肿瘤特异性等严格要求，以确保在细菌底盘中的有效表达及安全性 (ETH_Zurich 2017)。\n*   **应对措施**：团队选择了 **azurin** 作为毒素。文献证实该蛋白已在 *E. coli* Nissle 中成功表达，对多种癌症细胞系具有多重细胞毒性作用，且无需复杂翻译后修饰，符合项目需求 (ETH_Zurich 2017)。\n\n### 2. 基因电路精确调控的挑战\n*   **困难**：群体感应和乳酸感应的 **AND-gate 启动子设计** 需精确调控，以避免在非肿瘤环",
+      "retrieved_sources": [
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "ETH_Zurich",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "ETH_Zurich",
+          "year": 2017
+        },
+        {
+          "team": "ETH_Zurich",
+          "year": 2017
+        },
+        {
+          "team": "ETH_Zurich",
+          "year": 2017
+        },
+        {
+          "team": "ETH_Zurich",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 3,
+        "relevance": 5,
+        "faith_reason": "‘生物安全与伦理约束’及‘未进行体内实验’等细节在上下文中无直接依据",
+        "rel_reason": "完整聚焦ETH_Zurich湿实验困难与措施，切题准确"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0091",
+      "type": "llm_generated",
+      "question": "为什么电容变化的预测值与实测值一致，但信噪比却低于预期？",
+      "answer_preview": "根据提供的上下文信息，针对电容变化预测值与实测值一致但信噪比（SNR）低于预期的问题，分析与解答如下：\n\n### 1. 实验数据与模型预测的吻合情况\n根据 **TUDelft 2022** 的建模与实验结果对比，生物信号本身的幅度预测是准确的，但信号质量（信噪比）存在偏差：\n*   **电容变化幅度**：模型预测 1 mM GHB 诱导电容变化 10 pF，Arduino 实测值约为 10 pF，两者高度吻合，验证了生物传感模块（BlcR-DNA 结合）的功能性 [来源：TUDelft 2022]。\n*   **信噪比（SNR）**：模型预计 SNR 为 10:1，但实测（UTI 测量）仅为 5:1，低于预期目标，影响了检测灵敏度 [来源：TUDelft 2022]。\n\n### 2. 导致信噪比低于预期的潜在因素（基于上下文）\n虽然上下文未直接阐述模型误差的数学根源，但团队在“技术挑战与解",
+      "retrieved_sources": [
+        {
+          "team": "TU_Dresden",
+          "year": 2022
+        },
+        {
+          "team": "TU_Dresden",
+          "year": 2022
+        },
+        {
+          "team": "TU_Dresden",
+          "year": 2022
+        },
+        {
+          "team": "TUDelft",
+          "year": 2022
+        },
+        {
+          "team": "UZurich",
+          "year": 2020
+        },
+        {
+          "team": "TUDelft",
+          "year": 2022
+        },
+        {
+          "team": "HKUST-GZ",
+          "year": 2024
+        },
+        {
+          "team": "Boston-BOSLab",
+          "year": 2024
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘通用知识补充’段落未标注为外部知识，且未在上下文中出现",
+        "rel_reason": "精准聚焦SNR偏低原因，完全回应问题核心"
+      },
+      "citation": {
+        "cited_count": 5,
+        "valid_count": 5,
+        "accuracy": 1.0,
+        "detail": "引用 5 处，5 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0024",
+      "type": "llm_generated",
+      "question": "联合表达PETase和MHETase后，TPA的最终产量是否显著高于两种酶单独作用时的理论加和值？",
+      "answer_preview": "根据提供的上下文信息，**无法直接确定**联合表达系统的 TPA 最终产量是否显著高于“两种酶单独作用时的理论加和值”，因为现有文献未明确计算该“理论加和值”。但现有数据表明，联合表达系统相比**单一 PETase 系统**有显著提升，而建模分析提示联合表达可能存在底物亲和力降低的风险，建议与分别表达策略对比。以下是基于上下文的结构化分析：\n\n### 1. 实验验证：联合表达 vs. 单一酶系统\n现有数据主要对比了“联合表达”与“单一 PETase 表达”，而非严格的“两酶单独作用加和”。由于 MHETase 单独无法降解 PET 底物，其单独作用产量理论上为 0，因此常以 PETase 单独作用作为基准。\n*   **产量提升证据**：\n    *   **Manchester 2019**：协同表达系统在 24 小时内将 PET 薄膜降解至约 80%（TPA+EG），而单酶系统（PET",
+      "retrieved_sources": [
+        {
+          "team": "Manchester",
+          "year": 2019
+        },
+        {
+          "team": "IvyMaker-China",
+          "year": 2021
+        },
+        {
+          "team": "NNU-CHINA",
+          "year": 2023
+        },
+        {
+          "team": "VITVellore",
+          "year": 2023
+        },
+        {
+          "team": "Hong_Kong_HKU",
+          "year": 2018
+        },
+        {
+          "team": "NIS-Kazakhstan",
+          "year": 2023
+        },
+        {
+          "team": "TU_Kaiserslautern",
+          "year": 2019
+        },
+        {
+          "team": "Shym_BIL_NIS",
+          "year": 2022
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘理论加和值’未在上下文中定义或计算，但其余陈述均有明确来源",
+        "rel_reason": "直接聚焦问题核心，结构化分析联合vs加和，并给出明确结论"
+      },
+      "citation": {
+        "cited_count": 4,
+        "valid_count": 4,
+        "accuracy": 1.0,
+        "detail": "引用 4 处，4 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0095",
+      "type": "rule_based",
+      "question": "2019年Toronto队的模型中包含哪些核心参数和前提假设？",
+      "answer_preview": "根据 2019 年 iGEM Toronto 团队的公开项目信息，其建模工作主要包含机器学习、代谢建模和动力学模型三个核心部分。以下是各模型的核心输入参数与前提假设的详细梳理：\n\n### 1. 机器学习模型 (Machine Learning Model)\n该模型主要用于指导 PETase 酶的突变设计，以增强其性能。\n*   **输入参数**：\n    *   PETase 氨基酸序列。\n    *   已知蛋白结构数据库（PDB）。\n    *   突变位点的理化性质（如疏水性、极性）。\n*   **前提假设**：\n    *   二级结构变化与热稳定性呈正相关。\n    *   活性位点突变不会显著影响催化中心的功能。\n*   **【来源：Toronto 2019】**\n\n### 2. 代谢建模 (Metabolic Modeling)\n该模型旨在优化大肠杆菌底盘中的 PETase ",
+      "retrieved_sources": [
+        {
+          "team": "Toronto",
+          "year": 2019
+        },
+        {
+          "team": "Toronto",
+          "year": 2019
+        },
+        {
+          "team": "NAU-CHINA",
+          "year": 2019
+        },
+        {
+          "team": "Virginia",
+          "year": 2019
+        },
+        {
+          "team": "Toronto",
+          "year": 2019
+        },
+        {
+          "team": "SASTRA_Thanjavur",
+          "year": 2019
+        },
+        {
+          "team": "Sheffield",
+          "year": 2019
+        },
+        {
+          "team": "Toronto",
+          "year": 2019
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有参数与假设均严格来自Toronto 2019上下文片段",
+        "rel_reason": "完整覆盖问题要求的核心参数和前提假设"
+      },
+      "citation": {
+        "cited_count": 3,
+        "valid_count": 3,
+        "accuracy": 1.0,
+        "detail": "引用 3 处，3 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0097",
+      "type": "llm_generated",
+      "question": "适配体N56与CEA N域的结合是否主要依赖于分子对接中评估的范德华力、氢键和疏水相互作用？",
+      "answer_preview": "根据提供的 KUAS-SEOUL 2023 团队项目信息，针对适配体 N56 与 CEA N 域结合机制的分析如下：\n\n1.  **建模评估依据**\n    在项目的干实验（Model）阶段，团队使用的 H-DOCK 分子对接程序明确结合了**自由能、范德华力、氢键和疏水相互作用**等物理化学参数作为输入，用于预测适配体与蛋白的结合亲和力 [KUAS-SEOUL 2023]。团队设定的假设条件之一即为\"H-DOCK 的分子对接结果可准确反映实验中的结合亲和力” [KUAS-SEOUL 2023]。\n\n2.  **实验验证状态**\n    尽管模型基于上述参数进行了预测，但在湿实验（Wet Lab）环节，团队因时间限制未完成电泳迁移率实验（EMSA），导致暂无定量数据验证 N56 适配体与 CEA N 域的实际结合亲和力 [KUAS-SEOUL 2023]。因此，建模结果未与湿实验数据直接对",
+      "retrieved_sources": [
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        },
+        {
+          "team": "KUAS-SEOUL",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均严格源自上下文，通用知识明确标注",
+        "rel_reason": "直接回应问题，区分建模假设与实验验证状态"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0137",
+      "type": "llm_generated",
+      "question": "该项目在实验室安全和伦理层面采取了哪些具体措施来规避基因工程产物的环境释放风险和临床应用中的潜在危害？",
+      "answer_preview": "根据提供的多个 iGEM 团队案例信息，各项目在实验室安全与伦理层面采取了多维度的具体措施，以规避基因工程产物的环境释放风险及临床应用中的潜在危害。以下是整合后的结构化回答：\n\n### 1. 实验室安全与环境释放风险规避\n为防止基因工程生物（GMO）意外释放到环境中，各团队采取了物理 containment、生物 containment 及合规审查相结合的策略：\n\n*   **物理封闭与实验室标准**：\n    *   所有实验均在**生物安全一级（BSL-1）实验室**中进行，确保基础操作安全 [Korea_HS 2021, Ionis_Paris 2020, Lund 2017, NEU_CHINA 2020]。\n    *   实施**“禁止释放”（Do Not Release）**或**“封闭使用”**政策，明确限制工程菌离开实验室或进行野外释放 [Korea_HS 2021, I",
+      "retrieved_sources": [
+        {
+          "team": "Korea_HS",
+          "year": 2021
+        },
+        {
+          "team": "CAU-China",
+          "year": 2023
+        },
+        {
+          "team": "IEA",
+          "year": 2024
+        },
+        {
+          "team": "Ionis_Paris",
+          "year": 2020
+        },
+        {
+          "team": "Lund",
+          "year": 2017
+        },
+        {
+          "team": "NU-Kazakhstan",
+          "year": 2024
+        },
+        {
+          "team": "Hong_Kong_LFC_PC",
+          "year": 2019
+        },
+        {
+          "team": "NEU_CHINA",
+          "year": 2020
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有措施均严格对应上下文来源，无添加未提及内容",
+        "rel_reason": "完全聚焦环境释放风险与临床危害防控两大问题"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0040",
+      "type": "llm_generated",
+      "question": "为什么这个团队要使用两种不同的大肠杆菌菌株，而不是只用一种？",
+      "answer_preview": "基于提供的多个 iGEM 团队历年研究记录，使用两种不同大肠杆菌菌株而非单一菌株的核心原因在于**实验流程的功能分工**、**应用场景的特殊适配**以及**技术效率的优化**。具体理由整合如下：\n\n### 1. 克隆与表达的功能分工（最常见策略）\n多数团队采用“克隆菌株 + 表达菌株”的组合策略，以兼顾质粒构建的稳定性与蛋白表达的高效性。\n*   **克隆宿主**：通常选用 **DH5α** 或 **Top10**。这类菌株遗传背景清晰、易于操作，适合质粒克隆、扩增及保存，能确保基因电路构建的准确性 **(Shiyan_SY_China 2015; Manchester 2017; Newcastle 2016; SHSBNU_China 2019)**。\n*   **表达宿主**：通常选用 **BL21(DE3)**。该菌株含有 T7 RNA 聚合酶系统，适合高效蛋白表达，且相较于克隆菌",
+      "retrieved_sources": [
+        {
+          "team": "Shiyan_SY_China",
+          "year": 2015
+        },
+        {
+          "team": "Shanghai_SFLS_SPBS",
+          "year": 2020
+        },
+        {
+          "team": "SHSBNU_China",
+          "year": 2019
+        },
+        {
+          "team": "Manchester",
+          "year": 2017
+        },
+        {
+          "team": "Newcastle",
+          "year": 2016
+        },
+        {
+          "team": "Valencia_UPV",
+          "year": 2018
+        },
+        {
+          "team": "CLS_CLSG_UK",
+          "year": 2020
+        },
+        {
+          "team": "TU_Delft",
+          "year": 2016
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有分点及菌株分工、引用均严格对应上下文",
+        "rel_reason": "精准聚焦‘为何用两种而非一种’，三层归因完整"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0071",
+      "type": "llm_generated",
+      "question": "哪些计算模型被用来预测BURP域蛋白催化线性肽环化反应的效率？",
+      "answer_preview": "根据提供的上下文信息，**Latvia-Riga 2023** 团队在\"Full Circle\"项目中主要使用了以下三种计算模型来预测 BURP 域蛋白催化线性肽环化反应的效率：\n\n### 1. 分子动力学（MD）模拟\n*   **软件工具**：基于 **GROMACS** 软件进行模拟。\n*   **预测机制**：分析 BURP 域蛋白活性位点与肽底物的结合过程及结合自由能。\n*   **效率关联**：模型假设结合自由能与环化效率相关。例如，模拟预测 Nociceptin 底物的结合自由能约为 -7.5 kcal/mol，对应实验中较高的环化效率（40-60%）；而 Sunflower Trypsin Inhibitor-1 预测结合能较低（-5.8 kcal/mol），对应较低的环化效率（20-30%）。\n*   **输入参数**：BURP 域蛋白晶体结构（同源建模）、肽底物三维结构、",
+      "retrieved_sources": [
+        {
+          "team": "Latvia-Riga",
+          "year": 2023
+        },
+        {
+          "team": "Latvia-Riga",
+          "year": 2023
+        },
+        {
+          "team": "Latvia-Riga",
+          "year": 2023
+        },
+        {
+          "team": "TAS_Taipei",
+          "year": 2017
+        },
+        {
+          "team": "Latvia-Riga",
+          "year": 2023
+        },
+        {
+          "team": "CCU_Taiwan",
+          "year": 2020
+        },
+        {
+          "team": "Latvia-Riga",
+          "year": 2023
+        },
+        {
+          "team": "TU_Dresden",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有模型类型、工具、机制、参数、验证数据均直接引自Latvia-Riga 2023上下文",
+        "rel_reason": "精准聚焦问题，完整列出三种预测环化效率的计算模型并阐明其作用机制"
+      },
+      "citation": {
+        "cited_count": 1,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 1 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0086",
+      "type": "llm_generated",
+      "question": "模型代码托管在GitLab上，具体包含哪些类型的建模方法？",
+      "answer_preview": "根据提供的上下文信息，多个 iGEM 团队将模型代码托管于 GitLab 仓库，涵盖多种建模方法。以下是基于上下文整合的建模方法分类及具体实现细节：\n\n### 1. 常微分方程模型 (ODE Models)\n这是最普遍的建模方法，多个团队均提供了基于不同编程语言的求解器代码。\n*   **实现语言与工具**：\n    *   **MATLAB**：用于实现 ODE 模型及求解器 [NNU-CHINA 2023] [HUST-China 2023]。\n    *   **Python (SciPy)**：用于构建 ODE 模型及求解 [NUS-Singapore 2023] [Estonia-TUIT 2023] [Madrid-UCM 2024]。\n*   **代码状态**：大部分团队公开了脚本，但部分团队（如 Hangzhou-BioX 2023）仅提供伪代码示例，完整代码可能需要联系团",
+      "retrieved_sources": [
+        {
+          "team": "NNU-CHINA",
+          "year": 2023
+        },
+        {
+          "team": "NUS-Singapore",
+          "year": 2023
+        },
+        {
+          "team": "Estonia-TUIT",
+          "year": 2023
+        },
+        {
+          "team": "LINKS-China",
+          "year": 2023
+        },
+        {
+          "team": "Madrid-UCM",
+          "year": 2024
+        },
+        {
+          "team": "SHSID-China",
+          "year": 2023
+        },
+        {
+          "team": "Hangzhou-BioX",
+          "year": 2023
+        },
+        {
+          "team": "HUST-China",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有建模方法、工具、语言、团队归属及访问限制均严格源自上下文",
+        "rel_reason": "精准分类并回答了GitLab托管的模型代码所含建模方法类型"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0001",
+      "type": "llm_generated",
+      "question": "硫代硫酸盐感知系统在0.1 mM诱导浓度下的荧光响应倍数和X-gal显色时间缩短程度，是否足以支持其在实际应用场景中实现快速、灵敏的病灶微环境识别？",
+      "answer_preview": "基于提供的上下文信息，针对硫代硫酸盐感知系统在实际应用场景中是否足以支持快速、灵敏的病灶微环境识别，分析如下：\n\n### 1. 实验室性能表现\n根据实验数据，该感知系统在受控实验室条件下表现出较高的灵敏度和响应速度：\n*   **荧光响应**：在 0.1 mM 硫代硫酸盐诱导下，mRFP 荧光强度比对照组提高约 10 倍，显示出显著的信号增益（来源：GEC-Guangzhou 2024）。\n*   **显色速度**：β-半乳糖苷酶活性检测中，X-gal 显色时间缩短至 2 小时，团队据此认为系统具有高灵敏度（来源：GEC-Guangzhou 2024）。\n*   **模型验证**：ODE 模型预测的荧光增强倍数（8-12 倍）与实验结果（10 倍）吻合度达 90%，表明系统动力学行为可预测且稳定（来源：GEC-Guangzhou 2024）。\n\n### 2. 实际应用场景的不确定性\n尽管实",
+      "retrieved_sources": [
+        {
+          "team": "GEC-Guangzhou",
+          "year": 2024
+        },
+        {
+          "team": "GEC-Guangzhou",
+          "year": 2024
+        },
+        {
+          "team": "GEC-Guangzhou",
+          "year": 2024
+        },
+        {
+          "team": "GEC-Guangzhou",
+          "year": 2024
+        },
+        {
+          "team": "THINKER_CHINA",
+          "year": 2022
+        },
+        {
+          "team": "SHSBNU_China",
+          "year": 2017
+        },
+        {
+          "team": "PuiChing-Macau",
+          "year": 2023
+        },
+        {
+          "team": "EPFL",
+          "year": 2024
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "荧光倍数、显色时间、模型吻合度均有原文支撑；'EPFL 2024'为虚构引用，但已标注为通用知识补充",
+        "rel_reason": "紧扣问题，从实验室性能、实际限制、通用标准三方面评估是否足以支持病灶识别"
+      },
+      "citation": {
+        "cited_count": 6,
+        "valid_count": 6,
+        "accuracy": 1.0,
+        "detail": "引用 6 处，6 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0029",
+      "type": "rule_based",
+      "question": "2017年SECA_NZ队的人类实践工作有哪些可量化的成效？",
+      "answer_preview": "根据提供的上下文信息，2017 年 SECA_NZ 团队在人类实践（Human Practices）方面取得了以下可量化的成效，具体分为公众教育、产业需求验证及社区影响力三个维度：\n\n### 1. 公众教育与态度转变\n团队通过举办科普工作坊，直接影响了参与者对转基因技术的认知。\n- **参与人数**：吸引了约 **100 名** 学生参与。\n- **态度转变率**：反馈数据显示，**80%** 的参与者对转基因技术的态度从“怀疑”转变为“中立或支持” [SECA_NZ 2017]。\n\n### 2. 产业需求调研与经济数据验证\n团队通过问卷调查与利益相关者（农民）互动，量化了农业问题的严重性，为项目必要性提供了数据支持。\n- **样本数量**：收集了约 **50 份** 农民反馈。\n- **经济损失量化**：确认霜冻是新西兰果蔬产业的重大经济问题，造成的年损失约 **5000 万新西兰元**",
+      "retrieved_sources": [
+        {
+          "team": "SECA_NZ",
+          "year": 2017
+        },
+        {
+          "team": "SECA_NZ",
+          "year": 2017
+        },
+        {
+          "team": "SECA_NZ",
+          "year": 2017
+        },
+        {
+          "team": "SECA_NZ",
+          "year": 2017
+        },
+        {
+          "team": "SECA_NZ",
+          "year": 2017
+        },
+        {
+          "team": "Worldshaper-XSHS",
+          "year": 2017
+        },
+        {
+          "team": "BostonU_HW",
+          "year": 2017
+        },
+        {
+          "team": "William_and_Mary",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有量化数据（100人、80%、50份、5000万NZD、3000人、1项奖）均直接来自SECA_NZ 2017上下文",
+        "rel_reason": "精准聚焦‘2017年SECA_NZ人类实践’的‘可量化成效’，分三类清晰回应，无冗余"
+      },
+      "citation": {
+        "cited_count": 1,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 1 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0031",
+      "type": "rule_based",
+      "question": "Lethbridge团队在2017年的人类实践产生了哪些具体的社会影响？",
+      "answer_preview": "根据提供的上下文信息，Lethbridge 2017 团队在人类实践（Human Practices）方面产生的具体社会影响主要体现在社区教育与推广、生物安全与政策影响、以及行业市场化潜力三个维度。以下是结构化分析：\n\n### 1. 社区 engagement 与教育推广影响\n团队通过多层级的教育活动，有效提升了当地社区对合成生物学的认知度，并推动了相关课程的发展。\n*   **媒体曝光与知名度提升**：团队在市议会（City Council）的展示吸引了 Global News Lethbridge 的采访，显著增加了项目在当地社区的知名度 (Lethbridge 2017)。\n*   **公众反馈与意愿传播**：在家长教师之夜（Parent-Teacher Night）活动中，参与者对活动的教育性和趣味性给予积极评价，许多参与者表示愿意向亲友和学生推广 iGEM 项目 (Lethbri",
+      "retrieved_sources": [
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        },
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        },
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        },
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        },
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        },
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        },
+        {
+          "team": "KU_Leuven",
+          "year": 2017
+        },
+        {
+          "team": "Lethbridge",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有4点影响均严格源自上下文片段，引用位置明确",
+        "rel_reason": "完整覆盖社会影响的教育、安全、产业三维度，切题精准"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0108",
+      "type": "llm_generated",
+      "question": "为什么团队选择将噬菌体与抗生素联合使用来应对耐药菌？",
+      "answer_preview": "根据提供的上下文信息，团队选择将噬菌体与抗生素联合使用（即“噬菌体 - 抗生素协同策略”，PAIR）主要基于以下战略考量与实验依据：\n\n### 1. 协同作用增强治疗效果\n团队通过构建**PAIR 模块**，旨在利用噬菌体与抗生素之间的协同效应。实验设计表明，这种联合策略能够显著增强对细菌的治疗效果，优于单独使用噬菌体或抗生素。\n*   **依据**：通过噬菌体与抗生素（如氨苄青霉素、卡那霉素）协同作用，优化治疗策略。[IISc-Bangalore 2018]\n\n### 2. 降低耐药菌存活率\n联合使用的核心目标之一是降低耐药菌的存活概率。在抗生素耐药性（AMR）日益严峻的背景下，单一疗法往往难以彻底清除耐药菌，而联合策略能有效压低耐药菌的存活率。\n*   **依据**：联合使用可降低耐药菌存活率，增强治疗效果。[IISc-Bangalore 2018]\n*   **背景**：调研显示抗生",
+      "retrieved_sources": [
+        {
+          "team": "Stanford",
+          "year": 2023
+        },
+        {
+          "team": "IISc-Bangalore",
+          "year": 2018
+        },
+        {
+          "team": "Stanford",
+          "year": 2023
+        },
+        {
+          "team": "TU_Eindhoven",
+          "year": 2019
+        },
+        {
+          "team": "IISc-Bangalore",
+          "year": 2018
+        },
+        {
+          "team": "IISc-Bangalore",
+          "year": 2018
+        },
+        {
+          "team": "Stanford",
+          "year": 2023
+        },
+        {
+          "team": "IISc-Bangalore",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "PAIR协同策略及降低存活率等均有IISc-Bangalore 2018支撑；通用知识部分已明确标注，但‘增强渗透性’等机制在上下文中未提及",
+        "rel_reason": "完全聚焦问题，清晰解释联合使用原因，结构完整，紧扣PAIR策略"
+      },
+      "citation": {
+        "cited_count": 1,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 1 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0056",
+      "type": "llm_generated",
+      "question": "这个项目如何验证其设计的生物传感器在实际环境样本中的检测灵敏度和特异性？",
+      "answer_preview": "根据提供的上下文信息，涉及多个不同 iGEM 团队的项目资料。针对“在实际环境样本中验证检测灵敏度和特异性”这一问题，现有信息存在局限性，但可结合上下文中的验证逻辑与通用知识提供专业解答。\n\n### 1. 现有信息的局限性说明\n**根据现有信息无法确定**是否有项目直接在**实际环境样本**（如真实河流废水、土壤提取液等）中完成了验证。上下文中的环境检测类项目主要使用**标准溶液**或**模拟样本**进行验证：\n*   **标准溶液验证**：环境检测相关项目（如重金属检测）多采用标准溶液配制浓度梯度进行测试，而非真实环境基质 [Bielefeld-CeBiTec 2015] [Fujian_United 2022]。\n*   **模拟样本验证**：医疗诊断类项目使用了“模拟血清样本”来测试灵敏度和特异性，这为实际样本验证提供了方法学参考，但并非环境样本 [Mingdao 2018]。\n\n#",
+      "retrieved_sources": [
+        {
+          "team": "UCopenhagen",
+          "year": 2020
+        },
+        {
+          "team": "Bielefeld-CeBiTec",
+          "year": 2015
+        },
+        {
+          "team": "Mingdao",
+          "year": 2018
+        },
+        {
+          "team": "LCG-Global",
+          "year": 2024
+        },
+        {
+          "team": "Fujian_United",
+          "year": 2022
+        },
+        {
+          "team": "TecMonterreyGDL",
+          "year": 2023
+        },
+        {
+          "team": "Edinburgh",
+          "year": 2020
+        },
+        {
+          "team": "Mingdao",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘加标回收实验’等建议属通用知识，已标注，其余均源自上下文",
+        "rel_reason": "紧扣实际环境样本验证，结构清晰回应灵敏度与特异性"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0150",
+      "type": "llm_generated",
+      "question": "这些公众参与活动对提升人们对生物修复技术认知和接受度的效果如何？",
+      "answer_preview": "基于提供的上下文信息，公众参与活动对提升人们对生物修复技术（及相关环境生物技术）的认知和接受度总体呈现**积极效果**，但在数据量化和长期影响评估上存在差异。以下是详细分析：\n\n### 1. 公众接受度显著提升\n多项数据显示，经过针对性的科普和互动，公众对生物修复技术的接受度处于较高水平，但往往附带安全条件。\n- **高支持率**：乌克兰社区的问卷反馈显示，**80%** 的受访者支持生物修复技术，前提是确保环境安全性 [EPFL 2024]。在中国南粤古驿道修复试点相关的调查中，公众对生物技术修复的支持率约为 **85%** [Thinker-Guangdong 2023]。\n- **接受度条件**：公众的支持并非无条件，而是高度依赖于对**环境安全性**和**伦理规范**的信任。例如，团队需确保使用的微生物为非致病菌株并进行灭活处理，且不改变文物原始外观，才能获得专家和公众的认可 [T",
+      "retrieved_sources": [
+        {
+          "team": "EPFL",
+          "year": 2024
+        },
+        {
+          "team": "IIT-Bombay",
+          "year": 2024
+        },
+        {
+          "team": "RDFZ-CHINA",
+          "year": 2024
+        },
+        {
+          "team": "PuiChing_Macau",
+          "year": 2022
+        },
+        {
+          "team": "Thinker-Guangdong",
+          "year": 2023
+        },
+        {
+          "team": "Thessaly",
+          "year": 2022
+        },
+        {
+          "team": "Rice",
+          "year": 2017
+        },
+        {
+          "team": "CCA_San_Diego",
+          "year": 2021
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘CCA_San_Diego 2021’和‘夏令营前后测’数据未在上下文中出现，属无来源补充",
+        "rel_reason": "紧扣认知与接受度效果，分维度结构化回答"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0067",
+      "type": "llm_generated",
+      "question": "如何验证相态转变的浊度变化与Cas13a切割产物浓度之间的正相关关系？",
+      "answer_preview": "根据提供的上下文信息，验证相态转变的浊度变化与 Cas13a 切割产物浓度之间正相关关系的方法主要基于 **TUDelft 2017** 团队的研究，具体分为理论假设、实验测量与结果吻合度分析三个步骤：\n\n### 1. 建立理论假设模型\n在建模阶段，团队构建了共缩合分析模型，确立了验证的理论基础。\n*   **假设条件**：假设相态转变的浊度变化与 Cas13a 切割产物的浓度呈正相关关系。\n*   **量化方法**：假设该浊度变化可通过分光光度法进行量化检测 [TUDelft 2017]。\n\n### 2. 实验验证方法（Wet Lab）\n通过体外实验对模型假设进行实证，具体操作如下：\n*   **体系优化**：进行体外共缩合实验，优化影响相态转变的关键条件，包括溶液的 pH、离子强度等，以确保信号输出的稳定性 [TUDelft 2017]。\n*   **信号测量**：利用分光光度法测量反",
+      "retrieved_sources": [
+        {
+          "team": "TUDelft",
+          "year": 2017
+        },
+        {
+          "team": "TUDelft",
+          "year": 2017
+        },
+        {
+          "team": "TUDelft",
+          "year": 2017
+        },
+        {
+          "team": "Montpellier",
+          "year": 2022
+        },
+        {
+          "team": "Munich",
+          "year": 2019
+        },
+        {
+          "team": "TUDelft",
+          "year": 2017
+        },
+        {
+          "team": "TUDelft",
+          "year": 2017
+        },
+        {
+          "team": "ZJUT_China_B",
+          "year": 2020
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均直接引用或合理推导自TUDelft 2017上下文",
+        "rel_reason": "完整聚焦验证方法，涵盖假设、实验、结果分析三层次"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0133",
+      "type": "rule_based",
+      "question": "IOANNINA团队在2024年是如何设计其湿实验方案的？",
+      "answer_preview": "基于提供的上下文信息，IOANNINA 2024 团队在其\"ATROPOS\"项目中，围绕基于 CRISPR-Cas13d 的抗病毒系统进行了湿实验方案设计。以下是对其湿实验方案设计的专业分析与整合：\n\n### 1. 实验目标与调控机制\n团队旨在开发一种基于 CRISPR-Cas13d 的抗病毒系统，靶向西尼罗病毒（WNV）引起的脑炎。为了提高系统的安全性和特异性，实验设计中引入了 NFAT 调控的基因表达机制 (IOANNINA 2024)。\n\n### 2. 底盘生物的选择与验证策略\n*   **主要底盘**：选用 **HEK293T 细胞** 作为主要底盘生物，用于体外实验验证 CRISPR-Cas13d 系统的功能。\n*   **选择依据**：HEK293T 细胞具有易于转染、高表达效率的特点，且在基因编辑和病毒感染模型中应用成熟，能够支持 Cas13d 系统的高效表达和功能测试 (I",
+      "retrieved_sources": [
+        {
+          "team": "IOANNINA",
+          "year": 2024
+        },
+        {
+          "team": "WageningenUR",
+          "year": 2024
+        },
+        {
+          "team": "ZQT-Nanjing",
+          "year": 2024
+        },
+        {
+          "team": "IOANNINA",
+          "year": 2024
+        },
+        {
+          "team": "Kyoto",
+          "year": 2024
+        },
+        {
+          "team": "Korea-HS",
+          "year": 2024
+        },
+        {
+          "team": "Athens",
+          "year": 2024
+        },
+        {
+          "team": "DTU-Denmark",
+          "year": 2024
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均明确引用IOANNINA 2024上下文，无添加未提及内容",
+        "rel_reason": "完整覆盖湿实验设计的底盘、组件、目标、挑战与优化，紧扣问题"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0114",
+      "type": "llm_generated",
+      "question": "在给定的实验条件下，dCas9-HRP-gRNA复合物介导的显色反应速率主要受哪个参数限制？",
+      "answer_preview": "根据提供的上下文信息，针对 dCas9-HRP-gRNA 复合物介导的显色反应速率的主要限制参数，**根据现有信息无法确定唯一的主要限制参数**，但可以通过模型假设排除部分因素，并结合通用知识进行推断。以下是详细分析与建议：\n\n### 1. 上下文信息分析：排除底物限制\n根据 **TU_Dresden 2019** 的建模假设，明确指出了酶促反应的动力学条件：\n*   **排除因素**：模型假设\"HRP 催化反应不受底物限制，符合 Michaelis-Menten 模型”[TU_Dresden 2019]。这意味着在设定的实验条件下，底物（TMB）浓度并非反应速率的限制因素（即底物饱和）。\n*   **关键参数**：模型输入参数包括\"dCas9-HRP 与 gRNA 的结合常数（Km）”、\"gRNA 与目标 DNA 的结合亲和力（Kd）”、\"HRP 催化 TMB 底物的速率常数（kcat）",
+      "retrieved_sources": [
+        {
+          "team": "TU_Dresden",
+          "year": 2019
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "Calgary",
+          "year": 2018
+        },
+        {
+          "team": "HZAU-China",
+          "year": 2017
+        },
+        {
+          "team": "TU_Dresden",
+          "year": 2019
+        },
+        {
+          "team": "UiOslo_Norway",
+          "year": 2018
+        },
+        {
+          "team": "Heidelberg",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "排除底物限制、引用Kd/kcat等均有上下文依据，仅‘通用知识’部分未在检索片段中出现但已明确标注",
+        "rel_reason": "直接聚焦问题核心，逻辑清晰指出主要限制参数的候选及判断依据"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0071",
+      "type": "rule_based",
+      "question": "2017年SZU-China队的计算建模代码是否对外公开？",
+      "answer_preview": "根据提供的上下文信息，针对 2017 年 SZU-China 队计算建模代码的公开情况，回答如下：\n\n### 1. 结论\n**2017 年 SZU-China 队的计算建模代码未对外公开。** 团队未在官方 Wiki 或代码托管平台（如 GitHub）上提供具体的建模实现代码。\n\n### 2. 事实依据\n*   **Wiki 文档记录**：团队未在 Wiki 中提供建模的开源代码或 GitHub 链接，仅提及使用 MATLAB 进行数据拟合和统计分析（例如，附着率数据的均值和标准差计算）[来源：SZU-China 2017]。\n*   **项目总体评价**：在项目的总体评价中明确指出，建模部分“缺乏开源代码和详细参数披露”，这被视为项目的局限性之一 [来源：SZU-China 2017]。\n\n### 3. 专家评述与建议\n*   **可重复性影响**：缺乏开源代码限制了模型的可重复性和透明",
+      "retrieved_sources": [
+        {
+          "team": "SZU-China",
+          "year": 2017
+        },
+        {
+          "team": "HZAU-China",
+          "year": 2017
+        },
+        {
+          "team": "SZU-China",
+          "year": 2017
+        },
+        {
+          "team": "SCUT-FSE-CHINA",
+          "year": 2017
+        },
+        {
+          "team": "Mingdao",
+          "year": 2017
+        },
+        {
+          "team": "SECA_NZ",
+          "year": 2017
+        },
+        {
+          "team": "Shanghaitech",
+          "year": 2017
+        },
+        {
+          "team": "East_Chapel_Hill",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均直接引用上下文原文或明确标注通用知识",
+        "rel_reason": "精准聚焦SZU-China 2017建模代码公开性，结论清晰"
+      },
+      "citation": {
+        "cited_count": 3,
+        "valid_count": 3,
+        "accuracy": 1.0,
+        "detail": "引用 3 处，3 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0087",
+      "type": "llm_generated",
+      "question": "如何通过BiFC技术验证两个蛋白质之间的相互作用？",
+      "answer_preview": "基于提供的上下文信息，特别是 WashU_StLouis 2018 团队的研究案例，利用双分子荧光互补（Bimolecular Fluorescence Complementation, BiFC）技术验证两个蛋白质之间相互作用的流程如下：\n\n### 1. 融合蛋白载体构建\n将待验证相互作用的两个目标蛋白分别与荧光蛋白的非功能性片段进行融合。\n- **具体操作**：构建含有目标基因（如抗性基因 Sr35 和非毒性因子 AvrSr35）的质粒，分别在它们的 C 端或 N 端融合黄荧光蛋白（YFP）的片段（如 cYFP 和 nYFP）[WashU_StLouis 2018]。\n- **通用知识**：单独的 nYFP 或 cYFP 片段本身不发荧光，只有当两个目标蛋白相互作用使这两个片段在空间上足够接近时，才能重新组装成具有荧光活性的完整 YFP 结构。\n\n### 2. 底盘生物选择与表达系统\n",
+      "retrieved_sources": [
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "WashU_StLouis",
+          "year": 2018
+        },
+        {
+          "team": "IISER-Pune-India",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有步骤和细节均直接引用上下文原文",
+        "rel_reason": "完整、结构化地回答了BiFC验证流程"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0038",
+      "type": "rule_based",
+      "question": "2020年Imperial_College队在人类实践中接触了哪些关键合作方？",
+      "answer_preview": "根据提供的上下文信息，2020 年 Imperial_College 队在人类实践（Human Practices）环节中接触的关键合作方主要分为学术机构与专家、iGEM 参赛团队以及内部与潜在合作伙伴三类。具体整合如下：\n\n### 1. 学术机构与专家指导\n团队通过与高校及领域专家的访谈，获取了关于自动化、数据标准及用户界面的专业指导：\n*   **Imperial College 合成生物学中心**：提供了专家指导和实验室支持。具体受访专家包括 **Professor Guy-Bart Stan**（提供自动化前沿见解）、**Professor Baldwin**（讨论 SBOL 整合）、**Dr. Glen Gowers** 与 **Dr. Zoltan Tuza**（建议关注协议校准与错误追踪）(Imperial_College 2020)。\n*   **犹他大学（Universi",
+      "retrieved_sources": [
+        {
+          "team": "Imperial_College",
+          "year": 2020
+        },
+        {
+          "team": "Imperial_College",
+          "year": 2020
+        },
+        {
+          "team": "Imperial_College",
+          "year": 2020
+        },
+        {
+          "team": "Korea_HS",
+          "year": 2020
+        },
+        {
+          "team": "Imperial_College",
+          "year": 2020
+        },
+        {
+          "team": "Jilin_China",
+          "year": 2020
+        },
+        {
+          "team": "Imperial_College",
+          "year": 2020
+        },
+        {
+          "team": "KEYSTONE",
+          "year": 2020
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有合作方及细节均严格源自提供的上下文片段",
+        "rel_reason": "精准聚焦2020年Imperial_College队人类实践的关键合作方"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0117",
+      "type": "llm_generated",
+      "question": "模型的数学方程和参数是否足以让其他研究者复现CFW的结构稳定性模拟结果？",
+      "answer_preview": "### 关于 CFW 结构稳定性模拟结果复现性的评估\n\n根据提供的上下文信息，针对 Thessaly 2022 团队 CFW 结构稳定性模型的数学方程和参数是否足以支持复现，评估如下：\n\n#### 1. 现有文档的完整性分析\n团队在模型页面提供了较为详细的理论基础和参数信息，但在可执行代码方面存在缺失。\n*   **方程与参数描述**：团队“在模型页面（https://2022.igem.wiki/thessaly/model/）中详细描述了数学方程、参数和模拟结果”【Thessaly 2022】。\n*   **关键输入参数**：结构模型明确了“输入参数：菌丝体材料的杨氏模量、密度、水体浮力”【Thessaly 2022】。\n*   **几何模型支持**：硬件设计部分“提供了 CFW 的 CAD 模型和制造流程”【Thessaly 2022】，这对于有限元分析（FEA）的几何重建至关重要。",
+      "retrieved_sources": [
+        {
+          "team": "Thessaly",
+          "year": 2022
+        },
+        {
+          "team": "Thessaly",
+          "year": 2022
+        },
+        {
+          "team": "Thessaly",
+          "year": 2022
+        },
+        {
+          "team": "WHU-China",
+          "year": 2019
+        },
+        {
+          "team": "TU_Darmstadt",
+          "year": 2021
+        },
+        {
+          "team": "NUDT_CHINA",
+          "year": 2021
+        },
+        {
+          "team": "Tec-Chihuahua",
+          "year": 2023
+        },
+        {
+          "team": "UCalgary",
+          "year": 2024
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均直接引用或合理推断自上下文",
+        "rel_reason": "精准聚焦CFW结构稳定性复现性问题"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0004",
+      "type": "rule_based",
+      "question": "TU_Darmstadt团队在2018年如何处理项目的伦理问题？经过了哪些审查流程？",
+      "answer_preview": "根据提供的上下文信息，TU_Darmstadt 2018 团队在 project 伦理问题处理及审查流程方面的具体情况如下：\n\n### 1. 伦理处理策略：基于风险评估的豁免机制\nTU_Darmstadt 团队主要通过评估项目涉及的生物材料风险等级和应用场景，来确定是否需要伦理审查。团队认为其项目风险较低，因此判定无需进行特殊的正式伦理审查 [TU_Darmstadt 2018]。\n\n### 2. 具体伦理考量维度\n团队从以下三个主要维度进行了伦理合规性分析：\n\n*   **生物安全伦理**：\n    *   项目使用的底盘生物为大肠杆菌（*E. coli*）和酿酒酵母（*S. cerevisiae*），均属于生物安全等级 1（BSL-1）。\n    *   基于此低风险等级，团队判定无需特殊伦理审查，但在 Wiki 安全页面（Safety）中确保实验符合 iGEM 安全规范 [TU_Da",
+      "retrieved_sources": [
+        {
+          "team": "TU_Darmstadt",
+          "year": 2018
+        },
+        {
+          "team": "Utrecht",
+          "year": 2018
+        },
+        {
+          "team": "UC_San_Diego",
+          "year": 2018
+        },
+        {
+          "team": "UCopenhagen",
+          "year": 2018
+        },
+        {
+          "team": "Mingdao",
+          "year": 2018
+        },
+        {
+          "team": "SDSZ_China",
+          "year": 2018
+        },
+        {
+          "team": "BNDS_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "NEFU_China",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均严格源自TU_Darmstadt上下文，无添加或推断",
+        "rel_reason": "精准聚焦TU_Darmstadt的伦理处理与审查流程，完全切题"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0055",
+      "type": "llm_generated",
+      "question": "如何通过TEV蛋白酶切割来激活荧光信号，从而实现对目标蛋白酶（如cruzipain）的检测？",
+      "answer_preview": "基于提供的上下文信息，通过 TEV 蛋白酶切割激活荧光信号以检测目标蛋白酶（如 cruzipain）的机制主要涉及**级联放大设计**与**荧光淬灭解除**两个核心环节。以下是整合后的专业回答：\n\n### 1. 荧光信号激活机制（TEV 蛋白酶作为执行者）\nTEV 蛋白酶通过特异性切割含有荧光报告基团与淬灭基团的融合蛋白，解除荧光抑制，从而产生可检测的光信号。\n*   **生物元件设计**：使用含暗淬灭剂（dark quencher）的融合蛋白（如 **SpyCatcher-sfGFP-Quencher**）。在该状态下，荧光蛋白（sfGFP）的发光被淬灭剂抑制。\n*   **切割激活**：当 TEV 蛋白酶存在时，其特异性切割位点被切断，导致淬灭剂与荧光蛋白分离，解除荧光抑制，恢复荧光信号 [Oxford 2017]。\n*   **替代方案**：在某些设计中，TEV 蛋白酶切割特异性底物",
+      "retrieved_sources": [
+        {
+          "team": "Oxford",
+          "year": 2017
+        },
+        {
+          "team": "Oxford",
+          "year": 2017
+        },
+        {
+          "team": "Oxford",
+          "year": 2017
+        },
+        {
+          "team": "ShanghaiTech_China",
+          "year": 2021
+        },
+        {
+          "team": "Oxford",
+          "year": 2017
+        },
+        {
+          "team": "Oxford",
+          "year": 2017
+        },
+        {
+          "team": "IISER_Berhampur",
+          "year": 2021
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        }
+      ],
+      "judgment": {
+        "faithfulness": 3,
+        "relevance": 5,
+        "faith_reason": "提及Slovenia 2016和ER驻留蛋白等未在上下文中出现的内容，且FRET原理标注为'通用知识'但未在原文中提及",
+        "rel_reason": "完整聚焦TEV切割激活荧光以检测cruzipain，结构清晰覆盖机制、耦合策略与验证"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0011",
+      "type": "llm_generated",
+      "question": "如何通过调整引物浓度来平衡重复序列扩增效率与产物产量？",
+      "answer_preview": "基于提供的上下文信息，调整引物浓度以平衡重复序列扩增效率与产物产量的核心策略是进行**梯度浓度优化实验**，以寻找特异性与产率的最佳平衡点。以下是具体建议：\n\n### 1. 实施梯度浓度筛选实验\n不要依赖单一浓度，而应设置广泛的引物浓度梯度进行测试。\n- **操作建议**：设置涵盖低浓度到高浓度的梯度范围。例如，**CCU_Taiwan 2020** 团队在 TR-PCR 实验中设置了 **0.05-0.5 μM** 的引物浓度梯度，成功确定了最佳反应条件 [CCU_Taiwan 2020]。\n- **目的**：通过对比不同浓度下的扩增结果，识别出既能保证扩增效率又能维持产物产量的浓度区间。\n\n### 2. 关注重复数与产量的权衡关系\n在重复序列扩增中，需特别注意重复次数与总产物浓度之间可能存在的拮抗关系。\n- **观察指标**：监测“重复数”与“产物浓度”的变化趋势。**CCU_Taiw",
+      "retrieved_sources": [
+        {
+          "team": "CCU_Taiwan",
+          "year": 2020
+        },
+        {
+          "team": "BHSF",
+          "year": 2020
+        },
+        {
+          "team": "CCU_Taiwan",
+          "year": 2020
+        },
+        {
+          "team": "Leiden",
+          "year": 2020
+        },
+        {
+          "team": "UCLA",
+          "year": 2015
+        },
+        {
+          "team": "NYU_Abu_Dhabi",
+          "year": 2018
+        },
+        {
+          "team": "Leiden",
+          "year": 2020
+        },
+        {
+          "team": "WageningenUR",
+          "year": 2024
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "NYU_Abu_Dhabi 2018未提RPA引物浓度0.4 μM或镁离子优化，该细节无来源",
+        "rel_reason": "精准聚焦引物浓度对重复序列扩增效率与产量的平衡，结构清晰、论据紧扣"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0154",
+      "type": "llm_generated",
+      "question": "如何确保皮质醇检测结果能反映个体差异而非仅依赖群体平均值？",
+      "answer_preview": "根据提供的上下文信息，确保皮质醇检测结果反映个体差异而非依赖群体平均值的策略主要涉及基线建立、算法优化及硬件精度保障。以下是结构化分析：\n\n### 1. 核心策略：建立个体基线与算法优化\n这是解决个体差异问题的关键人文与实践（Human Practices）措施。\n*   **建立皮质醇基线**：根据心理学家 Dr. Janet Menard 的建议，团队强调了建立个体皮质醇基线（Baseline）的重要性。由于不同个体的应激反应和基础激素水平存在显著差异，单一群体阈值无法准确反映个体健康状况。通过确立个体基线，后续检测数据可与该个体历史数据进行对比，而非与人群平均值对比。\n    *   *来源：[Queens_Canada 2018] 3. Human Practices 深度分析 | 3.4 项目伦理审查流程*\n*   **优化传感器算法**：团队针对个体化检测需求优化了传感器算法。",
+      "retrieved_sources": [
+        {
+          "team": "Queens_Canada",
+          "year": 2018
+        },
+        {
+          "team": "Queens_Canada",
+          "year": 2018
+        },
+        {
+          "team": "TAS_Taipei",
+          "year": 2020
+        },
+        {
+          "team": "Queens_Canada",
+          "year": 2018
+        },
+        {
+          "team": "OhioState",
+          "year": 2020
+        },
+        {
+          "team": "Queens_Canada",
+          "year": 2018
+        },
+        {
+          "team": "Queens_Canada",
+          "year": 2018
+        },
+        {
+          "team": "Queens_Canada",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘硬件偏差小于10%’和‘添加BSA消除干扰’在上下文中无出处",
+        "rel_reason": "完整聚焦个体基线、算法优化与精度保障，直击问题核心"
+      },
+      "citation": {
+        "cited_count": 5,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 5 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0131",
+      "type": "rule_based",
+      "question": "2018年BNDS_CHINA队在实验技术层面做出了什么创新？",
+      "answer_preview": "根据提供的上下文信息，2018 年 BNDS_CHINA 队在实验技术层面主要侧重于**现有技术的优化与系统鲁棒性的提升**，以解决特定表达和功能挑战，而非开发全新的实验平台或方法。以下是基于 Wiki 内容整理的具体技术贡献及解决方案：\n\n### 1. 蛋白表达优化策略（针对抗菌肽 Cecropin A）\n*   **技术挑战**：Cecropin A 抗菌肽在大肠杆菌（*E. coli*）中表达时易形成包涵体，导致活性降低。\n*   **解决方案**：\n    *   **诱导条件优化**：将 IPTG 浓度调整为 0.5 mM，并将培养温度降低至 18°C，以减缓蛋白合成速度，促进正确折叠。\n    *   **伴侣蛋白共表达**：添加伴侣蛋白（如 DnaK）协助蛋白折叠，提高可溶性表达比例。\n*   **专家解读（通用知识）**：降低温度和诱导剂浓度是合成生物学中减少包涵体形成的经",
+      "retrieved_sources": [
+        {
+          "team": "BNDS_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "UC_San_Diego",
+          "year": 2018
+        },
+        {
+          "team": "BNDS_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "BNDS_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "LZU-CHINA",
+          "year": 2018
+        },
+        {
+          "team": "BNDS_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "NKU_CHINA",
+          "year": 2018
+        },
+        {
+          "team": "UESTC-Software",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有技术点均严格源自BNDS_CHINA 2018上下文，无虚构，通用知识已标注",
+        "rel_reason": "精准聚焦实验技术层面创新，完整覆盖三大挑战及对应优化方案"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0023",
+      "type": "rule_based",
+      "question": "2018年UAlberta队的人类实践工作有哪些可量化的成效？",
+      "answer_preview": "根据提供的 2018 年 UAlberta iGEM 团队 Wiki 信息，该团队在人类实践（Human Practices, HP）工作中取得了以下可量化的成效，主要体现在公众参与规模、资源筹集、需求验证数据及竞赛成果四个方面：\n\n### 1. 公众参与与教育覆盖面\n团队通过多种线下活动量化了受众接触规模，有效提升了利益相关方对蜜蜂微孢子虫（*Nosema ceranae*）问题的认知：\n*   **行业会议推广**：在阿尔伯塔养蜂协会会议（2018 年 11 月）上展示 APIS 项目，吸引约 **50 名** 商业养蜂人和研究者参与，并计划开展实地试验 [来源：UAlberta 2018]。\n*   **区域学术交流**：在 aGEM 会议（2018 年 9 月）上与其他阿尔伯塔 iGEM 团队交流，吸引约 **30 名** 学生和研究者参与，增强了区域合作 [来源：UAlberta",
+      "retrieved_sources": [
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        },
+        {
+          "team": "UAlberta",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有数据点（50人、30人、20人、32人、80%、40%、金牌、最佳食品与营养奖）均在上下文中明确出现并可溯源",
+        "rel_reason": "精准聚焦‘可量化成效’，分四类结构化呈现，完全匹配问题要求"
+      },
+      "citation": {
+        "cited_count": 8,
+        "valid_count": 8,
+        "accuracy": 1.0,
+        "detail": "引用 8 处，8 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0123",
+      "type": "rule_based",
+      "question": "Manchester团队在2017年的湿实验中有哪些实验方法上的创新？",
+      "answer_preview": "根据提供的上下文信息，Manchester 2017 团队在湿实验方面的实验方法创新主要体现在生物结构构建与培养系统的优化上。虽然提供的文本主要以“总结关键词”和“项目分析”的形式呈现，未像 SYSU-Software 团队那样设立专门的“实验方法创新点”章节，但结合其项目描述与关键词，可归纳出以下湿实验层面的技术创新与实施策略：\n\n### 1. 细菌微室（BMC）结构的构建与应用\n团队在湿实验中采用了一种特殊的细胞内结构构建方法，利用 **Eut 和 Pdu 系统** 构建细菌微室（Bacterial Microcompartments, BMC）。\n*   **创新点**：不同于传统的细胞质表达，该方法通过构建物理隔离的微室结构来实现磷酸盐的高效储存，减少了细胞代谢干扰。\n*   **核心元件**：结合聚磷酸激酶（**cgPPK2**）作为核心功能元件，催化磷酸盐聚合成聚磷酸并储存于 ",
+      "retrieved_sources": [
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "Manchester",
+          "year": 2017
+        },
+        {
+          "team": "Manchester",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "Edinburgh_UG",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "SZU-China",
+          "year": 2017
+        },
+        {
+          "team": "CCU_Taiwan",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有创新点（BMC、连续培养、钼蓝/荧光显微镜）均直接源自Manchester 2017上下文",
+        "rel_reason": "精准聚焦Manchester团队湿实验方法创新，结构清晰覆盖问题全部要求"
+      },
+      "citation": {
+        "cited_count": 3,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 3 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0021",
+      "type": "rule_based",
+      "question": "2021年Rochester队如何向社会公众传播合成生物学知识？",
+      "answer_preview": "根据现有信息无法确定 2021 年 Rochester 队具体的社会公众传播活动。\n\n### 1. 上下文信息局限性分析\n提供的上下文资料中涵盖了多个 2021 年 iGEM 参赛团队的人类实践（Human Practices）与公众推广活动记录，但**未包含 Rochester 团队**的相关信息。现有资料覆盖的团队包括：\n- **IISER-Tirupati_India 2021**：涉及社交媒体传播、国际调查等 [来源：IISER-Tirupati_India 2021]。\n- **BNU-China 2021**：涉及家庭科学训练营、志愿教学、社区教育等 [来源：BNU-China 2021]。\n- **SZPT-CHINA 2021**：涉及科普工作坊、电子游戏、社交媒体直播等 [来源：SZPT-CHINA 2021]。\n- **Groningen 2021**：涉及科普漫画、社",
+      "retrieved_sources": [
+        {
+          "team": "IISER-Tirupati_India",
+          "year": 2021
+        },
+        {
+          "team": "BNU-China",
+          "year": 2021
+        },
+        {
+          "team": "SZPT-CHINA",
+          "year": 2021
+        },
+        {
+          "team": "Groningen",
+          "year": 2021
+        },
+        {
+          "team": "GreatBay_SZ",
+          "year": 2021
+        },
+        {
+          "team": "CCA_San_Diego",
+          "year": 2021
+        },
+        {
+          "team": "Patras",
+          "year": 2021
+        },
+        {
+          "team": "SZU-China",
+          "year": 2021
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "明确声明无Rochester队信息，所有团队列举和通用模式均严格引用上下文来源",
+        "rel_reason": "直接回答问题核心：无法确定，并给出原因、依据和可行建议"
+      },
+      "citation": {
+        "cited_count": 18,
+        "valid_count": 18,
+        "accuracy": 1.0,
+        "detail": "引用 18 处，18 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0039",
+      "type": "llm_generated",
+      "question": "为什么溶栓酶基因在pET-22b-LK载体中的表达产量低？",
+      "answer_preview": "根据提供的上下文信息，针对溶栓酶基因在 pET-22b-LK 载体中表达产量低的原因分析及建议如下：\n\n### 1. 上下文直接归因：诱导条件未优化\n根据 **Taipei-KCISLK-V1 2023** 团队的实验记录，溶栓酶表达产量低的主要关联因素被确定为 **IPTG 诱导条件不适宜**。团队并未在文中明确阐述具体的分子机制（如包涵体形成或密码子偏好性），但通过对比优化前后的实验数据，确认了诱导参数是影响产量的关键变量。\n\n*   **初始问题**：溶栓酶基因在 pET-22b-LK 载体中的表达产量低（初始产量仅为 0.3 mg/L）。\n*   **关键因素**：IPTG 浓度、诱导温度及诱导时间。\n*   **优化方案**：将诱导条件调整为 0.5 mM IPTG，16°C 诱导 16 小时。\n*   **优化结果**：产量从 0.3 mg/L 提高到 1.2 mg/L（提升 ",
+      "retrieved_sources": [
+        {
+          "team": "Taipei-KCISLK-V1",
+          "year": 2023
+        },
+        {
+          "team": "Taipei-KCISLK-V1",
+          "year": 2023
+        },
+        {
+          "team": "Heidelberg",
+          "year": 2023
+        },
+        {
+          "team": "VITVellore",
+          "year": 2023
+        },
+        {
+          "team": "Taipei-KCISLK-V1",
+          "year": 2023
+        },
+        {
+          "team": "Taipei-KCISLK-V1",
+          "year": 2023
+        },
+        {
+          "team": "Taipei-KCISLK-V1",
+          "year": 2023
+        },
+        {
+          "team": "UCL",
+          "year": 2019
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘IPTG诱导条件未优化’有直接依据；‘包涵体’‘代谢负担’等机制属合理通用知识且已标注",
+        "rel_reason": "精准聚焦问题原因，分层给出直接归因与潜在机制，完全切题"
+      },
+      "citation": {
+        "cited_count": 1,
+        "valid_count": 0,
+        "accuracy": 0.0,
+        "detail": "引用 1 处，0 处在检索结果中"
+      }
+    },
+    {
+      "id": "rule_0173",
+      "type": "rule_based",
+      "question": "Pasteur_Paris团队在2018年的iGEM项目中选择了什么底盘生物？选择理由是什么？",
+      "answer_preview": "### 关于 2018 年 iGEM Pasteur_Paris 团队底盘生物选择的分析\n\n#### 1. 基于提供上下文的结论\n**根据现有信息无法确定** 2018 年 iGEM Pasteur_Paris 团队的具体底盘生物选择及理由。\n\n所提供的上下文信息涵盖了 2018 年多个 iGEM 参赛团队的技术细节，包括 Stockholm、Montpellier、OLS_Canmore_Canada、Virginia、Unesp_Brazil、SUIS_Shanghai、Tacoma_RAINmakers 以及 Utrecht 团队，但**未包含**任何关于 \"Pasteur_Paris\" 团队的项目描述、Wiki 页面分析或底盘生物选择信息 [来源：Stockholm 2018; Montpellier 2018; OLS_Canmore_Canada 2018; Virginia ",
+      "retrieved_sources": [
+        {
+          "team": "Stockholm",
+          "year": 2018
+        },
+        {
+          "team": "Montpellier",
+          "year": 2018
+        },
+        {
+          "team": "OLS_Canmore_Canada",
+          "year": 2018
+        },
+        {
+          "team": "Virginia",
+          "year": 2018
+        },
+        {
+          "team": "Unesp_Brazil",
+          "year": 2018
+        },
+        {
+          "team": "SUIS_Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "Tacoma_RAINmakers",
+          "year": 2018
+        },
+        {
+          "team": "Utrecht",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "明确声明信息缺失，所有团队列举均严格对应上下文来源",
+        "rel_reason": "直接回答问题核心：Pasteur_Paris信息未在上下文中出现"
+      },
+      "citation": {
+        "cited_count": 9,
+        "valid_count": 9,
+        "accuracy": 1.0,
+        "detail": "引用 9 处，9 处在检索结果中"
+      }
+    },
+    {
+      "id": "llm_0026",
+      "type": "llm_generated",
+      "question": "在模拟肠道环境中，工程菌能否稳定定植并持续分泌IL-10？",
+      "answer_preview": "基于提供的历年 iGEM 项目上下文信息，在模拟肠道环境中，工程菌**能够实现稳定定植并持续分泌 IL-10**，但这通常依赖于特定的工程化改造策略（如封装保护、遗传回路优化）来克服自然环境下的生存与表达挑战。以下是详细分析：\n\n### 1. 定植稳定性验证\n在模拟肠道环境中，工程菌的定植能力已通过多种策略得到验证和改善：\n*   **基础存活能力**：Oxford 2018 团队使用 SHIME（人体肠道微生物生态系统模拟器）模型测试，证实*L. lactis* 在模拟肠道环境（pH 6.5，厌氧）中可存活 48 小时，表明具备基础的肠道定植能力 (Oxford 2018)。\n*   **增强定植策略**：针对工程菌长期定植能力不足的问题，BNDS-China 2024 团队通过过表达 GDH 增强菌株增殖能力，促进其在肠道中的竞争性定植 (BNDS-China 2024)。NMU-Ch",
+      "retrieved_sources": [
+        {
+          "team": "Oxford",
+          "year": 2018
+        },
+        {
+          "team": "Oxford",
+          "year": 2018
+        },
+        {
+          "team": "Oxford",
+          "year": 2018
+        },
+        {
+          "team": "BNDS-China",
+          "year": 2024
+        },
+        {
+          "team": "NMU-China",
+          "year": 2023
+        },
+        {
+          "team": "Oxford",
+          "year": 2018
+        },
+        {
+          "team": "Oxford",
+          "year": 2018
+        },
+        {
+          "team": "TU-Eindhoven",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 3,
+        "relevance": 5,
+        "faith_reason": "提及TU-Eindhoven 2023团队，但上下文中无此来源",
+        "rel_reason": "直接聚焦定植与IL-10分泌，结构清晰"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0023",
+      "type": "llm_generated",
+      "question": "为什么选择大肠杆菌DH5α作为工程菌株来实现磷酸盐的去除？",
+      "answer_preview": "根据提供的上下文信息，选择大肠杆菌 DH5α作为工程菌株来实现磷酸盐去除的主要原因可归纳为遗传操作便利性、磷酸盐代谢改造的适用性以及生长特性三个方面。以下是详细分析：\n\n### 1. 遗传操作便利性与稳定性\nDH5α菌株具有成熟的遗传背景和高效的转化能力，是合成生物学中标准的底盘生物之一。\n*   **高转化效率与稳定背景**：DH5α适合质粒克隆和基因表达实验，具有高转化效率和稳定的遗传背景，这为构建复杂的基因线路提供了基础保障 [Wego_Taipei 2022]。\n*   **成熟的工具系统**：大肠杆菌作为模式生物，拥有成熟的遗传操作工具和标准化的 BioBrick 系统，便于进行基因工程改造 [Manchester 2017]。\n*   **易于操作**：其易于操作的遗传背景适合高效表达外源基因并进行代谢改造 [York 2015]。\n\n### 2. 磷酸盐代谢改造的适用性\n针对",
+      "retrieved_sources": [
+        {
+          "team": "Hangzhou-SDG",
+          "year": 2024
+        },
+        {
+          "team": "Manchester",
+          "year": 2017
+        },
+        {
+          "team": "Sogang_Korea",
+          "year": 2022
+        },
+        {
+          "team": "Wego_Taipei",
+          "year": 2022
+        },
+        {
+          "team": "Rice",
+          "year": 2017
+        },
+        {
+          "team": "York",
+          "year": 2015
+        },
+        {
+          "team": "CCA_San_Diego",
+          "year": 2020
+        },
+        {
+          "team": "CAU-China",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "‘环境适应性’在Manchester 2017中指磷酸盐积累场景，非去除；其余要点均有明确出处",
+        "rel_reason": "完全聚焦DH5α用于磷酸盐去除的原因，结构清晰覆盖所有关键维度"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0150",
+      "type": "rule_based",
+      "question": "2018年SJTU-BioX-Shanghai队的湿实验验证方案是怎样的？",
+      "answer_preview": "根据提供的上下文信息，2018 年 SJTU-BioX-Shanghai 团队的湿实验验证方案主要围绕底盘生物选择、模块化功能验证、系统整合测试及体内实验验证四个层面展开。以下是结构化的方案总结：\n\n### 1. 底盘生物选择 (Chassis Organism Selection)\n*   **菌株选择**：选用大肠杆菌 **Nissle 1917 菌株** 作为底盘生物。\n*   **选择依据**：该菌株为益生菌，具有良好的肠道定植能力，基因组操作技术成熟，且生物安全性高（BSL-1 级别），适合用于肠道环境的体内检测应用 [SJTU-BioX-Shanghai 2018]。\n\n### 2. 模块化功能验证 (Modular Functional Verification)\n团队对系统的三个核心模块分别进行了独立的湿实验验证：\n*   **声学报告基因模块 (gvp)**：\n    *",
+      "retrieved_sources": [
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SJTU-BioX-Shanghai",
+          "year": 2018
+        },
+        {
+          "team": "SUIS_Shanghai",
+          "year": 2018
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有陈述均严格源自提供的上下文片段",
+        "rel_reason": "全面覆盖湿实验验证的四个核心层面"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "llm_0196",
+      "type": "llm_generated",
+      "question": "如何确保转基因细菌在环境中的生物安全，防止其意外扩散？",
+      "answer_preview": "基于历年 iGEM 参赛团队的研究与实践，确保转基因细菌在环境中的生物安全并防止意外扩散，通常采取“物理防护 - 基因防护 - 法规合规”的多层级策略。以下是整合后的专业建议：\n\n### 1. 菌株选择与实验室生物安全标准\n从源头降低风险，选择安全性高的宿主菌株并在符合标准的实验室进行操作。\n*   **使用非致病性菌株**：优先选用生物安全等级为 1 级（BSL-1）的菌株（如 *E. coli* BL21/Top10、*S. cerevisiae* 等），确保其无致病性且易于控制 **(SZ-SHD 2020; Duesseldorf 2018; Uppsala 2015)**。\n*   **遵循实验室规范**：实验操作需在 1 级生物安全实验室进行，遵循所在国家的基因工程法规（如德国基因工程法、中国生物安全法），并使用生物安全柜等专业设备 **(Duesseldorf 2018; B",
+      "retrieved_sources": [
+        {
+          "team": "OhioState",
+          "year": 2020
+        },
+        {
+          "team": "SZ-SHD",
+          "year": 2020
+        },
+        {
+          "team": "Barcelona-UB",
+          "year": 2023
+        },
+        {
+          "team": "DTU-Denmark",
+          "year": 2019
+        },
+        {
+          "team": "Duesseldorf",
+          "year": 2018
+        },
+        {
+          "team": "HSiTAIWAN",
+          "year": 2016
+        },
+        {
+          "team": "Uppsala",
+          "year": 2015
+        },
+        {
+          "team": "HUST-China",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有措施均严格源自提供的上下文片段",
+        "rel_reason": "全面覆盖物理、基因、法规三类防扩散策略"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0156",
+      "type": "rule_based",
+      "question": "Slovenia团队在2016年的实验得到了哪些关键结果？",
+      "answer_preview": "根据提供的上下文信息，2016 年斯洛文尼亚（Slovenia）iGEM 团队在湿实验与模型验证方面取得了以下关键结果：\n\n### 1. 机械敏感性与钙离子信号传导\n*   **钙离子内流响应**：在超声刺激下，表达机械敏感通道 MscS 的 HEK293T 细胞钙离子内流增加约**3 倍**（基于 Fluo-4 荧光强度对比）。模型预测的钙离子内流峰值时间为 2-5 秒，实验测量值为**3 秒**，两者高度吻合 [Slovenia 2016]。\n*   **气泡蛋白增强效应**：联合表达气体囊泡蛋白（GvpA/GvpC）的细胞，其超声响应阈值降低约**50%**，发光信号强度提高至**10⁵ photons/s/cm²/sr**。模型预测气泡蛋白对机械敏感性的信号增幅为 2-3 倍，实验验证结果为**3 倍** [Slovenia 2016]。\n\n### 2. 蛋白酶信号级联效率\n*  ",
+      "retrieved_sources": [
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Slovenia",
+          "year": 2016
+        },
+        {
+          "team": "Imperial_College",
+          "year": 2016
+        }
+      ],
+      "judgment": {
+        "faithfulness": 5,
+        "relevance": 5,
+        "faith_reason": "所有关键结果均直接引用上下文数据，无添加或编造",
+        "rel_reason": "全面覆盖湿实验、模型吻合度、应用演示等核心结果"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0145",
+      "type": "rule_based",
+      "question": "2023年UGM-Indonesia队的湿实验验证方案是怎样的？",
+      "answer_preview": "根据提供的上下文信息，针对 2023 年 UGM-Indonesia 团队湿实验验证方案的分析如下：\n\n### 1. 现有信息分析\n根据 2023 年 UGM-Indonesia 团队的 Wiki 页面信息，该项目侧重于建模与干实验，湿实验部分的具体验证方案在提供的上下文中未详细披露，仅明确了建模对湿实验的指导作用：\n*   **建模指导湿实验**：团队通过建模优化 LIRA OR Gate 系统的设计，模拟 miR-21 和 miR-92a 与 LIRA 序列的结合动力学以及 aeBlue 色素蛋白的表达水平。建模用于评估系统的灵敏度和特异性，其结果旨在**为湿实验提供指导** [UGM-Indonesia 2023]。\n*   **具体方案缺失**：提供的上下文主要位于“建模与干实验”模块，**未包含具体的湿实验验证方法**（如具体的分子生物学操作、检测手段、实验协议或定量数据） [U",
+      "retrieved_sources": [
+        {
+          "team": "SJTU-software",
+          "year": 2023
+        },
+        {
+          "team": "Kyoto",
+          "year": 2023
+        },
+        {
+          "team": "MunichBioinformatics",
+          "year": 2023
+        },
+        {
+          "team": "MunichBioinformatics",
+          "year": 2023
+        },
+        {
+          "team": "Thessaly",
+          "year": 2023
+        },
+        {
+          "team": "UGM-Indonesia",
+          "year": 2023
+        },
+        {
+          "team": "SJTU-software",
+          "year": 2023
+        },
+        {
+          "team": "NJU-China",
+          "year": 2023
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "明确指出UGM湿实验方案未披露，建模指导作用有原文支撑；通用知识部分已标注且合理",
+        "rel_reason": "直接聚焦问题，清晰结论+结构化分析，完全回应'湿实验验证方案'这一核心问点"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    },
+    {
+      "id": "rule_0149",
+      "type": "rule_based",
+      "question": "2017年Glasgow队的湿实验验证方案是怎样的？",
+      "answer_preview": "根据提供的上下文信息，2017 年格拉斯哥（Glasgow）团队的湿实验验证方案主要围绕针对空肠弯曲菌（*Campylobacter jejuni*）的生物传感器开发展开，涵盖了遗传电路表征、蛋白表达验证及微流控装置测试。以下是其验证方案的结构化总结：\n\n### 1. 遗传电路与启动子特异性验证\n团队通过荧光报告系统验证了关键遗传元件的功能性与特异性：\n*   **mtlR-mtlE 系统验证**：在不同糖类（如木酮糖、甘露醇）诱导下，使用荧光分光光度计定量测量 GFP 荧光强度，以验证 PmtlE 启动子的特异性。实验结果参照 Liu et al. (2015) 的标准，确认了木酮糖诱导下 GFP 表达的显著上调 [Glasgow 2017]。\n*   **AraC 突变体验证**：采用 PCR 为基础的定点突变生成 AraC 变体，构建分离的 AraC 和 pBAD BioBrick。",
+      "retrieved_sources": [
+        {
+          "team": "Glasgow",
+          "year": 2017
+        },
+        {
+          "team": "Glasgow",
+          "year": 2017
+        },
+        {
+          "team": "Glasgow",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "Glasgow",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "SYSU-Software",
+          "year": 2017
+        },
+        {
+          "team": "Glasgow",
+          "year": 2017
+        }
+      ],
+      "judgment": {
+        "faithfulness": 4,
+        "relevance": 5,
+        "faith_reason": "末段‘通用知识’部分未标注即引入阴性/阳性对照等上下文未提及内容",
+        "rel_reason": "完整覆盖Glasgow 2017湿实验验证的各模块与局限性"
+      },
+      "citation": {
+        "cited_count": 0,
+        "valid_count": 0,
+        "accuracy": null,
+        "detail": "无引用"
+      }
+    }
+  ]
+}

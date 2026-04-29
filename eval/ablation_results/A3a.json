@@ -1,0 +1,37 @@
+{
+  "tag": "A3a",
+  "name": "Hybrid recall=20",
+  "config": {
+    "tag": "A3a",
+    "name": "Hybrid recall=20",
+    "use_bm25": true,
+    "use_faiss": true,
+    "use_reranker": true,
+    "use_year_filter": true,
+    "recall": 20
+  },
+  "metrics": {
+    "overall": {
+      "Hit@1": 0.4677,
+      "Hit@3": 0.6072,
+      "Hit@5": 0.6357,
+      "MRR": 0.5398,
+      "n": 387
+    },
+    "rule_based": {
+      "Hit@1": 0.4599,
+      "Hit@3": 0.5829,
+      "Hit@5": 0.6043,
+      "MRR": 0.5235,
+      "n": 187
+    },
+    "llm_generated": {
+      "Hit@1": 0.475,
+      "Hit@3": 0.63,
+      "Hit@5": 0.665,
+      "MRR": 0.555,
+      "n": 200
+    }
+  },
+  "elapsed_s": 559.7
+}

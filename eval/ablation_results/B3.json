@@ -1,0 +1,37 @@
+{
+  "tag": "B3",
+  "name": "Hybrid 无Reranker (RRF)",
+  "config": {
+    "tag": "B3",
+    "name": "Hybrid 无Reranker (RRF)",
+    "use_bm25": true,
+    "use_faiss": true,
+    "use_reranker": false,
+    "use_year_filter": true,
+    "recall": 50
+  },
+  "metrics": {
+    "overall": {
+      "Hit@1": 0.2842,
+      "Hit@3": 0.4625,
+      "Hit@5": 0.5556,
+      "MRR": 0.3959,
+      "n": 387
+    },
+    "rule_based": {
+      "Hit@1": 0.1658,
+      "Hit@3": 0.385,
+      "Hit@5": 0.5027,
+      "MRR": 0.3065,
+      "n": 187
+    },
+    "llm_generated": {
+      "Hit@1": 0.395,
+      "Hit@3": 0.535,
+      "Hit@5": 0.605,
+      "MRR": 0.4795,
+      "n": 200
+    }
+  },
+  "elapsed_s": 38.4
+}
