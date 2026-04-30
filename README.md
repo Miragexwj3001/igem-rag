@@ -25,6 +25,12 @@ iGEM 每年都会沉淀大量公开 Wiki 页面，包含项目设计、实验方
 - 支持快速查看某类赛道、热门方向、代表项目等信息
 - 适合第一次使用时快速了解系统能力
 
+**页面示例**
+
+<p align="center">
+  <img src="asset/page1.png" alt="首页示例" width="88%">
+</p>
+
 ### 2. 往届项目知识检索台
 
 - 支持按关键词、年份、赛道、奖项等条件过滤项目
@@ -33,6 +39,12 @@ iGEM 每年都会沉淀大量公开 Wiki 页面，包含项目设计、实验方
 - 支持相似项目推荐
 - 支持中文提问中文回答、英文提问英文回答
 - 回答附带证据来源，便于回溯
+
+**页面示例**
+
+<p align="center">
+  <img src="asset/page2.png" alt="知识检索台示例" width="88%">
+</p>
 
 ### 3. 推理探索
 
@@ -45,6 +57,12 @@ iGEM 每年都会沉淀大量公开 Wiki 页面，包含项目设计、实验方
   - 8 周执行计划
   - 接下来 7 天的行动清单
   - 风险与缓解建议
+
+**页面示例**
+
+<p align="center">
+  <img src="asset/page3.png" alt="推理探索示例" width="88%">
+</p>
 
 ## 技术路线
 
@@ -96,6 +114,10 @@ igem-rag/
 ├─ ui_core.py                    # 共享 UI、样式、数据加载与工具函数
 ├─ requirements.txt              # Python 依赖
 ├─ README.md
+├─ asset/
+│  ├─ page1.png
+│  ├─ page2.png
+│  └─ page3.png
 ├─ out_embedding/
 │  ├─ vector_index.faiss
 │  ├─ chunk_metadata.json
