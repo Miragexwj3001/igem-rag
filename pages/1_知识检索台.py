@@ -16,7 +16,10 @@ from ui_core import (
     normalize_text,
     parse_multi_with_unlimited,
     recommend_similar,
+    render_background_decor,
     render_chat_bubble,
+    render_hero,
+    render_section_intro,
     render_sources,
     render_top_nav,
     sidebar_global_api_key,
@@ -60,16 +63,30 @@ def build_chat_query(user_question: str, filters: dict, context_project: dict | 
     )
 
 
+def align_answer_language(rag, user_question: str, answer: str) -> str:
+    user_is_zh = any("\u4e00" <= ch <= "\u9fff" for ch in user_question)
+    answer_has_zh = any("\u4e00" <= ch <= "\u9fff" for ch in answer)
+
+    if user_is_zh and not answer_has_zh:
+        try:
+            return rag._translate_with_qwen(answer, "zh")
+        except Exception:
+            return answer
+    if (not user_is_zh) and answer_has_zh:
+        try:
+            return rag._translate_with_qwen(answer, "en")
+        except Exception:
+            return answer
+    return answer
+
+
 def main():
     inject_styles()
+    render_background_decor()
     render_top_nav("知识检索")
+    render_hero("往届项目知识检索台", "像问答产品一样连续追问，但回答背后连接的是历年 iGEM 项目证据与结构化元数据。", "Bio Knowledge")
+    render_section_intro("往届项目知识检索台", "左侧先筛选和锁定项目，右侧像常见聊天产品一样连续提问，并查看答案证据。", eyebrow="Search")
     api_key = sidebar_global_api_key()
-
-    try:
-        rag = get_rag_system(api_key)
-    except Exception as e:
-        st.error(str(e))
-        st.stop()
 
     df = load_teams_table()
 
@@ -83,6 +100,8 @@ def main():
         st.session_state.search_selected_row_id = None
     if "search_locked_project" not in st.session_state:
         st.session_state.search_locked_project = None
+    if "search_show_similar" not in st.session_state:
+        st.session_state.search_show_similar = False
 
     years_all = sorted([int(y) for y in df["year_num"].dropna().unique().tolist()])
     tracks_all = sorted([t for t in df[TRACK_COL].astype(str).unique().tolist() if t.strip()])
@@ -91,6 +110,7 @@ def main():
     left, right = st.columns([1.1, 1.35], gap="large")
 
     with left:
+        st.markdown("<p class='toolbar-note'>先缩小项目范围，再决定是否锁定某个具体项目进行提问。</p>", unsafe_allow_html=True)
         with st.form("search_filter_form"):
             keyword = st.text_input("关键词（可不填）", value=st.session_state.search_filters.get("keyword", ""))
             y_default = ["不限"] if not st.session_state.search_filters["years"] else st.session_state.search_filters["years"]
@@ -130,6 +150,8 @@ def main():
             selected_label = st.selectbox("选择项目", options=labels, index=default_idx)
             selected_row_id = row_ids[labels.index(selected_label)]
 
+            if st.session_state.search_selected_row_id != selected_row_id:
+                st.session_state.search_show_similar = False
             st.session_state.search_selected_row_id = selected_row_id
             selected_row = filtered[filtered["row_id"] == selected_row_id].iloc[0]
             st.session_state.search_selected_project = selected_row.to_dict()
@@ -149,14 +171,18 @@ def main():
             if str(selected_row.get(WIKI_COL, "")).strip():
                 st.markdown(f"Wiki：[链接]({selected_row[WIKI_COL]})")
             st.info(normalize_text(str(selected_row.get(SUMMARY_COL, "暂无项目概述"))))
-
-            _, matrix = get_similarity_artifacts(df)
-            sims = recommend_similar(df, matrix, int(selected_row["row_id"]), topn=5)
-            st.dataframe(sims, use_container_width=True, height=220)
+            if st.button("查看相似项目推荐", use_container_width=True):
+                st.session_state.search_show_similar = True
+            if st.session_state.search_show_similar:
+                with st.spinner("正在计算相似项目..."):
+                    _, matrix = get_similarity_artifacts(df)
+                    sims = recommend_similar(df, matrix, int(selected_row["row_id"]), topn=5)
+                st.dataframe(sims, use_container_width=True, height=220)
 
     with right:
         f = st.session_state.search_filters
         context_project = st.session_state.search_locked_project or st.session_state.search_selected_project
+        st.markdown("<p class='toolbar-note'>对话区会继承你当前锁定的项目或过滤范围，适合追问技术细节、实验路线和项目比较。</p>", unsafe_allow_html=True)
         st.markdown(
             f"<div class='context-box'><b>当前过滤范围</b><br>关键词：{f['keyword'] or '不限'} | 年份：{f['years'] or '不限'} | 赛道：{f['tracks'] or '不限'}</div>",
             unsafe_allow_html=True,
@@ -181,10 +207,17 @@ def main():
             render_chat_bubble("user", user_prompt)
 
             q = build_chat_query(user_prompt, st.session_state.search_filters, context_project)
+            try:
+                rag = get_rag_system(api_key)
+            except Exception as e:
+                st.error(str(e))
+                st.stop()
+
             with st.spinner("正在检索并生成回答..."):
                 result = rag.query(q)
 
-            ans = normalize_text(result.get("answer", ""))
+            raw_answer = result.get("answer", "")
+            ans = normalize_text(align_answer_language(rag, user_prompt, raw_answer))
             render_chat_bubble("assistant", ans)
             render_sources(result.get("sources", []), title="本轮证据来源")
             st.session_state.search_chat_messages.append(

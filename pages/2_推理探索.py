@@ -20,6 +20,9 @@ from ui_core import (
     load_teams_table,
     normalize_list,
     normalize_text,
+    render_background_decor,
+    render_hero,
+    render_section_intro,
     render_top_nav,
     sidebar_global_api_key,
 )
@@ -395,7 +398,10 @@ def render_plan(result: Dict):
 
 def main():
     inject_styles()
+    render_background_decor()
     render_top_nav("推理探索")
+    render_hero("推理探索", "把相似历史案例、证据片段和大模型归纳能力组合起来，生成更像比赛方案书的执行建议。", "Strategy Planner")
+    render_section_intro("推理探索", "系统会先召回相似历史项目和证据，再把它们整理成更适合新队伍执行的方案。", eyebrow="Planner")
     api_key = sidebar_global_api_key()
 
     try:
@@ -408,8 +414,7 @@ def main():
     if "explore_result" not in st.session_state:
         st.session_state.explore_result = None
 
-    st.markdown("### 推理探索（可执行方案版）")
-    st.caption("输入你的项目方向后，系统会先检索相似历史项目，再用大模型归纳出可执行的8周计划。")
+    st.markdown("<p class='toolbar-note'>更适合输入一个仍在成型中的项目方向，而不是只问一个事实性问题。</p>", unsafe_allow_html=True)
 
     with st.form("explore_form"):
         brief = st.text_area("项目简介（必填）", height=130, placeholder="例如：我们想做可现场检测的食品污染生物传感系统...")

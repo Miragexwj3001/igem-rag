@@ -5,13 +5,16 @@ from ui_core import (
     get_rag_system,
     inject_styles,
     load_teams_table,
+    render_background_decor,
+    render_hero,
     render_result_block,
+    render_section_intro,
     render_top_nav,
     run_query_result,
     sidebar_global_api_key,
 )
 
-st.set_page_config(page_title="iGEM 首页洞察", page_icon="🧬", layout="wide")
+st.set_page_config(page_title="iGEM Navigator", page_icon="🧬", layout="wide")
 
 INSIGHT_CARDS = [
     {
@@ -49,6 +52,7 @@ INSIGHT_CARDS = [
 
 def main():
     inject_styles()
+    render_background_decor()
     api_key = sidebar_global_api_key()
 
     try:
@@ -64,10 +68,12 @@ def main():
         st.session_state.home_custom_result = None
 
     render_top_nav("首页")
-    st.markdown(
-        "<div class='hero'><h1>iGEM 智能洞察中心</h1><p>首页可快速获取热点信息，顶部可切换到知识检索和推理探索页面。</p></div>",
-        unsafe_allow_html=True,
+    render_hero(
+        "iGEM Navigator",
+        "围绕 iGEM 历年项目、赛道趋势和新队伍规划需求，提供更有证据支撑的检索、问答与探索体验。",
+        "Competition Intelligence",
     )
+    render_section_intro("快速洞察入口", "通过预设高价值问题，快速浏览赛道趋势、代表项目和热门主题。", eyebrow="Home")
 
     years = df["year_num"].dropna().astype(int)
     tracks = df[TRACK_COL].replace("", None).dropna().nunique()
@@ -102,6 +108,7 @@ def main():
             cursor += 1
 
     st.markdown("---")
+    render_section_intro("自定义提问", "如果首页卡片不够用，可以直接输入问题，系统会走同一套 RAG 检索与回答流程。", eyebrow="Ask")
     q = st.text_area("自定义问题", height=90)
     if st.button("运行自定义问题"):
         if q.strip():
